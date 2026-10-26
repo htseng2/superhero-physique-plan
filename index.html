@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#090d16" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Superhero Physique Plan — Interactive Tracker</title>
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body class="pb-24">
+  <!-- Top Header -->
+  <header class="sticky top-0 z-30 bg-slate-950/85 backdrop-blur-xl border-b border-slate-800/80">
+    <div class="max-w-4xl mx-auto px-4 pt-3 pb-2.5">
+      <div class="flex items-center justify-between gap-3 mb-2.5">
+        <div class="flex items-center gap-2.5">
+          <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-sky-400 via-indigo-500 to-rose-500 flex items-center justify-center shadow-lg shadow-sky-500/20 text-white font-black text-lg">
+            S
+          </div>
+          <div>
+            <h1 class="text-base sm:text-lg font-extrabold tracking-tight text-white leading-none">
+              SUPERHERO PHYSIQUE PROTOCOL
+            </h1>
+            <p class="text-[11px] text-slate-400 mt-0.5">
+              Target: <span class="text-sky-400 font-semibold">80 kg @ ~11% BF</span> • V-Taper & Spine-Shielded Hypertrophy
+            </p>
+          </div>
+        </div>
+
+        <button
+          onclick="switchTab('sync')"
+          class="px-2.5 py-1.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-xs font-semibold text-slate-300 flex items-center gap-1.5"
+          title="Database & GitHub Cloud Sync"
+        >
+          <span>☁️</span>
+          <span class="hidden sm:inline">Sync / DB</span>
+        </button>
+      </div>
+
+      <!-- Navigation Tabs -->
+      <nav id="main-nav-tabs" class="flex items-center gap-1.5 overflow-x-auto pb-1 no-scrollbar"></nav>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main id="app-main-content" class="max-w-4xl mx-auto px-4 pt-5"></main>
+
+  <!-- Floating Rest Timer Bar (Bottom Sticky) -->
+  <div
+    id="floating-timer-bar"
+    class="hidden fixed bottom-0 left-0 right-0 z-40 bg-slate-950/95 backdrop-blur-xl border-t border-sky-500/40 shadow-2xl"
+  ></div>
+
+  <!-- Toast Container -->
+  <div id="toast-container" class="fixed bottom-16 right-4 z-50 flex flex-col gap-2 max-w-sm"></div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
