@@ -10,6 +10,203 @@ const STORAGE_KEYS = {
   SETTINGS: 'superhero_settings_v1'
 };
 
+const PHOTO_BASE = 'https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/';
+
+const EXERCISE_MEDIA = {
+  warmup_couch: {
+    gif: './assets/gifs/warmup_couch.gif',
+    photoFolder: 'Intermediate_Hip_Flexor_and_Quad_Stretch',
+    muscles: 'Iliopsoas (Hip Flexors) • Rectus Femoris',
+    biomechanics: 'Decompresses anterior pelvic pull on lumbar vertebrae before lower-body loading or pickleball.'
+  },
+  warmup_9090: {
+    gif: './assets/gifs/warmup_9090.gif',
+    photoFolder: 'Seated_Glute',
+    muscles: 'Deep Hip External & Internal Rotators • Hip Capsule',
+    biomechanics: 'Restores hip joint capsule rotation so lateral court cuts and deep leg presses never torque the lower back.'
+  },
+  warmup_birddog: {
+    gif: './assets/gifs/warmup_birddog.gif',
+    photoFolder: 'Superman',
+    muscles: 'Multifidus • Transverse Abdominis • Gluteus Maximus',
+    biomechanics: 'Dr. Stuart McGill\'s gold-standard spine stabilizer—activates 360° core stiffness with near-zero disc compression.'
+  },
+  u1_incline_press: {
+    gif: './assets/gifs/u1_incline_press.gif',
+    photoFolder: 'Leverage_Incline_Chest_Press',
+    muscles: 'Clavicular Pectoralis Major (Upper Chest) • Anterior Delts • Triceps',
+    biomechanics: 'Squares off the high "Superman" upper-chest shelf while fixed lever path eliminates shoulder joint instability.'
+  },
+  u1_neutral_pulldown: {
+    gif: './assets/gifs/u1_neutral_pulldown.gif',
+    photoFolder: 'Close-Grip_Front_Lat_Pulldown',
+    muscles: 'Iliac & Thoracic Latissimus Dorsi • Teres Major',
+    biomechanics: 'Neutral grip aligns the humerus in the sagittal plane to bias lower-lat sweep and V-taper flare.'
+  },
+  u1_converging_flat_press: {
+    gif: './assets/gifs/u1_converging_flat_press.gif',
+    photoFolder: 'Leverage_Chest_Press',
+    muscles: 'Sternal Pectoralis Major • Triceps Brachii',
+    biomechanics: 'Converging arms match natural pec fiber line of pull, allowing safe 0 RIR training with full back pad support.'
+  },
+  u1_chest_supp_row: {
+    gif: './assets/gifs/u1_chest_supp_row.gif',
+    photoFolder: 'Leverage_Iso_Row',
+    muscles: 'Mid/Lower Lats • Rhomboids • Middle Trapezius',
+    biomechanics: 'Chest pad absorbs 100% of horizontal torso load, eliminating lumbar shear stress completely.'
+  },
+  u1_cable_lat_raise: {
+    gif: './assets/gifs/u1_cable_lat_raise.gif',
+    photoFolder: 'Cable_Seated_Lateral_Raise',
+    muscles: 'Lateral Deltoid (Medial Head)',
+    biomechanics: 'Wrist-height cable delivers peak mechanical tension in the bottom lengthened third where dumbbells have zero load.'
+  },
+  u1_bayesian_preacher_curl: {
+    gif: './assets/gifs/u1_bayesian_preacher_curl.gif',
+    photoFolder: 'Standing_One-Arm_Cable_Curl',
+    muscles: 'Biceps Brachii (Long Head Peak) • Brachialis',
+    biomechanics: 'Extending the shoulder slightly behind the torso stretches the biarticular biceps long head for maximum stretch-mediated growth.'
+  },
+  u1_overhead_tri_ext: {
+    gif: './assets/gifs/u1_overhead_tri_ext.gif',
+    photoFolder: 'Cable_Rope_Overhead_Triceps_Extension',
+    muscles: 'Triceps Brachii (Long Head Priority)',
+    biomechanics: 'Overhead shoulder flexion stretches the triceps long head—proven to trigger ~40% more muscle growth than pushdowns alone.'
+  },
+  l1_seated_leg_curl: {
+    gif: './assets/gifs/l1_seated_leg_curl.gif',
+    photoFolder: 'Seated_Leg_Curl',
+    muscles: 'Semitendinosus • Semimembranosus • Biceps Femoris',
+    biomechanics: 'Done 1st to pump synovial cushioning into the knee joint while 90° hip flexion stretches hamstrings for 1.5× hypertrophy.'
+  },
+  l1_leg_extension: {
+    gif: './assets/gifs/l1_leg_extension.gif',
+    photoFolder: 'Leg_Extensions',
+    muscles: 'Rectus Femoris • Vastus Lateralis • Vastus Medialis (VMO)',
+    biomechanics: 'Only exercise that fully shortens the rectus femoris; pre-fatigues quads so Leg Press requires 25–30% less spinal/knee load.'
+  },
+  l1_single_leg_press: {
+    gif: './assets/gifs/l1_single_leg_press.gif',
+    photoFolder: 'Leg_Press',
+    muscles: 'Quadriceps Sweep • Gluteus Maximus',
+    biomechanics: 'Resting non-working foot on the floor locks pelvic tilt and prevents lower-back rounding ("butt wink") completely.'
+  },
+  l1_leg_press_calf: {
+    gif: './assets/gifs/l1_leg_press_calf.gif',
+    photoFolder: 'Calf_Press_On_The_Leg_Press_Machine',
+    muscles: 'Gastrocnemius • Intrinsic Foot Arch Stabilizers',
+    biomechanics: 'Trains straight-knee gastrocnemius in a deep stretch while keeping 0 kg of axial compression off your spine.'
+  },
+  l1_pallof_press: {
+    gif: './assets/gifs/l1_pallof_press.gif',
+    photoFolder: 'Pallof_Press',
+    muscles: 'Transverse Abdominis • Internal & External Obliques',
+    biomechanics: 'Isometric anti-rotation tightens the "corset" waist muscles while reinforcing lumbar disc stability.'
+  },
+  u2_upper_back_row: {
+    gif: './assets/gifs/u2_upper_back_row.gif',
+    photoFolder: 'Leverage_High_Row',
+    muscles: 'Upper Back (Rhomboids, Mid/Lower Traps, Rear Delts)',
+    biomechanics: '45°–60° elbow path drives scapular retraction/protraction to build 3D upper-back thickness with sternum support.'
+  },
+  u2_converging_incline_press: {
+    gif: './assets/gifs/u2_converging_incline_press.gif',
+    photoFolder: 'Incline_Cable_Chest_Press',
+    muscles: 'Clavicular Pectoralis Major • Anterior Deltoid',
+    biomechanics: '25°–30° converging arc maximizes clavicular fiber shortening without anterior shoulder impingement.'
+  },
+  u2_neutral_pulldown: {
+    gif: './assets/gifs/u2_neutral_pulldown.gif',
+    photoFolder: 'Underhand_Cable_Pulldowns',
+    muscles: 'Latissimus Dorsi (Lower Iliac Sweep) • Biceps',
+    biomechanics: 'Supinated/neutral grip keeps elbows tucked forward in the sagittal plane for maximum lower-lat leverage.'
+  },
+  u2_pec_deck_fly: {
+    gif: './assets/gifs/u2_pec_deck_fly.gif',
+    photoFolder: 'Butterfly',
+    muscles: 'Pectoralis Major (Sternal & Clavicular Heads)',
+    biomechanics: 'Pure horizontal adduction removes the triceps bottleneck and loads the pecs across their entire contractile range.'
+  },
+  u2_machine_lat_raise: {
+    gif: './assets/gifs/u2_machine_lat_raise.gif',
+    photoFolder: 'Seated_Side_Lateral_Raise',
+    muscles: 'Lateral Deltoid (Capped 3D Shoulder Width)',
+    biomechanics: 'Arm pads apply resistance directly above the elbow, removing wrist/grip involvement for pure lateral delt isolation.'
+  },
+  l2_hip_thrust: {
+    gif: './assets/gifs/l2_hip_thrust.gif',
+    photoFolder: 'Barbell_Hip_Thrust',
+    muscles: 'Gluteus Maximus • Hamstrings',
+    biomechanics: 'Horizontal force vector loads the glutes at peak hip extension while placing zero shear stress on the lumbar discs.'
+  },
+  l2_lying_leg_curl: {
+    gif: './assets/gifs/l2_lying_leg_curl.gif',
+    photoFolder: 'Seated_Leg_Curl',
+    muscles: 'Hamstrings (Lengthened Hip-Flexed Position)',
+    biomechanics: 'Leaning slightly forward over the seated pad maximizes stretch-mediated hamstring hypertrophy without lower-back arching.'
+  },
+  l2_single_leg_press_high: {
+    gif: './assets/gifs/l2_single_leg_press_high.gif',
+    photoFolder: 'Narrow_Stance_Leg_Press',
+    muscles: 'Gluteus Maximus • Hamstrings • Quadriceps',
+    biomechanics: 'High foot placement increases hip flexion moment and reduces knee flexion angle—zero anterior knee shear.'
+  },
+  l2_seated_calf_raise: {
+    gif: './assets/gifs/l2_seated_calf_raise.gif',
+    photoFolder: 'Seated_Calf_Raise',
+    muscles: 'Soleus • Posterior Tibialis (Flat-Foot Arch Support)',
+    biomechanics: '90° bent knee slackens the gastrocnemius to isolate the soleus and deep arch-supporting posterior tibialis.'
+  },
+  l2_seated_hip_abduction: {
+    gif: './assets/gifs/l2_seated_hip_abduction.gif',
+    photoFolder: 'Thigh_Abductor',
+    muscles: 'Gluteus Medius • Gluteus Minimus • TFL',
+    biomechanics: 'Strengthens lateral hip stabilizers to stop inward knee valgus (flat-foot pronation) and absorb pickleball lunges.'
+  },
+  d5_fresh_lat_raise: {
+    gif: './assets/gifs/d5_fresh_lat_raise.gif',
+    photoFolder: 'Side_Lateral_Raise',
+    muscles: 'Lateral Deltoid (3rd Weekly Frequency Hit)',
+    biomechanics: 'Performed 1st on Saturday when CNS motor unit recruitment is 100% fresh for maximum V-taper shoulder width.'
+  },
+  u2_rear_delt_fly: {
+    gif: './assets/gifs/u2_rear_delt_fly.gif',
+    photoFolder: 'Reverse_Machine_Flyes',
+    muscles: 'Posterior Deltoid • Infraspinatus • Teres Minor',
+    biomechanics: '45° arm path with chest support isolates the posterior deltoid to complete the 3D shoulder cap from the side.'
+  },
+  d5_preacher_curl: {
+    gif: './assets/gifs/d5_preacher_curl.gif',
+    photoFolder: 'Machine_Preacher_Curls',
+    muscles: 'Biceps Brachii (Short Head) • Brachialis',
+    biomechanics: 'Pad locks humerus in place to eliminate shoulder momentum and apply high tension in the bottom stretched range.'
+  },
+  d5_overhead_tri: {
+    gif: './assets/gifs/d5_overhead_tri.gif',
+    photoFolder: 'Cable_Rope_Overhead_Triceps_Extension',
+    muscles: 'Triceps Brachii (Long Head)',
+    biomechanics: 'Trains the largest head of the triceps while fresh on Arm Day for dense upper-arm girth.'
+  },
+  d5_bayesian_curl_ss: {
+    gif: './assets/gifs/d5_bayesian_curl_ss.gif',
+    photoFolder: 'Standing_Biceps_Cable_Curl',
+    muscles: 'Biceps Brachii (Long Head Peak)',
+    biomechanics: 'Continuous cable tension from full shoulder extension to peak elbow flexion.'
+  },
+  u2_cable_triceps_ext: {
+    gif: './assets/gifs/u2_cable_triceps_ext.gif',
+    photoFolder: 'Triceps_Pushdown_-_Rope_Attachment',
+    muscles: 'Triceps Brachii (Lateral & Medial Heads)',
+    biomechanics: 'Arms-at-side extension biases the lateral horseshoe and medial head in the shortened lockout position.'
+  },
+  d5_deadbug_core: {
+    gif: './assets/gifs/d5_deadbug_core.gif',
+    photoFolder: 'Dead_Bug',
+    muscles: 'Rectus Abdominis (6-Pack) • Transverse Abdominis',
+    biomechanics: 'Loads the rectus abdominis via intense anti-extension tension while keeping the lumbar spine pressed flat and safe.'
+  }
+};
+
 const WARMUP_PROTOCOL = [
   {
     id: 'warmup_couch',
@@ -1200,6 +1397,140 @@ function renderTimerBar() {
   `;
 }
 
+function findItemDefinition(itemId) {
+  const warmupItem = WARMUP_PROTOCOL.find(w => w.id === itemId);
+  if (warmupItem) {
+    return {
+      id: warmupItem.id,
+      name: warmupItem.name,
+      badge: warmupItem.prescription,
+      cue: warmupItem.cue,
+      restSeconds: warmupItem.timerSeconds,
+      restLabel: `${warmupItem.timerSeconds}s`
+    };
+  }
+  for (const day of Object.values(WORKOUT_PLAN)) {
+    const found = day.exercises.find(e => e.id === itemId);
+    if (found) return found;
+  }
+  return null;
+}
+
+function openExerciseModal(itemId) {
+  const modalRoot = document.getElementById('exercise-modal-root');
+  if (!modalRoot) return;
+  const item = findItemDefinition(itemId);
+  const media = EXERCISE_MEDIA[itemId];
+  if (!item || !media) return;
+
+  const photo0Url = `${PHOTO_BASE}${media.photoFolder}/0.jpg`;
+  const photo1Url = `${PHOTO_BASE}${media.photoFolder}/1.jpg`;
+
+  modalRoot.innerHTML = `
+    <div
+      class="fixed inset-0 z-50 modal-backdrop flex items-center justify-center p-3 sm:p-6 overflow-y-auto"
+      onclick="if(event.target === this) closeExerciseModal()"
+    >
+      <div class="glass-panel rounded-2xl max-w-2xl w-full p-4 sm:p-6 border border-sky-500/40 shadow-2xl my-auto">
+        <!-- Modal Header -->
+        <div class="flex items-start justify-between gap-3 pb-3 border-b border-slate-800">
+          <div>
+            <span class="text-[11px] font-bold uppercase tracking-wider text-sky-400">${item.badge || 'Biomechanical Form Guide'}</span>
+            <h3 class="text-lg sm:text-xl font-extrabold text-white mt-0.5">${item.name}</h3>
+          </div>
+          <button
+            onclick="closeExerciseModal()"
+            class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold text-sm flex items-center justify-center shrink-0"
+          >
+            ✕
+          </button>
+        </div>
+
+        <!-- Media Grid: Animated GIF + Start/Peak Real Gym Photos -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 my-4">
+          <!-- Animated Rep Loop GIF -->
+          <div class="bg-white rounded-xl p-2 flex flex-col items-center justify-between border-2 border-sky-400/60 shadow-lg">
+            <span class="w-full text-[10px] font-extrabold uppercase tracking-wider text-slate-900 bg-sky-100 px-2 py-0.5 rounded text-center mb-1">
+              🎬 Animated Rep Loop
+            </span>
+            <img
+              src="${media.gif}"
+              alt="${item.name} Animated Demo"
+              class="w-full h-44 object-contain rounded-lg"
+            />
+          </div>
+
+          <!-- Start Position Photo -->
+          <div class="bg-slate-900 rounded-xl overflow-hidden border border-slate-800 flex flex-col">
+            <span class="text-[10px] font-bold uppercase tracking-wider text-slate-300 bg-slate-950/90 px-2.5 py-1 text-center border-b border-slate-800">
+              1. Start / Lengthened Setup
+            </span>
+            <img
+              src="${photo0Url}"
+              alt="${item.name} Start Position"
+              class="w-full h-44 object-cover"
+              onerror="this.parentElement.style.display='none'"
+            />
+          </div>
+
+          <!-- Peak Contraction Photo -->
+          <div class="bg-slate-900 rounded-xl overflow-hidden border border-slate-800 flex flex-col">
+            <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-300 bg-slate-950/90 px-2.5 py-1 text-center border-b border-slate-800">
+              2. Peak Contraction / Finish
+            </span>
+            <img
+              src="${photo1Url}"
+              alt="${item.name} Peak Contraction"
+              class="w-full h-44 object-cover"
+              onerror="this.parentElement.style.display='none'"
+            />
+          </div>
+        </div>
+
+        <!-- Anatomical & Biomechanical Details -->
+        <div class="space-y-2.5 text-xs sm:text-sm">
+          <div class="p-3 rounded-xl bg-slate-900/90 border border-slate-800">
+            <div class="text-[11px] font-bold uppercase tracking-wider text-indigo-400 mb-0.5">🎯 Target Muscles</div>
+            <div class="font-semibold text-white">${media.muscles}</div>
+          </div>
+
+          <div class="p-3 rounded-xl bg-slate-900/90 border border-slate-800">
+            <div class="text-[11px] font-bold uppercase tracking-wider text-sky-400 mb-0.5">⚡ Key Execution Cue</div>
+            <div class="text-slate-200 leading-relaxed">${item.cue}</div>
+          </div>
+
+          <div class="p-3 rounded-xl bg-emerald-950/30 border border-emerald-500/30">
+            <div class="text-[11px] font-bold uppercase tracking-wider text-emerald-400 mb-0.5">🛡️ Spine, Hip & Hypertrophy Rationale</div>
+            <div class="text-emerald-100/90 leading-relaxed">${media.biomechanics}</div>
+          </div>
+        </div>
+
+        <!-- Modal Footer Actions -->
+        <div class="flex items-center justify-between gap-3 mt-4 pt-3 border-t border-slate-800">
+          <button
+            onclick="startRestTimer(${item.restSeconds || 90}, '${item.name.replace(/'/g, '')}'); closeExerciseModal();"
+            class="px-4 py-2 rounded-xl bg-sky-500/20 hover:bg-sky-500/30 text-sky-300 border border-sky-500/30 font-bold text-xs flex items-center gap-1.5"
+          >
+            <span>⏱</span>
+            <span>Start ${item.restLabel || '90s'} Timer</span>
+          </button>
+          <button
+            onclick="closeExerciseModal()"
+            class="px-5 py-2 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold text-xs"
+          >
+            Got It
+          </button>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function closeExerciseModal() {
+  const modalRoot = document.getElementById('exercise-modal-root');
+  if (modalRoot) modalRoot.innerHTML = '';
+}
+
 function renderWorkoutTab() {
   const plan = WORKOUT_PLAN[state.selectedDayId];
   const draft = state.activeDraft;
@@ -1236,7 +1567,7 @@ function renderWorkoutTab() {
     `;
   }).join('');
 
-  // Pre-Lower & Pickleball 8-min Warmup Banner (shown automatically on Lower 1 & Lower 2, or collapsible on Upper)
+  // Pre-Lower & Pickleball 8-min Warmup Banner (shown automatically on Lower 1 & Lower 2)
   const warmupHtml = plan.needsLowerWarmup ? `
     <div class="glass-panel rounded-2xl p-4 sm:p-5 mb-6 border-l-4 border-l-amber-400">
       <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
@@ -1245,25 +1576,41 @@ function renderWorkoutTab() {
           <h3 class="text-base font-bold text-white">Hip Capsule & McGill Lumbar Stiffness Warm-Up</h3>
         </div>
         <span class="text-xs px-2.5 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 font-medium">
-          Prevents Butt-Wink & Sciatic Shear
+          Tap GIF to inspect form
         </span>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
         ${WARMUP_PROTOCOL.map(w => {
           const checked = draft.warmupCompleted && draft.warmupCompleted[w.id];
+          const wMedia = EXERCISE_MEDIA[w.id];
           return `
             <div class="p-3 rounded-xl border transition-all ${checked ? 'bg-emerald-950/30 border-emerald-500/40' : 'bg-slate-900/70 border-slate-800'}">
-              <div class="flex items-start justify-between gap-2">
-                <label class="flex items-start gap-2.5 cursor-pointer select-none">
-                  <input type="checkbox" ${checked ? 'checked' : ''} onchange="toggleWarmupItem('${w.id}')" class="mt-1 w-4 h-4 rounded accent-emerald-500" />
-                  <div>
-                    <div class="text-sm font-semibold ${checked ? 'line-through text-emerald-300' : 'text-slate-100'}">${w.name}</div>
-                    <div class="text-xs font-bold text-sky-400 mt-0.5">${w.prescription}</div>
+              <div class="flex items-start gap-2.5">
+                ${wMedia ? `
+                  <div onclick="openExerciseModal('${w.id}')" class="exercise-thumb-wrap w-16 h-16 shrink-0" title="Tap for full form guide & photos">
+                    <img src="${wMedia.gif}" alt="${w.name}" loading="lazy" class="exercise-thumb-img" />
+                    <span class="absolute bottom-0 inset-x-0 bg-slate-950/80 text-[9px] text-sky-300 text-center font-bold py-0.5">🔍 Form</span>
                   </div>
-                </label>
-                <button onclick="startRestTimer(${w.timerSeconds}, '${w.name.replace(/'/g, '')}')" class="px-2 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs text-sky-300 border border-slate-700 shrink-0" title="Start Timer">
-                  ⏱ ${w.timerSeconds}s
-                </button>
+                ` : ''}
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-start justify-between gap-1">
+                    <label class="flex items-start gap-2 cursor-pointer select-none">
+                      <input type="checkbox" ${checked ? 'checked' : ''} onchange="toggleWarmupItem('${w.id}')" class="mt-1 w-4 h-4 rounded accent-emerald-500" />
+                      <div>
+                        <div class="text-xs sm:text-sm font-semibold ${checked ? 'line-through text-emerald-300' : 'text-slate-100'}">${w.name}</div>
+                        <div class="text-xs font-bold text-sky-400 mt-0.5">${w.prescription}</div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="flex items-center gap-1.5 mt-2">
+                    <button onclick="startRestTimer(${w.timerSeconds}, '${w.name.replace(/'/g, '')}')" class="px-2 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-[11px] text-sky-300 border border-slate-700">
+                      ⏱ ${w.timerSeconds}s Timer
+                    </button>
+                    <button onclick="openExerciseModal('${w.id}')" class="px-2 py-1 rounded-lg bg-slate-800/70 hover:bg-slate-700 text-[11px] text-slate-300 border border-slate-700/70">
+                      🎬 Demo
+                    </button>
+                  </div>
+                </div>
               </div>
               <p class="text-xs text-slate-400 mt-2 leading-relaxed">${w.cue}</p>
             </div>
@@ -1278,6 +1625,7 @@ function renderWorkoutTab() {
     const draftEx = draft.exercises[ex.id] || { sets: [] };
     const lastLog = getLastExerciseLog(ex.id);
     const overload = computeOverloadSuggestion(ex, lastLog);
+    const media = EXERCISE_MEDIA[ex.id];
 
     const lastSummaryText = lastLog
       ? `Last (${lastLog.date}): ` + lastLog.sets.filter(s => Number(s.reps) > 0).map(s => `${s.weight}${state.settings.unit}×${s.reps}`).join(', ')
@@ -1354,26 +1702,53 @@ function renderWorkoutTab() {
 
     return `
       <div class="glass-panel rounded-2xl p-4 sm:p-5 mb-4 transition-all hover:border-slate-700">
-        <!-- Exercise Header -->
-        <div class="flex flex-wrap items-start justify-between gap-2 mb-3">
-          <div>
-            <div class="flex flex-wrap items-center gap-2">
-              <h3 class="text-base sm:text-lg font-bold text-white">${ex.name}</h3>
-              <span class="text-[11px] font-semibold px-2.5 py-0.5 rounded-full bg-indigo-500/15 text-indigo-300 border border-indigo-500/30">
-                ${ex.badge}
-              </span>
+        <!-- Exercise Header with Animated GIF Thumbnail -->
+        <div class="flex flex-col sm:flex-row items-start justify-between gap-3.5 mb-3">
+          <div class="flex items-start gap-3.5 w-full">
+            ${media ? `
+              <div
+                onclick="openExerciseModal('${ex.id}')"
+                class="exercise-thumb-wrap w-20 h-20 sm:w-24 sm:h-24 shrink-0"
+                title="Tap to view larger Animated Demo + Start/Finish Photos"
+              >
+                <img src="${media.gif}" alt="${ex.name} animated demo" loading="lazy" class="exercise-thumb-img" />
+                <span class="absolute bottom-0 inset-x-0 bg-slate-950/85 text-[10px] text-sky-300 text-center font-bold py-0.5">
+                  🎬 Inspect
+                </span>
+              </div>
+            ` : ''}
+            <div class="flex-1 min-w-0">
+              <div class="flex flex-wrap items-center gap-2">
+                <h3 class="text-base sm:text-lg font-bold text-white leading-snug">${ex.name}</h3>
+                <span class="text-[11px] font-semibold px-2.5 py-0.5 rounded-full bg-indigo-500/15 text-indigo-300 border border-indigo-500/30">
+                  ${ex.badge}
+                </span>
+              </div>
+              ${media ? `<div class="text-[11px] font-medium text-emerald-400/90 mt-1">🎯 ${media.muscles}</div>` : ''}
+              <p class="text-xs sm:text-sm text-slate-300 mt-1 leading-relaxed">
+                <strong class="text-sky-400">Cue:</strong> ${ex.cue}
+              </p>
             </div>
-            <p class="text-xs sm:text-sm text-slate-300 mt-1.5 leading-relaxed">
-              <strong class="text-sky-400">Cue:</strong> ${ex.cue}
-            </p>
           </div>
-          <button
-            onclick="startRestTimer(${ex.restSeconds}, '${ex.name.replace(/'/g, '')}')"
-            class="px-3 py-1.5 rounded-xl bg-slate-800/90 hover:bg-slate-700 border border-slate-700 text-xs font-semibold text-sky-300 flex items-center gap-1.5 shrink-0"
-          >
-            <span>⏱</span>
-            <span>Rest ${ex.restLabel}</span>
-          </button>
+
+          <div class="flex sm:flex-col items-center sm:items-end gap-2 w-full sm:w-auto justify-end shrink-0">
+            <button
+              onclick="startRestTimer(${ex.restSeconds}, '${ex.name.replace(/'/g, '')}')"
+              class="px-3 py-1.5 rounded-xl bg-slate-800/90 hover:bg-slate-700 border border-slate-700 text-xs font-semibold text-sky-300 flex items-center gap-1.5 shrink-0"
+            >
+              <span>⏱</span>
+              <span>Rest ${ex.restLabel}</span>
+            </button>
+            ${media ? `
+              <button
+                onclick="openExerciseModal('${ex.id}')"
+                class="px-3 py-1.5 rounded-xl bg-sky-500/15 hover:bg-sky-500/25 border border-sky-500/30 text-xs font-semibold text-sky-300 flex items-center gap-1.5 shrink-0"
+              >
+                <span>🎬</span>
+                <span>Form & Photos</span>
+              </button>
+            ` : ''}
+          </div>
         </div>
 
         <!-- Prescription & Progressive Overload Banner -->
