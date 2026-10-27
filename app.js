@@ -39,26 +39,13 @@ const WORKOUT_PLAN = {
     id: 'upper1',
     shortTitle: 'Upper 1',
     dayLabel: 'Monday',
-    title: 'Upper 1: Side Delt & Clavicular Chest Priority',
-    subtitle: 'V-Taper Width & Upper Chest Shelf',
+    title: 'Upper 1: Clavicular Chest, Lat Width & Lengthened Arms',
+    subtitle: 'Heavy Upper-Shelf Pressing, Vertical/Horizontal Lat Pulls & Stretch Arm Feeder',
     needsLowerWarmup: false,
     exercises: [
       {
-        id: 'u1_cable_lat_raise',
-        name: 'Cross-Body Cable Lateral Raise',
-        sets: 4,
-        repRange: '10–15',
-        minReps: 10,
-        maxReps: 15,
-        restSeconds: 90,
-        restLabel: '90s',
-        targetRir: '0 RIR',
-        badge: 'Shoulder Width • Safe to Failure',
-        cue: 'Pulley at wrist height; raise 30° forward into the scapular plane. Decoupled from spine—push to technical failure.'
-      },
-      {
         id: 'u1_incline_press',
-        name: 'Plate-Loaded Incline Chest Press',
+        name: '1. Plate-Loaded Incline Chest Press',
         sets: 3,
         repRange: '6–8',
         minReps: 6,
@@ -70,21 +57,21 @@ const WORKOUT_PLAN = {
         cue: 'Handles at upper chest; tuck elbows 45°; 3s controlled eccentric. Load primary plates on upper horns first.'
       },
       {
-        id: 'u1_chest_supp_row',
-        name: 'Chest-Supported Neutral Row',
+        id: 'u1_neutral_pulldown',
+        name: '2. Neutral-Grip Lat Pulldown',
         sets: 3,
-        repRange: '8–10',
-        minReps: 8,
-        maxReps: 10,
-        restSeconds: 120,
-        restLabel: '2 min',
+        repRange: '6–8',
+        minReps: 6,
+        maxReps: 8,
+        restSeconds: 150,
+        restLabel: '2.5 min',
         targetRir: '1 RIR',
-        badge: 'Use Lifting Straps • Zero Lower Back Load',
-        cue: 'Sternum pinned firmly to pad; use lifting straps so grip never limits back growth; drive elbows down toward hips.'
+        badge: 'Use Lifting Straps • V-Taper Iliac Flare',
+        cue: 'Shoulder-width neutral grip with lifting straps; drive elbows down toward hips to widen iliac lats.'
       },
       {
         id: 'u1_converging_flat_press',
-        name: 'Converging Machine Chest Press',
+        name: '3. Converging Machine Chest Press',
         sets: 2,
         repRange: '8–10',
         minReps: 8,
@@ -96,17 +83,56 @@ const WORKOUT_PLAN = {
         cue: 'Full back support against pad; push the final set all the way to technical failure safely.'
       },
       {
-        id: 'u1_bayesian_preacher_curl',
-        name: 'Bayesian Cable / Machine Preacher Curl',
+        id: 'u1_chest_supp_row',
+        name: '4. Chest-Supported Neutral Row',
         sets: 3,
+        repRange: '8–10',
+        minReps: 8,
+        maxReps: 10,
+        restSeconds: 120,
+        restLabel: '2 min',
+        targetRir: '1 RIR',
+        badge: 'Use Lifting Straps • Zero Lower Back Load',
+        cue: 'Sternum pinned firmly to pad; use straps so forearm grip never limits back growth; drive elbows toward hips.'
+      },
+      {
+        id: 'u1_cable_lat_raise',
+        name: '5. Cross-Body Cable Lateral Raise',
+        sets: 3,
+        repRange: '10–15',
+        minReps: 10,
+        maxReps: 15,
+        restSeconds: 90,
+        restLabel: '90s',
+        targetRir: '0 RIR',
+        badge: 'Side Delt Hit #1 of 3 • Safe to Failure',
+        cue: 'Pulley at wrist height; raise 30° forward into the scapular plane. Push to technical failure.'
+      },
+      {
+        id: 'u1_bayesian_preacher_curl',
+        name: '6A. [Superset] Bayesian Cable Curl',
+        sets: 2,
+        repRange: '10–12',
+        minReps: 10,
+        maxReps: 12,
+        restSeconds: 60,
+        restLabel: '60s',
+        targetRir: '0 RIR',
+        badge: 'Lengthened Bicep Stretch • Superset w/ 6B',
+        cue: 'Step forward so arm is drawn slightly behind torso for maximum long-head bicep stretch; zero torso sway.'
+      },
+      {
+        id: 'u1_overhead_tri_ext',
+        name: '6B. [Superset] Overhead Cable Triceps Extension',
+        sets: 2,
         repRange: '10–12',
         minReps: 10,
         maxReps: 12,
         restSeconds: 90,
         restLabel: '90s',
         targetRir: '0 RIR',
-        badge: 'Arm Density • Zero Torso Sway',
-        cue: 'Upper arms locked against pad or behind torso via cable; zero lumbar sway; squeeze peak contraction.'
+        badge: 'Triceps Long-Head Stretch (+40% Growth)',
+        cue: 'Cables set at hip/chest height, arms overhead; stretches the biarticular triceps long head for maximum arm mass.'
       }
     ]
   },
@@ -128,8 +154,8 @@ const WORKOUT_PLAN = {
         restSeconds: 120,
         restLabel: '2 min',
         targetRir: '0 RIR',
-        badge: 'Step 1: Joint Cushion Warm-Up',
-        cue: 'Pumps hamstrings first to lubricate and cushion the knee capsule before any quad loading.'
+        badge: 'Step 1: Joint Cushion + 1.5× Hamstring Stretch',
+        cue: 'Pumps hamstrings first to cushion the knee capsule while training hamstrings in the lengthened 90° hip position.'
       },
       {
         id: 'l1_leg_extension',
@@ -146,7 +172,7 @@ const WORKOUT_PLAN = {
       },
       {
         id: 'l1_single_leg_press',
-        name: '3. Single-Leg 45° Leg Press',
+        name: '3. Single-Leg 45° Leg Press (Mid-Foot)',
         sets: 3,
         repRange: '10–12/leg',
         minReps: 10,
@@ -189,39 +215,26 @@ const WORKOUT_PLAN = {
     id: 'upper2',
     shortTitle: 'Upper 2',
     dayLabel: 'Thursday',
-    title: 'Upper 2: Lat Width & Shoulder Capping',
-    subtitle: 'Iliac Lat Flare & 3D Deltoid Capping',
+    title: 'Upper 2: 3D Upper-Back Yoke, Pec Shelf & Delts',
+    subtitle: 'Transverse Upper-Back Thickness, Stretched Pec Adduction & Side Delt Capping',
     needsLowerWarmup: false,
     exercises: [
       {
-        id: 'u2_neutral_pulldown',
-        name: 'Neutral-Grip Lat Pulldown',
+        id: 'u2_upper_back_row',
+        name: '1. Chest-Supported 45° Upper-Back Row',
         sets: 3,
-        repRange: '6–8',
-        minReps: 6,
-        maxReps: 8,
+        repRange: '8–10',
+        minReps: 8,
+        maxReps: 10,
         restSeconds: 150,
         restLabel: '2.5 min',
         targetRir: '1 RIR',
-        badge: 'Use Lifting Straps • V-Taper Flare',
-        cue: 'Shoulder-width neutral grip with lifting straps; drive elbows down into waist to target broad iliac lats.'
-      },
-      {
-        id: 'u2_machine_lat_raise',
-        name: 'Machine Lateral Raise',
-        sets: 4,
-        repRange: '12–15',
-        minReps: 12,
-        maxReps: 15,
-        restSeconds: 90,
-        restLabel: '90s',
-        targetRir: '0 RIR',
-        badge: 'Strict Lateral Delt Capping',
-        cue: 'Pads placed on outer upper arms/elbows; initiate movement purely with side delts; push to 0 RIR.'
+        badge: 'Use Straps • Rhomboids, Traps & Rear Delts',
+        cue: 'Pronated/wide grip on chest-supported pad; flare elbows 45°–60° and retract/protract shoulder blades for 3D back thickness.'
       },
       {
         id: 'u2_converging_incline_press',
-        name: 'Converging Incline Machine Press',
+        name: '2. Converging Incline Machine Press',
         sets: 3,
         repRange: '8–10',
         minReps: 8,
@@ -233,30 +246,43 @@ const WORKOUT_PLAN = {
         cue: '25°–30° bench angle; hands converge upward along clavicular fibers; stop 1 rep shy of failure.'
       },
       {
-        id: 'u2_rear_delt_fly',
-        name: 'Chest-Supported Rear Delt Fly',
+        id: 'u2_neutral_pulldown',
+        name: '3. Underhand / Neutral-Grip Lat Pulldown',
         sets: 3,
-        repRange: '15–20',
-        minReps: 15,
-        maxReps: 20,
-        restSeconds: 60,
-        restLabel: '60s',
-        targetRir: '0 RIR',
-        badge: '3D Shoulder Cap • Sternum Supported',
-        cue: 'Sternum flat on pad; arms flared 45° away from torso to isolate rear delts over mid-traps.'
+        repRange: '8–10',
+        minReps: 8,
+        maxReps: 10,
+        restSeconds: 120,
+        restLabel: '2 min',
+        targetRir: '1 RIR',
+        badge: 'Use Lifting Straps • 2nd Weekly Lat Flare',
+        cue: 'Keep torso upright with slight thoracic extension; drive elbows down into front pockets for lower-lat sweep.'
       },
       {
-        id: 'u2_cable_triceps_ext',
-        name: 'Cross-Body Cable Triceps Extension',
-        sets: 3,
+        id: 'u2_pec_deck_fly',
+        name: '4. Seated Pec Deck / Cable Fly',
+        sets: 2,
         repRange: '10–12',
         minReps: 10,
         maxReps: 12,
         restSeconds: 90,
         restLabel: '90s',
         targetRir: '0 RIR',
-        badge: 'Dense Limbs • Zero Shoulder Strain',
-        cue: 'Dual high cables crossed; elbows pinned tightly at sides; full lockout extension.'
+        badge: 'Pure Horizontal Adduction • 2s Stretch Pause',
+        cue: 'Eliminates triceps bottleneck; hold a 2s deep stretch when hands are just in front of torso line, then squeeze.'
+      },
+      {
+        id: 'u2_machine_lat_raise',
+        name: '5. Machine Lateral Raise',
+        sets: 3,
+        repRange: '12–15',
+        minReps: 12,
+        maxReps: 15,
+        restSeconds: 90,
+        restLabel: '90s',
+        targetRir: '0 RIR',
+        badge: 'Side Delt Hit #2 of 3 • Strict Capping',
+        cue: 'Pads placed on outer upper arms/elbows; initiate movement purely with side delts; push to 0 RIR.'
       }
     ]
   },
@@ -283,16 +309,16 @@ const WORKOUT_PLAN = {
       },
       {
         id: 'l2_lying_leg_curl',
-        name: '2. Lying Leg Curl',
+        name: '2. Seated Leg Curl (Lean-Forward Stretch)',
         sets: 3,
-        repRange: '10–12',
-        minReps: 10,
-        maxReps: 12,
+        repRange: '12–15',
+        minReps: 12,
+        maxReps: 15,
         restSeconds: 90,
         restLabel: '90s',
         targetRir: '0 RIR',
-        badge: 'Pelvis Pressed Flat • Sciatic Safe',
-        cue: 'Keep pelvis/hips pressed flat into the bench pad throughout the rep to prevent lower-back hyperextension.'
+        badge: 'Upgraded from Lying Curl • 1.5× Growth & Zero Back Arch',
+        cue: 'Hinge slightly forward at hips against backrest pad to maximize biarticular hamstring stretch with zero lumbar hyperextension.'
       },
       {
         id: 'l2_single_leg_press_high',
@@ -334,6 +360,107 @@ const WORKOUT_PLAN = {
         cue: 'Controlled pause at outer stretch; builds gluteus medius to stop valgus knee cave and absorb court impacts.'
       }
     ]
+  },
+  superman5: {
+    id: 'superman5',
+    shortTitle: 'Day 5: Delts & Arms',
+    dayLabel: 'Saturday',
+    title: 'Day 5: "Superman Detailing" (3D Delts, Dense Limbs & Core)',
+    subtitle: '100% Fresh Neural Drive for Side/Rear Delts, Biceps, Triceps & Anti-Extension Abs (Zero Spine Load)',
+    needsLowerWarmup: false,
+    exercises: [
+      {
+        id: 'd5_fresh_lat_raise',
+        name: '1. Cable or Machine Lateral Raise (Fresh Priority)',
+        sets: 4,
+        repRange: '12–15',
+        minReps: 12,
+        maxReps: 15,
+        restSeconds: 90,
+        restLabel: '90s',
+        targetRir: '0 RIR',
+        badge: 'Side Delt Hit #3 of 3 • Peak Unfatigued Drive',
+        cue: 'Trained first when CNS is 100% fresh! Control 2s lowering; push final set to failure + 3 lengthened partial reps.'
+      },
+      {
+        id: 'u2_rear_delt_fly',
+        name: '2. Chest-Supported Rear Delt Fly',
+        sets: 3,
+        repRange: '15–20',
+        minReps: 15,
+        maxReps: 20,
+        restSeconds: 60,
+        restLabel: '60s',
+        targetRir: '0 RIR',
+        badge: '3D Shoulder Cap • Sternum Supported',
+        cue: 'Sternum flat on pad; sweep hands outward in a wide arc with elbows flared 45° to isolate rear delts.'
+      },
+      {
+        id: 'd5_preacher_curl',
+        name: '3. Machine Preacher Curl',
+        sets: 3,
+        repRange: '8–10',
+        minReps: 8,
+        maxReps: 10,
+        restSeconds: 90,
+        restLabel: '90s',
+        targetRir: '0 RIR',
+        badge: 'Bicep Short-Head & Brachialis Thickness',
+        cue: 'Triceps glued to preacher pad; zero shoulder momentum; smooth pull from 95% extension to peak squeeze.'
+      },
+      {
+        id: 'd5_overhead_tri',
+        name: '4. Overhead Cable Triceps Extension',
+        sets: 3,
+        repRange: '10–12',
+        minReps: 10,
+        maxReps: 12,
+        restSeconds: 90,
+        restLabel: '90s',
+        targetRir: '0 RIR',
+        badge: 'Triceps Long Head • Maximum Stretch Tension',
+        cue: 'Elbows pointed forward/upward; pause 1s in the deep stretched position behind head on every rep.'
+      },
+      {
+        id: 'd5_bayesian_curl_ss',
+        name: '5A. [Superset] Bayesian Cable Curl',
+        sets: 2,
+        repRange: '12–15',
+        minReps: 12,
+        maxReps: 15,
+        restSeconds: 60,
+        restLabel: '60s',
+        targetRir: '0 RIR',
+        badge: 'Lengthened Bicep Peak • Superset w/ 5B',
+        cue: 'Cables behind torso; keep elbow pinned behind hip line throughout the curl for extreme bicep peak pump.'
+      },
+      {
+        id: 'u2_cable_triceps_ext',
+        name: '5B. [Superset] Cross-Body Cable Triceps Extension',
+        sets: 2,
+        repRange: '12–15',
+        minReps: 12,
+        maxReps: 15,
+        restSeconds: 90,
+        restLabel: '90s',
+        targetRir: '0 RIR',
+        badge: 'Lateral & Medial Triceps Horseshoe',
+        cue: 'Dual high cables crossed; elbows locked at sides; hard 1s lockout squeeze at the bottom.'
+      },
+      {
+        id: 'd5_deadbug_core',
+        name: '6. Wall-Press Dead-Bug / Neutral-Spine Plank Saw',
+        sets: 3,
+        repRange: '10–12/side',
+        minReps: 10,
+        maxReps: 12,
+        restSeconds: 60,
+        restLabel: '60s',
+        targetRir: '0 RIR',
+        badge: '6-Pack Rectus Abdominis • Zero Spinal Flexion',
+        cue: 'Push palms hard into wall behind head, press lower back flat into floor, and slowly lower alternating heels.'
+      }
+    ]
   }
 };
 
@@ -371,6 +498,7 @@ function detectDefaultDay() {
   if (dayOfWeek === 2) return 'lower1';
   if (dayOfWeek === 4) return 'upper2';
   if (dayOfWeek === 5) return 'lower2';
+  if (dayOfWeek === 6) return 'superman5';
   return 'upper1';
 }
 
@@ -519,10 +647,35 @@ function createDraftForDay(dayId) {
 }
 
 function ensureDraftForSelectedDay() {
-  if (!state.activeDraft || state.activeDraft.dayId !== state.selectedDayId) {
+  if (!state.activeDraft || state.activeDraft.dayId !== state.selectedDayId || !WORKOUT_PLAN[state.selectedDayId]) {
+    state.selectedDayId = WORKOUT_PLAN[state.selectedDayId] ? state.selectedDayId : 'upper1';
     state.activeDraft = createDraftForDay(state.selectedDayId);
     saveStateToStorage();
+    return;
   }
+  // Ensure any newly added exercises in the upgraded plan are present in existing draft
+  const plan = WORKOUT_PLAN[state.selectedDayId];
+  let updated = false;
+  if (!state.activeDraft.exercises) state.activeDraft.exercises = {};
+  plan.exercises.forEach(ex => {
+    if (!state.activeDraft.exercises[ex.id]) {
+      const lastLog = getLastExerciseLog(ex.id);
+      const sets = [];
+      for (let i = 0; i < ex.sets; i++) {
+        const prevSet = lastLog && lastLog.sets[i] ? lastLog.sets[i] : (lastLog && lastLog.sets[0] ? lastLog.sets[0] : null);
+        sets.push({
+          setNumber: i + 1,
+          weight: prevSet ? prevSet.weight : '',
+          reps: prevSet ? prevSet.reps : '',
+          rir: ex.targetRir.replace(' RIR', ''),
+          completed: false
+        });
+      }
+      state.activeDraft.exercises[ex.id] = { sets, notes: '' };
+      updated = true;
+    }
+  });
+  if (updated) saveStateToStorage();
 }
 
 function getLatestBodyweight() {
@@ -1503,7 +1656,7 @@ function renderHistoryTab() {
         <div class="glass-panel rounded-2xl p-4">
           <div class="text-xs font-bold uppercase tracking-wider text-slate-400">Total Workouts Logged</div>
           <div class="text-2xl font-extrabold text-white mt-1">${state.workoutHistory.length}</div>
-          <div class="text-xs text-sky-400 mt-1">Target: 4 sessions / week</div>
+          <div class="text-xs text-sky-400 mt-1">Target: 5 sessions / week (Superman Split)</div>
         </div>
         <div class="glass-panel rounded-2xl p-4">
           <div class="text-xs font-bold uppercase tracking-wider text-slate-400">Current Bodyweight</div>
@@ -1764,6 +1917,32 @@ function renderBlueprintTab() {
             <div class="p-2.5 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-200">
               <strong>0 RIR on Supported Isolations</strong> (Lateral Raises, Leg Curls/Extensions, Arms, Calves, Abductions): Push safely to technical failure since the spine is completely decoupled from the load.
             </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 4: The 5-Day "Superman" Specialization Upgrades -->
+      <div class="glass-panel rounded-2xl p-5 border-t-2 border-t-indigo-400">
+        <span class="text-xs font-bold uppercase tracking-wider text-indigo-400">Section 4 • Hypertrophy Optimization</span>
+        <h2 class="text-lg font-extrabold text-white mt-0.5 mb-3">Why the 5-Day "Superman" Split Beats 6-Day PPL</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs text-slate-300">
+          <div class="p-3.5 rounded-xl bg-slate-900/70 border border-slate-800 space-y-2">
+            <div class="font-bold text-white">⚡ 1. Unfatigued Motor Unit Recruitment (Day 5 Delts & Arms)</div>
+            <p class="text-slate-400 leading-relaxed">
+              In a 6-day PPL or standard 4-day split, arms and side delts are buried at the end of Push/Pull sessions when central nervous system (CNS) fatigue reduces high-threshold motor unit recruitment by 20–30%. Adding <strong>Day 5 (Saturday: 3D Delts, Dense Limbs & Core)</strong> trains your V-taper and arms when your nervous system is 100% fresh—with <strong>zero spinal or hip load</strong>.
+            </p>
+            <div class="font-bold text-white pt-1">📐 2. 3×/Week Side Delt & 2×/Week Vertical + Horizontal Back</div>
+            <p class="text-slate-400 leading-relaxed">
+              Side delts are hit 3×/week (Mon/Thu/Sat = 10 high-quality sets). Both Upper 1 and Upper 2 now include <strong>1 Vertical Pull + 1 Chest-Supported Row</strong> (including a 45°-flared upper-back row on Upper 2 for rhomboids/traps and a Seated Pec Deck Fly for stretched horizontal adduction).
+            </p>
+          </div>
+          <div class="p-3.5 rounded-xl bg-slate-900/70 border border-slate-800 space-y-2">
+            <div class="font-bold text-white">🔬 3. Stretch-Mediated Hypertrophy Upgrades</div>
+            <p class="text-slate-400 leading-relaxed">
+              • <strong>Seated Leg Curl Over Lying Leg Curl (Lower 2):</strong> Because the hamstrings cross both the hip and knee, sitting at a 90° hip angle stretches the hamstrings and produces <strong>1.5× greater hypertrophy</strong> than lying leg curls (Maeo et al., 2020) while eliminating lower-back arching.<br/><br/>
+              • <strong>Overhead Cable Triceps Extensions (Upper 1 & Day 5):</strong> Elevating the upper arms stretches the biarticular triceps long head, producing <strong>~40% greater triceps growth</strong> than arms-at-side pushdowns alone (Maeo et al., 2022).<br/><br/>
+              • <strong>Wall-Press Dead-Bugs (Day 5):</strong> Builds thick rectus abdominis ("6-pack") blocks via anti-extension tension with zero lumbar flexion.
+            </p>
           </div>
         </div>
       </div>
