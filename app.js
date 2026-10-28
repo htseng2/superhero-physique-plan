@@ -219,21 +219,21 @@ const WARMUP_PROTOCOL = [
     name: '1. Half-Kneeling Couch / Psoas Stretch (半跪姿沙發髂腰肌伸展)',
     prescription: '2 × 45s / side (每邊45秒)',
     timerSeconds: 45,
-    cue: 'EN: Lengthens tight hip flexors pulling on the lumbar spine. Squeeze glute of kneeling leg; do not arch lower back.\n繁中：拉開緊繃的髖屈肌（解除對腰椎的往前拉扯）。用力夾緊跪地側的屁股，保持肋骨下壓、絕對不要折腰挺肚子。'
+    cue: '⚙️ Setup/設定: Back knee against wall/bench pad, front foot planted at 90°. 後膝頂住牆角或椅墊，前腳踩地呈90°。\n🔥 Mobility/效益: Releases tight iliopsoas & rectus femoris pulling anteriorly on lumbar vertebrae. 解開緊繃髂腰肌與股直肌對腰椎的往前拉扯。\n🛡️ Safety/防傷: Squeeze glute of kneeling leg & tuck ribs down—NEVER arch lower back to lean upright! 用力夾緊跪地側屁股、肋骨下壓，嚴禁折腰挺肚！'
   },
   {
     id: 'warmup_9090',
     name: '2. Seated 90/90 Hip Capsule Switches (坐姿 90/90 髖關節內外旋轉換)',
     prescription: '2 × 8 slow reps / side (每邊慢速8下)',
     timerSeconds: 60,
-    cue: 'EN: Frees internal & external hip rotation for pickleball court pivots and prevents pelvic tuck ("butt wink").\n繁中：打開髖關節囊內旋與外旋角度，讓匹克球急停轉身與深蹲腿推時骨盆更自由，防止底部屁股眨眼傷腰。'
+    cue: '⚙️ Setup/設定: Sit on floor w/ both knees bent at 90° angles; keep chest tall. 坐姿雙膝皆彎曲呈90°，抬頭挺胸保持脊椎中立。\n🔥 Mobility/效益: Lubricates deep hip joint capsule (internal & external rotation) for pickleball pivots & deep leg presses. 打開髖關節囊內外旋活動度，釋放骨盆活動空間。\n🛡️ Safety/防傷: Rotate from the hip sockets while keeping lower back flat (prevents "butt wink" pelvic tuck). 由髖關節球窩帶動翻轉，保持下背挺直不駝背代償。'
   },
   {
     id: 'warmup_birddog',
     name: '3. McGill Bird-Dog (McGill 鳥狗式核心穩定)',
     prescription: '2 × 5 reps / side • 5s hold (每邊5下・停頓5秒)',
     timerSeconds: 50,
-    cue: 'EN: Establishes 360° lumbar core stiffness. Push heel back (don\'t kick high); keep spine completely neutral.\n繁中：建立 360° 腰椎保護剛性。腳跟往後牆水平蹬直（不要往上踢高導致折腰），保持脊椎與骨盆完全水平中立。'
+    cue: '⚙️ Setup/設定: Hands under shoulders, knees under hips, neutral flat spine. 四足跪姿，手在肩下、膝在髖下，腰背平直如桌面。\n🔥 Core Activation/效益: Make a fist & push opposite heel straight back toward wall (hold 5s) to fire multifidus & 360° core corset. 對側手握拳前伸、腳跟往後牆水平蹬直停5秒，喚醒多裂肌與360°深層核心。\n🛡️ Safety/防傷: Push heel BACK, never kick HIGH (kicking above hip level arches and pinches the lumbar spine). 腳跟「往後延伸」而非「往上踢高」，確保腰椎零凹陷折腰。'
   }
 ];
 
@@ -257,7 +257,7 @@ const WORKOUT_PLAN = {
         restLabel: '3 min',
         targetRir: '1–2 RIR',
         badge: 'Clavicular Shelf • Upper Horns First | 鎖骨上胸厚度・優先掛上方掛角',
-        cue: 'EN: Handles at upper chest; tuck elbows 45°; 3s controlled eccentric. Load primary plates on upper horns first.\n繁中：握把對準上胸鎖骨、手肘內收45°、控制離心下放3秒；槓片優先掛在上方掛角（強化中段與頂峰力矩）。'
+        cue: '⚙️ Setup/設定: Seat so handles align w/ upper chest (clavicle); load upper horns first. 調座椅讓握把對齊鎖骨上胸；槓片優先掛上方掛角。\n🔥 Hypertrophy/肌肥大: Tuck elbows 45° (arrow shape); 3s slow lower to deep pec stretch, drive up without locking out elbows. 手肘內收45°呈箭頭狀；3秒慢放至上胸深層拉伸，推起時手肘微彎不鎖死。\n📈 Overload/超負荷: Hit 8 reps on all 3 sets @ 1–2 RIR → +2.5kg next week. 三組皆滿8下(保留1-2下)→下次+2.5kg。\n🛡️ Safety/防傷: Keep shoulder blades & glutes pinned to pad; never flare elbows 90° or arch lower back. 肩胛骨與屁股貼死椅背；嚴禁手肘外開90°或折腰代償。'
       },
       {
         id: 'u1_neutral_pulldown',
@@ -270,7 +270,7 @@ const WORKOUT_PLAN = {
         restLabel: '2.5 min',
         targetRir: '1 RIR',
         badge: 'Use Lifting Straps • V-Taper Iliac Flare | 必戴拉力帶・倒三角下背闊外展',
-        cue: 'EN: Shoulder-width neutral grip with lifting straps; drive elbows down toward hips to widen iliac lats.\n繁中：與肩同寬對握並使用拉力帶（避免小臂先力竭）；想像把將手肘往骨盆方向下壓，主攻下背闊肌打造倒三角寬度。'
+        cue: '⚙️ Setup/設定: Shoulder-width neutral handles; ALWAYS wear lifting straps; lock thighs under pad. 與肩同寬對握把、必綁拉力帶、大腿卡緊靠墊。\n🔥 Hypertrophy/肌肥大: Slight 10° torso lean back; pull elbows down & forward toward hips, 1s squeeze, 3s stretch all the way up. 身體微後傾10°，手肘貼身往骨盆方向下壓夾緊1秒，3秒慢放讓背闊肌完全拉伸。\n📈 Overload/超負荷: Hit 8 clean reps × 3 sets → +2.5kg next session. 三組皆滿8下標準動作→下次加重。\n🛡️ Safety/防傷: Do not yank with lower-back momentum or shrug traps toward ears. 嚴禁甩腰後仰借力或聳肩代償。'
       },
       {
         id: 'u1_converging_flat_press',
@@ -283,7 +283,7 @@ const WORKOUT_PLAN = {
         restLabel: '2 min',
         targetRir: '0 RIR',
         badge: 'Sternal Fibers • Full Back Support | 中胸厚實度・背部貼緊靠墊',
-        cue: 'EN: Full back support against pad; push the final set all the way to technical failure safely.\n繁中：上背與屁股貼緊椅背穩定脊椎；最後一組在動作不變形的前提下安全推到完全力竭（0 RIR）。'
+        cue: '⚙️ Setup/設定: Handles at mid-chest (nipple line); retract scapula into flat backrest. 座椅調至握把對齊中胸乳頭線，肩胛後收貼緊椅背。\n🔥 Hypertrophy/肌肥大: Press inward along converging arc; pause 1s at deep stretch, push Set 2 to true 0 RIR failure. 沿內聚弧線推起並想像雙手手肘內夾；底部拉伸停1秒，第2組安全推到力竭(0 RIR)。\n📈 Overload/超負荷: Hit 10 reps on both sets → +2.5–5kg. 兩組皆達10下→下次加2.5–5kg。\n🛡️ Safety/防傷: Keep head, upper back & glutes glued to pad; do not let shoulders roll forward at the bottom. 頭、上背、屁股全程貼緊靠墊，底部肩膀不可前引聳起。'
       },
       {
         id: 'u1_chest_supp_row',
@@ -296,7 +296,7 @@ const WORKOUT_PLAN = {
         restLabel: '2 min',
         targetRir: '1 RIR',
         badge: 'Use Lifting Straps • Zero Lower Back Load | 必戴拉力帶・腰椎零剪力負擔',
-        cue: 'EN: Sternum pinned firmly to pad; use straps so forearm grip never limits back growth; drive elbows toward hips.\n繁中：胸口死死貼緊靠墊（徹底消除下背壓力）；戴拉力帶，將手肘往後下方骨盆方向拉，收緊中下背闊肌。'
+        cue: '⚙️ Setup/設定: Chest pad set so sternum is firmly supported; neutral grip w/ lifting straps. 胸墊高度對齊胸骨下緣並貼緊；對握並綁緊拉力帶。\n🔥 Hypertrophy/肌肥大: Let lats stretch forward at start, then drive elbows low & back toward hips (sagittal plane) for lower-lat thickness. 起始讓背闊往前完全拉開，接著手肘貼身往後下方骨盆方向拉到底停1秒。\n📈 Overload/超負荷: Hit 10 reps × 3 sets without chest leaving pad → +2.5–5kg. 三組滿10下且胸口不離墊→下次加重。\n🛡️ Safety/防傷: Keep sternum glued to pad 100% of the time (zero lower-back hyperextension or shear). 胸口全程死貼靠墊（徹底消除腰椎剪力與挺腰借力）。'
       },
       {
         id: 'u1_cable_lat_raise',
@@ -309,7 +309,7 @@ const WORKOUT_PLAN = {
         restLabel: '60s',
         targetRir: '0 RIR',
         badge: 'Unilateral Hit #1 of 3 • Free Hand Braced on Post | 單手側肩 #1/3・另一手扶柱穩固核心',
-        cue: 'EN: Pulley at wrist height; hold post with non-working hand; sweep 30° into scapular plane (+4 lengthened partials on final set).\n繁中：滑輪調至手腕高度（底部即有最大拉伸張力）；非訓練手抓緊柱子穩住身體，手臂前傾30°沿肩胛平面往外抬；最後一組力竭後直接加做4下底部半程組。'
+        cue: '⚙️ Setup/設定: Pulley at wrist height (max bottom tension); stand 1 step away, hold tower post w/ free hand. 滑輪調至手腕高度（最大化起始張力）；側站一步，非訓練手抓緊柱子。\n🔥 Hypertrophy/肌肥大: Sweep arm out & 30° forward (scapular plane) to shoulder level; 2s eccentric. Final set: 0 RIR + 4 bottom-half lengthened partials! 手臂前傾30°沿肩胛平面往遠方抬至平肩，2秒慢放；最後一組力竭後接4下底部半程組！\n📈 Overload/超負荷: Add 1 rep/set weekly until hitting 15 reps × 3 sets → move pin down 1 plate. 每週加1下直到三組滿15下再升一格重量（側肩先求標準不求重）。\n🛡️ Safety/防傷: Lead with elbow/pinky side without internal rotation; brace on post so torso never sways. 手肘微彎帶領、勿內旋肩膀夾擠；扶緊柱子嚴禁甩身體借力。'
       },
       {
         id: 'u1_bayesian_preacher_curl',
@@ -322,7 +322,7 @@ const WORKOUT_PLAN = {
         restLabel: '45s',
         targetRir: '0 RIR',
         badge: 'Unilateral Proximal Bicep Peak • Superset w/ 6B | 單手二頭長頭肌峰・與 6B 超級組',
-        cue: 'EN: Single low pulley; step forward so working arm is drawn behind torso; brace free hand on frame for zero lower-back sway.\n繁中：單邊低位滑輪，往前站一步讓手臂延伸至身體後方（極大化二頭長頭拉伸與肌峰）；另一手扶柱鎖定軀幹、嚴禁甩腰代償。'
+        cue: '⚙️ Setup/設定: Single low pulley; face away & step 1–2 feet forward so arm is drawn ~30° behind torso; brace free hand on frame. 低位滑輪背對站立並往前跨1-2步，讓手臂自然向後延伸約30°；另一手扶柱固定。\n🔥 Hypertrophy/肌肥大: Pin elbow behind hip line; curl up, then lower 3s all the way to full stretched bicep extension. 手肘釘在身體中線後方不前移，彎舉頂峰擠壓後3秒慢放到最底拉伸二頭長頭。\n📈 Overload/超負荷: Hit 12 reps/arm on both sets w/ pinned elbow → +1.25–2.5kg. 兩組皆滿12下且手肘不前跑→下次微幅加重。\n🛡️ Safety/防傷: Free hand braced on post + glutes tight prevents lumbar arching; keep wrist neutral/supinated. 扶柱+夾臀防止下背挺腰；手腕保持中立掌心朝上不折腕。'
       },
       {
         id: 'u1_overhead_tri_ext',
@@ -335,7 +335,7 @@ const WORKOUT_PLAN = {
         restLabel: '60s',
         targetRir: '0 RIR',
         badge: 'Same Single Pulley • Zero Lumbar Extension Torque | 同座單邊滑輪・零折腰風險',
-        cue: 'EN: Set single pulley to shoulder height; brace free hand on post and extend across body to full lockout one arm at a time.\n繁中：同一座單邊滑輪調至肩高；另一手扶柱固定身體，單手斜向跨體往下完全伸直鎖死1秒，安全榨乾三頭肌。'
+        cue: '⚙️ Setup/設定: Same single cable set to shoulder height; stand sideways ~30° & brace free hand on tower post. 同一座單邊滑輪調至肩膀高度；側身約30°站立，非訓練手抓柱穩定。\n🔥 Hypertrophy/肌肥大: Keep upper arm locked ~30° out from torso; extend across body to full elbow lockout (1s squeeze) + 2s eccentric. 上臂固定在身體斜外側，前臂斜向跨體往下完全伸直鎖死1秒，2秒慢回。\n📈 Overload/超負荷: Hit 12 clean lockouts/arm × 2 sets → add 1 small plate. 兩組滿12下完整鎖死→下次升一格重量。\n🛡️ Safety/防傷: Cross-body angle aligns cable with elbow joint (zero wrist/elbow strain & zero lower-back arch). 斜向跨體軌跡完美對齊手肘關節，手肘零壓力且下背完全不折腰。'
       }
     ]
   },
@@ -358,7 +358,7 @@ const WORKOUT_PLAN = {
         restLabel: '2 min',
         targetRir: '0 RIR',
         badge: '1.5× Stretch (Maeo 2020) • NO Forward Slump (Nerve Safe) | 1.5倍肌肥大・嚴禁駝背前傾（保護坐骨神經）',
-        cue: 'EN: Keep pelvis & upper back GLUED flat to reclined pad (100°–105°). Never slump forward (prevents sciatic nerve root tension).\n繁中：放第一動作先讓膝蓋充血並獲得1.5倍腿後側成長。關鍵護腰指令：屁股與上背必須「死死貼平」微仰椅背（100°–105°），絕對不可駝背前傾（防止觸發坐骨神經拉扯）！'
+        cue: '⚙️ Setup/設定: Align knee joint with machine pivot dot; ankle pad just above Achilles; lock thigh pad tight. 膝關節對齊器械轉軸紅點，腳踝墊靠在阿基里斯腱上方，大腿護墊壓緊鎖死。\n🔥 Hypertrophy/肌肥大: Seated hip flexion stretches hamstrings for 1.5× more growth (Maeo 2020); 1s bottom squeeze + 3s slow eccentric. 坐姿屈髖能給予腿後側1.5倍肌肥大；用力下勾停1秒，3秒控制慢放至膝蓋微彎。\n📈 Overload/超負荷: Hit 12 reps × 3 sets w/ back glued to pad → +2.5kg. 三組滿12下且背部不離墊→下次+2.5kg。\n🛡️ Safety/防傷: CRITICAL—Keep pelvis & upper back GLUED flat to reclined pad (100°–105°); NEVER slump forward (prevents sciatic nerve Slump Test pinch)! 關鍵護腰：屁股與上背必須「死死貼平」微仰椅背，嚴禁駝背前傾（防止拉扯坐骨神經根）！'
       },
       {
         id: 'l1_leg_extension',
@@ -371,7 +371,7 @@ const WORKOUT_PLAN = {
         restLabel: '90s',
         targetRir: '0 RIR',
         badge: '105°–110° Reclined Pad (Larsen 2024) • -25% Spine Load | 微仰椅背強化股直肌・減輕後續腿推25%腰椎負荷',
-        cue: 'EN: Set backrest slightly reclined (105°–110°) to stretch center-quad rectus femoris & open tight hips; 2s top squeeze.\n繁中：將椅背調微仰（105°–110°）打開緊繃髖部並拉伸大腿正中央的「股直肌」（Larsen 2024 實證）；預先疲勞股四頭肌讓下一動作腿推不需超大重量就能徹底刺激大腿；頂峰夾緊2秒。'
+        cue: '⚙️ Setup/設定: Set backrest slightly reclined (105°–110°); knee aligned w/ pivot; shin pad above ankle; grip side handles hard. 椅背調微仰(105°–110°)打開髖部，膝蓋對齊轉軸，雙手抓死兩側握把將屁股壓進椅座。\n🔥 Hypertrophy/肌肥大: Reclined hip angle stretches center-quad rectus femoris (Larsen 2024); hold top lockout 2s, 3s eccentric to full bend. 微仰角度能拉伸大腿正中央「股直肌」提升肥大效果；頂峰完全伸直夾緊2秒，3秒慢放到底。\n📈 Overload/超負荷: Hit 15 reps × 3 sets w/ 2s top hold → +2.5kg. 三組皆滿15下(含頂峰停2秒)→下次+2.5kg。\n🛡️ Safety/防傷: Pre-fatigues quads so your next Leg Press needs 25% less spinal/knee load; never kick explosively. 預先疲勞股四頭肌，讓下一動作腿推減少25%重量也能徹底刺激大腿；切勿用甩踢借力。'
       },
       {
         id: 'l1_single_leg_press',
@@ -384,7 +384,7 @@ const WORKOUT_PLAN = {
         restLabel: '90s',
         targetRir: '1–2 RIR',
         badge: 'Backrest Flat • Tripod Foot • No Belt | 椅背調最平・足底三角踩穩・不繫腰帶',
-        cue: 'EN: SET BACKREST FLAT. Non-working foot on floor stabilizes pelvis. Foot mid-sled; Tripod Foot; knee tracks 2nd toe.\n繁中：椅背調到最平（打開髖角護腰）；非訓練腳踩地鎖死骨盆（100%防止底部屁股眨眼傷腰）。腳掌三角點踩穩踏板中段，膝蓋對準第二腳趾方向推進。'
+        cue: '⚙️ Setup/設定: SET BACKREST FLAT (lowest notch). Working foot mid-sled; non-working foot flat on floor; NO weightlifting belt. 椅背調到最平（打開髖角護腰）；訓練腳踩踏板中段，非訓練腳踩穩地面鎖定骨盆；不繫硬腰帶。\n🔥 Hypertrophy/肌肥大: Root Tripod Foot (big toe, pinky toe, heel); lower 3s until thigh is ~90° to torso, drive through mid-foot without locking knee. 足底三角踩穩建立足弓，3秒慢放至舒適最深處（骨盆不翻轉），推起時膝蓋微彎不鎖死。\n📈 Overload/超負荷: Hit 12 reps/leg × 3 sets @ 1–2 RIR → +2.5–5kg. 三組滿12下(保留1-2下餘力)→下次+2.5–5kg。\n🛡️ Safety/防傷: Floor foot locks pelvis so lower back NEVER rounds ("butt wink"); track knee directly over 2nd toe (never cave inward). 踩地腳能100%防止底部骨盆後傾（屁股眨眼傷腰）；膝蓋對準第二腳趾、嚴禁內扣。'
       },
       {
         id: 'l1_leg_press_calf',
@@ -397,7 +397,7 @@ const WORKOUT_PLAN = {
         restLabel: '90s',
         targetRir: '0 RIR',
         badge: '2.2× Calf Growth (Kassiano 2023) • Arch Builder | 2.2倍小腿成長・強化扁平足弓・零脊椎壓迫',
-        cue: 'EN: Push through big toe ball; 2s bottom stretch pause. After full-ROM failure on final set, do 5 bottom-half lengthened partials.\n繁中：用大拇趾球發力推起（強化足弓）；底部完全拉伸暫停2秒消除阿基里斯腱反彈。最後一組全程力竭後，在底部拉伸區間多做5下「底部半程組」（實證2.2倍小腿肌肥大）。'
+        cue: '⚙️ Setup/設定: Balls of feet on bottom edge of sled; keep Safety Stops ENGAGED; knees 98% straight (soft micro-bend). 前腳掌踩踏板下緣，務必扣上安全插銷；膝蓋保持98%伸直（微彎不死鎖）。\n🔥 Hypertrophy/肌肥大: Pause 2s at deep bottom stretch (kills Achilles bounce), press through big toe ball. Final set: 0 RIR + 5 bottom-half lengthened partials (2.2× calf growth, Kassiano 2023)! 底部深層拉伸停2秒消除肌腱反彈，用大拇趾球推高；最後一組力竭後接5下「底部半程組」（2.2倍小腿成長）！\n📈 Overload/超負荷: Hit 12 full-pause reps × 4 sets → +5kg. 四組皆滿12下(含底部停2秒)→下次+5kg。\n🛡️ Safety/防傷: Zero axial spine compression (unlike standing calf machine); pressing through big toe strengthens flat-foot arch. 脊椎零軸向壓迫（完勝站姿小腿機）；大拇趾發力能強化扁平足弓。'
       },
       {
         id: 'l1_pallof_press',
@@ -410,7 +410,7 @@ const WORKOUT_PLAN = {
         restLabel: '60s',
         targetRir: 'Isometric',
         badge: 'Waist Cinch • Anti-Rotation Spine Armor | 收窄腰圍束腹帶・抗旋轉護腰裝甲',
-        cue: 'EN: Anti-rotation core brace; hold full extension in front of sternum for 2s per rep to cinch waist safely.\n繁中：抵抗滑輪側拉旋轉力，激活深層腹橫肌（天然束腹帶收緊腰圍）並建立匹克球急停變向時的腰椎防禦；雙手推直在胸前停頓2秒。'
+        cue: '⚙️ Setup/設定: Cable at sternum height; stand sideways w/ feet shoulder-width, knees soft, hands at chest. 滑輪調至胸骨高度，側對滑輪雙腳與肩同寬、膝蓋微彎，雙手握把貼胸前。\n🔥 Hypertrophy/肌肥大: Press hands straight out from sternum, hold 2–3s fighting rotational pull (tightens transverse abdominis "waist corset"), return slowly. 雙手往胸前正前方推直，用力抵抗側拉力停頓2-3秒（強化深層腹橫肌收窄腰圍），慢速收回。\n📈 Overload/超負荷: Hit 12 reps/side w/ zero torso twist (2s hold) → +1.25–2.5kg. 每邊滿12下(停2秒且軀幹零旋轉)→下次升一格重量。\n🛡️ Safety/防傷: Keep ribs stacked over pelvis; builds 360° lumbar anti-rotation armor for pickleball lunges with zero spinal flexion. 肋骨下壓對齊骨盆；在零脊椎彎曲磨損下建立匹克球急停變向的抗旋轉護腰裝甲。'
       }
     ]
   },
@@ -433,7 +433,7 @@ const WORKOUT_PLAN = {
         restLabel: '2.5 min',
         targetRir: '1 RIR',
         badge: 'Use Straps • Rhomboids, Traps & Rear Delts | 必戴拉力帶・轟炸菱形肌／中下斜方／後三角',
-        cue: 'EN: Pronated/wide grip on chest-supported pad; flare elbows 45°–60° and retract/protract shoulder blades for 3D back thickness.\n繁中：胸口貼緊靠墊（保護下背）；戴拉力帶、正手寬握，手肘外展45°–60°，底部讓肩胛骨充分前引拉開，向後拉時用力夾緊上背肌群。'
+        cue: '⚙️ Setup/設定: Pronated/overhand wide grip w/ lifting straps; sternum pinned firmly to chest pad. 正手寬握並綁拉力帶；胸骨下緣死死貼緊胸墊。\n🔥 Hypertrophy/肌肥大: Flare elbows 45°–60° out from torso; let shoulder blades protract (spread) fully at bottom, then squeeze blades together hard for 1s. 手肘外展45°–60°；底部讓肩胛骨充分往前拉開，向後拉時用力夾緊菱形肌與中下斜方停1秒。\n📈 Overload/超負荷: Hit 10 reps × 3 sets w/ full scapular squeeze → +2.5–5kg. 三組滿10下且肩胛完整夾緊→下次+2.5–5kg。\n🛡️ Safety/防傷: Keep chest glued to pad (never peel sternum off pad to heave weight with lower back). 胸口全程貼死靠墊，嚴禁挺起上半身用下背借力。'
       },
       {
         id: 'u2_converging_incline_press',
@@ -446,7 +446,7 @@ const WORKOUT_PLAN = {
         restLabel: '2.5 min',
         targetRir: '1 RIR',
         badge: '25°–30° Angle • Upper Pec Shelf | 25°–30° 黃金上斜角・飽滿上胸視覺',
-        cue: 'EN: 25°–30° bench angle; hands converge upward along clavicular fibers; stop 1 rep shy of failure.\n繁中：25°–30°上斜角度，雙手沿鎖骨胸肌纖維走向往內上方匯聚推起，安全榨乾上胸飽滿度（保留1下餘力 1 RIR）。'
+        cue: '⚙️ Setup/設定: 25°–30° incline angle; handles aligned w/ clavicular upper chest; shoulder blades retracted. 25°–30°上斜角度，握把對齊鎖骨上胸，肩胛骨後收下壓貼緊椅背。\n🔥 Hypertrophy/肌肥大: Press upward & inward along clavicular fibers; 3s controlled lowering to deep stretch + 1s pause at bottom. 沿上胸纖維往內上方匯聚推起；3秒慢放至底部深層拉伸停1秒再推。\n📈 Overload/超負荷: Hit 10 reps × 3 sets @ 1 RIR → +2.5kg. 三組皆滿10下(保留1下)→下次+2.5kg。\n🛡️ Safety/防傷: Keep glutes & upper back flat on pad; tuck elbows ~45°–60° to protect front shoulder capsule. 屁股與上背貼緊椅背不拱腰；手肘內收45°–60°保護前肩關節囊。'
       },
       {
         id: 'u2_neutral_pulldown',
@@ -459,7 +459,7 @@ const WORKOUT_PLAN = {
         restLabel: '2 min',
         targetRir: '1 RIR',
         badge: 'Use Lifting Straps • 2nd Weekly Lat Flare | 必戴拉力帶・每週第2次背闊寬度刺激',
-        cue: 'EN: Keep torso upright with slight thoracic extension; drive elbows down into front pockets for lower-lat sweep.\n繁中：戴拉力帶、軀幹穩定胸口微挺，將手肘貼著身體前側往腰際口袋方向下壓，強化下背闊肌倒三角弧線。'
+        cue: '⚙️ Setup/設定: Shoulder-width neutral or supinated grip w/ lifting straps; thighs locked securely under pad. 與肩同寬對握或反握、必戴拉力帶、大腿卡緊靠墊。\n🔥 Hypertrophy/肌肥大: Keep chest proud; drive elbows down & tucked in front of torso into waist pockets for lower-lat V-taper sweep; 3s eccentric stretch. 胸口微挺，手肘收在身體前側往腰際口袋下壓（主攻下背闊肌弧線），3秒慢放到頂部完全拉伸。\n📈 Overload/超負荷: Hit 10 reps × 3 sets → +2.5kg. 三組皆滿10下→下次+2.5kg。\n🛡️ Safety/防傷: Keep torso stable (<15° lean); never swing lower back to initiate the pull. 軀幹保持穩定（後傾不超過15°），切勿用下背前後搖晃拉動重量。'
       },
       {
         id: 'u2_pec_deck_fly',
@@ -472,7 +472,7 @@ const WORKOUT_PLAN = {
         restLabel: '90s',
         targetRir: '0 RIR',
         badge: 'Pure Horizontal Adduction • 2s Stretch Pause | 純水平胸肌內收・底部拉伸暫停2秒',
-        cue: 'EN: Eliminates triceps bottleneck; hold a 2s deep stretch when hands are just in front of torso line, then squeeze.\n繁中：純水平內收孤立胸大肌（避開三頭肌先力竭）；雙手退到身體平面微前方時停留2秒感受胸肌深層拉伸（勿過度往後拉傷前肩囊），再向內夾緊。'
+        cue: '⚙️ Setup/設定: Seat height so hands/elbows move horizontally at mid-chest level; set rear arm pins 1 notch in front of flat torso line. 座椅調至手肘與中胸同高水平移動；起始銷調在身體平面微前方一格。\n🔥 Hypertrophy/肌肥大: Pure horizontal adduction (bypasses triceps fatigue); pause 2s at stretched open position, squeeze inner biceps together for 1s. 純水平內收孤立胸大肌；張開至拉伸位停頓2秒，向內夾緊時想像把兩手二頭肌內側貼在一起停1秒。\n📈 Overload/超負荷: Hit 12 reps × 2 sets w/ 2s stretch pause → +2.5–5kg. 兩組皆滿12下(含拉伸停2秒)→下次+2.5–5kg。\n🛡️ Safety/防傷: Stop stretch when hands are just in front of torso line—never let arms pull excessively behind your body (protects anterior shoulder capsule). 手退到身體平面微前方即可停住，切勿過度往後拉扯前肩關節囊。'
       },
       {
         id: 'u2_machine_lat_raise',
@@ -485,7 +485,7 @@ const WORKOUT_PLAN = {
         restLabel: '90s',
         targetRir: '0 RIR',
         badge: 'Side Delt Hit #2 of 3 • +4 Lengthened Partials | 側肩頻率 #2/3・最後一組加4下底部半程',
-        cue: 'EN: Pads placed on outer upper arms/elbows; push to 0 RIR + 4 bottom-half lengthened partials on final set.\n繁中：靠墊頂住上臂外側／手肘上方（完全排除手腕與握力干擾）；用肩中束發力抬至水平，最後一組力竭後直接加做4下底部半程組。'
+        cue: '⚙️ Setup/設定: Align shoulder joint with machine pivot; pads rest against outer upper arms/elbows (relax hands/grip). 肩關節對齊器械轉軸，靠墊頂住上臂外側/手肘上方（手指放鬆不死握）。\n🔥 Hypertrophy/肌肥大: Drive elbows outward to shoulder height (1s pause), 3s lowering. Final set: 0 RIR + 4 bottom-half lengthened partials! 用手肘往兩側抬至肩膀高度停1秒，3秒慢放；最後一組推到力竭後直接加做4下底部半程組！\n📈 Overload/超負荷: Hit 15 reps × 3 sets → +2.5kg (or add 1–2kg micro-weight). 三組皆滿15下→下次微幅加重。\n🛡️ Safety/防傷: Keep traps depressed (push shoulders down away from ears) and torso glued to pad. 全程壓低肩胛骨（不聳肩借力），軀幹貼穩靠墊。'
       },
       {
         id: 'u2_rear_delt_fly_b',
@@ -498,7 +498,7 @@ const WORKOUT_PLAN = {
         restLabel: '60s',
         targetRir: '0 RIR',
         badge: 'Rear Delt Hit #1 of 2 • 3D Shoulder Cap | 後三角頻率 #1/2・3D 立體圓肩',
-        cue: 'EN: Sternum flat against pad; sweep arms wide at 45° elbow flare to cap posterior delts with zero spine load.\n繁中：每週第1次後三角孤立訓練；胸口貼平靠墊（零腰椎壓力），手肘微彎外展45°向兩側遠方畫大弧線撥開，把肩膀後側撐飽滿。'
+        cue: '⚙️ Setup/設定: Face pad w/ sternum flat against cushion; handles just below shoulder height; use neutral/angled grip so elbows flare 45°. 面向靠墊、胸骨貼平軟墊；握把略低於肩膀，採對握或斜握讓手肘自然外展45°。\n🔥 Hypertrophy/肌肥大: Push hands "outward to the walls" in a wide arc (don\'t pinch shoulder blades together early) to isolate rear delts; 2s eccentric. 想像雙手「往兩側牆壁推開」畫大弧線（勿提早夾緊肩胛骨變成練中背），孤立後三角肌打造3D圓肩。\n📈 Overload/超負荷: Progress reps from 15 → 20 across both sets before adding weight. 兩組皆能標準做滿20下再升一格重量。\n🛡️ Safety/防傷: Keep sternum glued to pad (zero lower-back sway) and stop arms at torso line so traps don\'t take over. 胸口死貼靠墊（零腰椎晃動），手臂撥到與身體平行即可停住。'
       }
     ]
   },
@@ -521,7 +521,7 @@ const WORKOUT_PLAN = {
         restLabel: '2–2.5m',
         targetRir: '1–2 RIR',
         badge: 'Top-Half ROM • Prevents Bottom Pelvic Tuck | 上半程鎖定臀肌・杜絕底部骨盆翻轉傷腰',
-        cue: 'EN: Chin tucked, ribs down; lower hips only ~45° (stop before pelvis tucks under) and drive to full lockout w/ 2s squeeze.\n繁中：收下巴、肋骨下壓鎖住核心；下放時只降約45°（在骨盆開始翻轉／折腰前就停住！），專注在臀大肌發力力矩最強的上半程推到水平鎖死並夾緊臀部2秒（媲美深蹲的臀肌成長、零脊椎軸向壓力）。'
+        cue: '⚙️ Setup/設定: Upper back pad right below shoulder blades; feet shoulder-width so shins are vertical (90°) at top lockout. 上背墊靠在肩胛骨下緣；雙腳與肩同寬，確保推到頂點時小腿垂直地面(90°)。\n🔥 Hypertrophy/肌肥大: Top-Half "Kas" ROM—lower hips only ~45° (halfway down), then drive through heels to full horizontal lockout w/ 2s hard glute squeeze (Plotkin 2023). 採用「上半程 Kas 臀推」：下放只降約45°即用腳跟推到水平鎖死並夾緊屁股2秒（鎖定臀大肌最強力矩區間）。\n📈 Overload/超負荷: Hit 12 reps × 3 sets w/ 2s lockout hold → +5kg. 三組皆滿12下(頂峰停2秒)→下次+5kg。\n🛡️ Safety/防傷: Keep chin tucked & ribs down (stare forward, never throw head back); stopping halfway down prevents bottom pelvic tuck & lumbar hyperextension. 全程收下巴、眼神看前方、肋骨下壓；半程下放能100%杜絕底部折腰與骨盆翻轉。'
       },
       {
         id: 'l2_lying_leg_curl',
@@ -534,7 +534,7 @@ const WORKOUT_PLAN = {
         restLabel: '90s',
         targetRir: '0 RIR',
         badge: '1.5× Growth (Maeo 2020) • NO Forward Lean (Sciatic Safe) | 1.5倍腿後肌肥大・嚴禁前傾（零坐骨神經張力）',
-        cue: 'EN: Keep pelvis & upper back GLUED flat to reclined backrest pad (chest proud, neutral spine). Do NOT slump forward!\n繁中：取代趴姿腿彎舉（避免骨盆前傾壓迫腰椎，且成長高出1.5倍）。關鍵：屁股與上背必須「全程貼死」後仰椅背、抬頭挺胸，絕對不要往前駝背！'
+        cue: '⚙️ Setup/設定: Backrest reclined 100°–105°; knee aligned w/ pivot; thigh pad locked tight over quads. 椅背設定微仰100°–105°，膝蓋對齊轉軸，大腿護墊緊壓鎖死。\n🔥 Hypertrophy/肌肥大: Replaces Lying Leg Curl to give 1.5× hamstring growth (Maeo 2020) without prone lumbar facet pinching; 1s squeeze + 3s eccentric. 取代趴姿腿彎舉（消除趴姿骨盆前傾壓迫腰椎，且成長高1.5倍）；底部夾緊1秒、3秒慢放。\n📈 Overload/超負荷: Hit 15 reps × 3 sets w/ strict glued back → +2.5kg. 三組滿15下且背部不離墊→下次+2.5kg。\n🛡️ Safety/防傷: Keep pelvis & upper back GLUED flat to pad (chest proud, neutral spine). NEVER lean/slump forward (zero sciatic nerve tension)! 屁股與上背必須「全程貼死」後仰椅背、抬頭挺胸，絕對不要往前駝背（零坐骨神經張力）！'
       },
       {
         id: 'l2_single_leg_press_high',
@@ -547,7 +547,7 @@ const WORKOUT_PLAN = {
         restLabel: '90s',
         targetRir: '1–2 RIR',
         badge: 'Backrest Flat • High Foot Glute/Quad Drive | 椅背最平・高位踩法強化臀腿且零膝剪力',
-        cue: 'EN: SET BACKREST FLAT. Foot placed high on sled; zero anterior knee shear, strong glute & quad recruitment.\n繁中：椅背調到最平、非訓練腳踩地穩定骨盆；訓練腳踩在踏板偏高位置（增加髖屈曲力矩、大幅減少膝蓋前側壓力），用腳跟與足弓穩定推起。'
+        cue: '⚙️ Setup/設定: SET BACKREST FLAT. Working foot placed HIGH on sled; non-working foot flat on floor. 椅背調到最平；訓練腳踩在踏板偏高處，非訓練腳踩穩地面鎖住骨盆。\n🔥 Hypertrophy/肌肥大: High foot placement increases hip flexion moment (glute + hamstring + quad sweep) with less knee bend; 3s lowering, drive through heel/mid-foot. 高位踩法增加髖關節力矩（強化臀腿微笑線）並減少膝蓋彎曲壓力；3秒慢放，用腳跟與足弓推起。\n📈 Overload/超負荷: Hit 12 reps/leg × 3 sets @ 1–2 RIR → +2.5–5kg. 三組滿12下(保留1-2下)→下次+2.5–5kg。\n🛡️ Safety/防傷: Zero anterior knee shear; floor foot locks pelvis so lower back stays 100% flat against pad. 膝蓋前側零剪力；踩地腳鎖死骨盆確保下背100%平貼靠墊不眨眼。'
       },
       {
         id: 'l2_seated_calf_raise',
@@ -560,7 +560,7 @@ const WORKOUT_PLAN = {
         restLabel: '60s',
         targetRir: '0 RIR',
         badge: 'Soleus & Posterior Tibialis (Flat-Foot Fix) | 比目魚肌與脛後肌（扁平足足弓救星）',
-        cue: 'EN: 90° knee angle; strengthens soleus and posterior tibialis tendon to support your foot arch.\n繁中：屈膝90°能放鬆腓腸肌，精準強化深層「比目魚肌」與「脛後肌腱」（直接撐起扁平足足弓、吸收球場跳躍衝擊）。底部暫停2秒、頂峰用力踮高。'
+        cue: '⚙️ Setup/設定: Balls of feet on platform; knee pad snug just above kneecaps at 90° knee bend. 前腳掌踩踏板邊緣，護墊緊壓膝蓋上方保持屈膝90°。\n🔥 Hypertrophy/肌肥大: 90° bent knee slackens gastrocnemius to isolate deep soleus & arch-supporting posterior tibialis; 2s bottom stretch pause + 1s top squeeze. 屈膝90°能放鬆腓腸肌，專門孤立深層「比目魚肌」與「脛後肌」；底部暫停2秒、頂峰踮高停1秒。\n📈 Overload/超負荷: Hit 15 full-ROM paused reps × 3 sets → +2.5kg. 三組滿15下完整行程(含停頓)→下次+2.5kg。\n🛡️ Safety/防傷: Push through big toe ball to rebuild flat-foot arch and prevent Achilles/plantar fascia strain on pickleball courts. 由大拇趾球發力推起，直接重建扁平足足弓並預防匹克球足底筋膜與阿基里斯腱拉傷。'
       },
       {
         id: 'l2_seated_hip_abduction',
@@ -573,7 +573,7 @@ const WORKOUT_PLAN = {
         restLabel: '60s',
         targetRir: '0 RIR',
         badge: 'Glute Medius • Pickleball Impact Shield | 強化臀中肌・防止膝內扣與匹克球衝擊',
-        cue: 'EN: Controlled pause at outer stretch; builds gluteus medius to stop valgus knee cave and absorb court impacts.\n繁中：強化臀中肌與臀小肌，防止扁平足造成的膝蓋內扣（Valgus），並吸收匹克球橫向跨步救球時的骨盆與下背衝擊。背部貼緊靠墊、外展頂峰停頓1秒。'
+        cue: '⚙️ Setup/設定: Sit all the way back with pelvis & spine glued to backrest; outer knee pads set to narrow starting stretch. 屁股坐到底、背部貼緊椅背（勿前傾懸空）；護墊調至最窄起始拉伸位。\n🔥 Hypertrophy/肌肥大: Drive knees wide apart, hold outer contraction 1s, 2s controlled return (targets upper-shelf gluteus medius & minimus). 雙膝往外推開至極限停頓1秒，2秒慢放回程（飽滿上臀外側臀中肌）。\n📈 Overload/超負荷: Hit 20 reps × 3 sets w/ 1s outer hold → +5kg. 三組皆滿20下(外展停1秒)→下次+5kg。\n🛡️ Safety/防傷: Stops flat-foot inward knee cave (valgus) and absorbs lateral pickleball court lunges before shock reaches your lower back. 防止扁平足引起的膝蓋內扣，並吸收匹克球橫向跨步救球的衝擊、保護腰椎。'
       }
     ]
   },
@@ -596,7 +596,7 @@ const WORKOUT_PLAN = {
         restLabel: '60s',
         targetRir: '0 RIR',
         badge: 'Unilateral Hit #3 of 3 • Peak Unfatigued Drive | 單手側肩 #3/3・中樞神經 100% 滿血首發',
-        cue: 'EN: Trained 1st while CNS is 100% fresh! Brace free hand on post; 2s lowering; push final set to failure + 4 lengthened partials.\n繁中：週六全場第一動作（趁中樞神經100%滿血、還沒有胸背推拉疲勞時優先轟炸側肩）！單手訓練發揮雙側赤字優勢（力量更大），另一手扶柱固定身體；離心下放2秒，最後一組力竭後接4下底部半程組。'
+        cue: '⚙️ Setup/設定: Pulley at wrist height; hold post w/ non-working hand; stand 1 step out for max bottom stretch tension. 滑輪調至手腕高；非訓練手抓緊柱子固定身體，側跨一步讓底部即有滿載張力。\n🔥 Hypertrophy/肌肥大: Trained 1st on Saturday when CNS is 100% fresh! Sweep 30° into scapular plane, 2s eccentric. Set 4: 0 RIR + 4 lengthened partials! 週六第一動作（趁中樞神經100%滿血優先轟炸側肩）！沿30°肩胛平面抬起、2秒慢放；第4組力竭後接4下底部半程組！\n📈 Overload/超負荷: Hit 15 reps/arm × 4 sets w/ zero body english → +1.25–2.5kg. 四組皆滿15下且身體零晃動→下次微調加重。\n🛡️ Safety/防傷: Free hand braced on post eliminates spine sway; keep shoulder depressed away from ear. 扶柱徹底消除腰部晃動；全程壓肩不聳肩。'
       },
       {
         id: 'u2_rear_delt_fly',
@@ -609,7 +609,7 @@ const WORKOUT_PLAN = {
         restLabel: '60s',
         targetRir: '0 RIR',
         badge: 'Rear Delt Hit #2 of 2 • Sternum Supported | 後三角頻率 #2/2・胸墊護腰',
-        cue: 'EN: Sternum flat on pad; sweep hands outward in a wide arc with elbows flared 45° to isolate rear delts.\n繁中：每週第2次後三角強化；胸口貼平靠墊（零腰椎壓力），手肘微彎外展45°向後外側畫大弧線，把肩膀後側3D立體圓潤度撐滿。'
+        cue: '⚙️ Setup/設定: Sternum flat against pad; handles slightly below shoulder level; neutral/pronated grip w/ 45° elbow flare. 胸口貼平靠墊；握把略低於肩，手肘保持45°外展。\n🔥 Hypertrophy/肌肥大: Sweep hands wide outward ("reach for the side walls") to isolate posterior delts for 3D shoulder cap; 1s hold + 2s eccentric. 雙手往兩側牆壁遠方畫大弧線撥開（勿夾肩胛骨搶走張力），頂峰停1秒、2秒慢放。\n📈 Overload/超負荷: Hit 20 clean reps × 3 sets → +2.5kg. 三組皆滿20下標準動作→下次+2.5kg。\n🛡️ Safety/防傷: Chest pad absorbs 100% of torso load; never arch lower back off the pad at the end of the set. 胸墊100%支撐軀幹；力竭時嚴禁挺腰離開靠墊。'
       },
       {
         id: 'd5_preacher_curl',
@@ -622,7 +622,7 @@ const WORKOUT_PLAN = {
         restLabel: '90s',
         targetRir: '0 RIR',
         badge: 'Distal Bicep & Brachialis Thickness (Pedrosa 2023) | 遠端二頭與肱肌厚度（與背後彎舉互補）',
-        cue: 'EN: Triceps glued to preacher pad; zero shoulder momentum; smooth pull from 95% extension to peak squeeze.\n繁中：三頭肌與腋下死死貼緊斜板（100%封鎖肩膀借力與腰部晃動）；專攻手臂靠近手肘處的「遠端二頭肌」與「肱肌」飽滿厚度（Pedrosa 2023實證）。下放至95%伸展即可，勿完全放鬆鎖死。'
+        cue: '⚙️ Setup/設定: Seat height so armpits & back of triceps are snuggled flush against preacher pad; supinated grip. 調座椅讓腋下與三頭肌完整服貼在斜板上（無空隙），雙手反握。\n🔥 Hypertrophy/肌肥大: Peak torque at bottom stretched position builds distal lower-bicep & brachialis thickness (Pedrosa 2023); 3s slow eccentric. 牧師椅在底部拉伸位張力最大，專攻靠近手肘的「遠端二頭肌與肱肌厚度」（與背後彎舉完美互補）；3秒慢放。\n📈 Overload/超負荷: Hit 10 reps × 3 sets w/ triceps glued to pad → +2.5kg. 三組皆滿10下且手肘不離墊→下次+2.5kg。\n🛡️ Safety/防傷: Lower to ~95% extension (keep micro-bend at bottom—never violently hyperextend elbow joint) and keep butt seated. 下放至95%伸直即可（保留極微彎張力、切勿在底部放鬆頓挫傷手肘肌腱），屁股坐穩不站起。'
       },
       {
         id: 'd5_overhead_tri',
@@ -635,7 +635,7 @@ const WORKOUT_PLAN = {
         restLabel: '75s',
         targetRir: '0 RIR',
         badge: 'Back/Post Braced • +40% Long-Head Growth (Maeo 2022) | 靠背或扶柱防折腰・+40% 三頭長頭成長',
-        cue: 'EN: Sit against a 70°–80° incline bench OR do Single-Arm Overhead with free hand braced on cable post to block lower-back arching.\n繁中：過頭肩屈角度能帶來+40%三頭肌長頭肌肥大（Maeo 2022實證）！護腰關鍵：背靠70°–80°上斜椅坐姿操作，或採「單手過頭伸展＋另一手抓緊柱子」徹底鎖死肋骨與骨盆，嚴禁挺腰折腰代償。'
+        cue: '⚙️ Setup/設定: Set 70°–80° incline bench in front of low/mid pulley (OR stand single-arm w/ free hand braced on tower post). 在滑輪前放70°–80°上斜椅靠背坐穩（或採單手過頭伸展、另一手抓緊柱子固定）。\n🔥 Hypertrophy/肌肥大: Overhead shoulder flexion stretches biarticular long head for +40% MORE triceps growth than pushdowns alone (Maeo 2022); 3s deep lower behind neck. 過頭舉臂能深度拉伸三頭肌長頭，創造比下壓高出+40%的肌肥大（Maeo 2022實證）；3秒慢放至頸後深層拉伸再伸直。\n📈 Overload/超負荷: Hit 12 reps × 3 sets w/ zero rib flare → +1.25–2.5kg. 三組滿12下且肋骨不外翻→下次微調加重。\n🛡️ Safety/防傷: Bench backrest (or post brace) + ribs tucked down 100% blocks lumbar hyperextension arching! 上斜椅背（或扶柱）搭配肋骨下壓，能100%封鎖站姿雙手過頭常見的「下背折腰挺肚」傷腰風險！'
       },
       {
         id: 'd5_bayesian_curl_ss',
@@ -648,7 +648,7 @@ const WORKOUT_PLAN = {
         restLabel: '45s',
         targetRir: '0 RIR',
         badge: 'Unilateral Bicep Peak • Superset w/ 5B | 單手二頭長頭肌峰・與 5B 超級組',
-        cue: 'EN: Single low cable behind torso; brace free hand on frame; keep elbow pinned behind hip line throughout the curl.\n繁中：單邊低位滑輪，往前站一步讓手肘固定在身體中線後方（極大化二頭肌長頭拉伸與肌峰）；非訓練手扶緊柱子，享受單手更強的神經驅動與泵感。'
+        cue: '⚙️ Setup/設定: Single low pulley; step forward so working arm hangs ~30° behind torso; brace free hand on frame. 低位滑輪背對往前跨步，讓手臂自然落在身體後方約30°；非訓練手抓柱穩定。\n🔥 Hypertrophy/肌肥大: Keep elbow pinned behind hip line throughout curl to isolate proximal long-head bicep peak; 3s eccentric stretch. 全程將手肘釘在身體中線後方不前移，極大化二頭長頭拉伸與肌峰；3秒慢放到底。\n📈 Overload/超負荷: Hit 15 reps/arm × 2 sets → +1.25–2.5kg. 兩組皆滿15下且手肘固定→下次升一格重量。\n🛡️ Safety/防傷: Free hand braced on post prevents lower-back sway; supinate wrist smoothly. 扶柱固定軀幹零晃動；掌心朝上穩定彎舉不折手腕。'
       },
       {
         id: 'u2_cable_triceps_ext',
@@ -661,7 +661,7 @@ const WORKOUT_PLAN = {
         restLabel: '60s',
         targetRir: '0 RIR',
         badge: 'Same Single Pulley • Lateral & Medial Horseshoe | 同座單邊滑輪・三頭外側馬蹄鐵線條',
-        cue: 'EN: Same single cable tower; brace free hand on post; extend across body with hard 1s lockout squeeze at the bottom.\n繁中：同一座單邊滑輪調至肩高；另一手扶柱穩住核心，單手往對側下方完全伸直鎖死1秒，雕塑三頭肌外側馬蹄鐵線條。'
+        cue: '⚙️ Setup/設定: Same single cable tower set to shoulder height; brace free hand on post. 同一座單邊滑輪調至肩高；另一手扶柱穩住身體。\n🔥 Hypertrophy/肌肥大: Extend forearm diagonally across body to full elbow lockout w/ hard 1s squeeze (targets lateral & medial horseshoe heads). 前臂斜向跨體往下完全伸直並用力鎖死1秒（雕刻三頭肌外側馬蹄鐵與內側頭）。\n📈 Overload/超負荷: Hit 15 reps/arm × 2 sets w/ 1s lockout → +1.25–2.5kg. 兩組皆滿15下完整鎖死→下次升一格重量。\n🛡️ Safety/防傷: Keep upper arm glued in place; zero shoulder internal rotation or lower-back arch. 上臂釘死不動，零肩膀內旋與零折腰。'
       },
       {
         id: 'd5_deadbug_core',
@@ -674,7 +674,7 @@ const WORKOUT_PLAN = {
         restLabel: '60s',
         targetRir: '0 RIR',
         badge: '6-Pack Rectus Abdominis • Zero Spinal Flexion | 雕刻六塊腹直肌・零脊椎彎曲磨損',
-        cue: 'EN: Push palms hard into wall behind head, press lower back flat into floor, and slowly lower alternating heels.\n繁中：躺姿雙手用力推住頭頂後方的牆面或柱子底座，將下背死死壓平貼緊地面（零腰椎彎曲擠壓），雙腳交替緩慢下放延伸，用強大抗伸展張力雕刻六塊腹直肌。'
+        cue: '⚙️ Setup/設定: Lie on back ~1 foot from wall/rack base; press both palms hard into wall behind head; knees bent 90° in air. 仰躺離牆面或架子底座約30公分，雙手往頭頂後方用力推牆，雙腿屈膝90°抬起。\n🔥 Hypertrophy/肌肥大: Pushing into wall + flattening lower back fires entire 6-pack rectus abdominis via intense anti-extension; take 3s to lower 1 heel to 2cm above floor, exhale hard, return. 雙手推牆＋下背死貼地面能產生極強「抗伸展」張力雕刻六塊腹直肌；花3秒慢放單腳跟至離地2公分、用力吐氣收腹後收回。\n📈 Overload/超負荷: Hit 12 slow reps/side × 3 sets → pause 2s at bottom extension (or wear light ankle weights). 三組每邊滿12下慢速標準動作→在底部伸展點多停2秒。\n🛡️ Safety/防傷: If your lower back arches off the floor even 1cm, shorten leg reach! 100% disc-safe alternative to crunches/leg raises. 一旦感覺下背離開地面出現空隙，立刻縮短腿下放距離！完全零椎間盤彎曲擠壓的六塊肌王牌動作。'
       }
     ]
   }
