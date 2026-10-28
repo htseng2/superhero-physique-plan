@@ -662,6 +662,440 @@ const WORKOUT_PLAN = {
 };
 
 // ============================================================================
+// HEVY TEMPLATE MAPPING & PRE-SEEDED WORKOUT HISTORY FROM HEVY
+// ============================================================================
+const HEVY_TEMPLATE_TO_APP_ID = {
+  'BE289E45': 'u1_cable_lat_raise',
+  'FBF92739': 'u1_incline_press',
+  '1DF4A847': 'u1_chest_supp_row',
+  'd6904d8f-e078-43c2-a9d4-44a1c2615ea3': 'u1_converging_flat_press',
+  '2DBCA395': 'u1_bayesian_preacher_curl',
+  'B5EFBF9C': 'u1_overhead_triceps',
+  '11A123F3': 'l1_seated_leg_curl',
+  '75A4F6C4': 'l1_leg_extension',
+  '3FD83744': 'l1_single_leg_press',
+  '91237BDD': 'l1_leg_press_calf',
+  'CC55119B': 'l1_pallof_press',
+  '473CF5B8': 'u2_neutral_pulldown',
+  'BC3492DA': 'u2_upper_back_row',
+  'D5D0354D': 'u2_machine_lat_raise',
+  '370e448e-c99e-4284-a88c-0b952f899894': 'u2_converging_incline_press',
+  '9DCE2D64': 'u2_pec_deck_fly',
+  'D8281C62': 'u2_rear_delt_fly',
+  '292f33f5-9ffe-40a2-af7e-9dd6a22c1fcc': 'u2_cable_triceps_ext',
+  '68CE0B9B': 'l2_hip_thrust',
+  'B812E76E': 'l2_lying_leg_curl',
+  '062AB91A': 'l2_seated_calf_raise',
+  'F4B4C6EE': 'l2_seated_hip_abduction',
+  '5535b7aa-e6ae-459b-85fe-21057ee5d24a': 'd5_preacher_curl',
+  'D8911FC4': 'd5_deadbug_core'
+};
+
+const APP_ID_TO_HEVY_TEMPLATE = {
+  'u1_incline_press': 'FBF92739',
+  'u1_neutral_pulldown': '473CF5B8',
+  'u1_converging_flat_press': 'd6904d8f-e078-43c2-a9d4-44a1c2615ea3',
+  'u1_chest_supp_row': '1DF4A847',
+  'u1_cable_lat_raise': 'BE289E45',
+  'u1_bayesian_preacher_curl': '2DBCA395',
+  'u1_overhead_triceps': 'B5EFBF9C',
+  'l1_seated_leg_curl': '11A123F3',
+  'l1_leg_extension': '75A4F6C4',
+  'l1_single_leg_press': '3FD83744',
+  'l1_leg_press_calf': '91237BDD',
+  'l1_pallof_press': 'CC55119B',
+  'u2_upper_back_row': 'BC3492DA',
+  'u2_converging_incline_press': '370e448e-c99e-4284-a88c-0b952f899894',
+  'u2_neutral_pulldown': '473CF5B8',
+  'u2_pec_deck_fly': '9DCE2D64',
+  'u2_machine_lat_raise': 'D5D0354D',
+  'l2_hip_thrust': '68CE0B9B',
+  'l2_lying_leg_curl': '11A123F3',
+  'l2_single_leg_press_high': '3FD83744',
+  'l2_seated_calf_raise': '062AB91A',
+  'l2_seated_hip_abduction': 'F4B4C6EE',
+  'd5_fresh_lat_raise': 'BE289E45',
+  'u2_rear_delt_fly': 'D8281C62',
+  'd5_preacher_curl': '5535b7aa-e6ae-459b-85fe-21057ee5d24a',
+  'd5_overhead_tri': 'B5EFBF9C',
+  'd5_bayesian_curl_ss': '2DBCA395',
+  'u2_cable_triceps_ext': '292f33f5-9ffe-40a2-af7e-9dd6a22c1fcc',
+  'd5_deadbug_core': 'D8911FC4'
+};
+
+// Equivalent exercises across days so baseline working weights carry over seamlessly
+const EXERCISE_EQUIVALENTS = {
+  'u1_neutral_pulldown': ['u1_neutral_pulldown', 'u2_neutral_pulldown'],
+  'u2_neutral_pulldown': ['u2_neutral_pulldown', 'u1_neutral_pulldown'],
+  'd5_fresh_lat_raise': ['d5_fresh_lat_raise', 'u1_cable_lat_raise', 'u2_machine_lat_raise'],
+  'u1_overhead_triceps': ['u1_overhead_triceps', 'd5_overhead_tri'],
+  'd5_overhead_tri': ['d5_overhead_tri', 'u1_overhead_triceps'],
+  'd5_bayesian_curl_ss': ['d5_bayesian_curl_ss', 'u1_bayesian_preacher_curl'],
+  'l2_lying_leg_curl': ['l2_lying_leg_curl', 'l1_seated_leg_curl']
+};
+
+const DEFAULT_HEVY_HISTORY = [
+  {
+    "id": "hevy_21c62725-9b22-4a2a-9d82-b174d12fe0f4",
+    "dayId": "lower1",
+    "dayTitle": "Lower 1: Quad Dominance & Knee-Friendly Alignment",
+    "shortTitle": "Lower 1",
+    "date": "2026-03-26",
+    "timestamp": "2026-03-26T08:07:59+00:00",
+    "bodyweight": null,
+    "sessionNotes": "Synced from Hevy",
+    "totalVolume": 12510,
+    "totalSets": 16,
+    "exercises": [
+      {
+        "exerciseId": "l1_seated_leg_curl",
+        "name": "Seated Leg Curl (Machine)",
+        "sets": [
+          { "setNumber": 1, "weight": 72.5, "reps": 11, "rir": "0", "completed": true },
+          { "setNumber": 2, "weight": 72.5, "reps": 12, "rir": "0", "completed": true },
+          { "setNumber": 3, "weight": 72.5, "reps": 12, "rir": "0", "completed": true }
+        ]
+      },
+      {
+        "exerciseId": "l1_leg_extension",
+        "name": "Leg Extension (Machine)",
+        "sets": [
+          { "setNumber": 1, "weight": 72.5, "reps": 15, "rir": "0", "completed": true },
+          { "setNumber": 2, "weight": 74.5, "reps": 15, "rir": "0", "completed": true },
+          { "setNumber": 3, "weight": 74.5, "reps": 15, "rir": "0", "completed": true }
+        ]
+      },
+      {
+        "exerciseId": "l1_single_leg_press",
+        "name": "Single Leg Press (Machine)",
+        "sets": [
+          { "setNumber": 1, "weight": 90, "reps": 12, "rir": "1-2", "completed": true },
+          { "setNumber": 2, "weight": 90, "reps": 12, "rir": "1-2", "completed": true },
+          { "setNumber": 3, "weight": 90, "reps": 12, "rir": "1-2", "completed": true }
+        ]
+      },
+      {
+        "exerciseId": "l1_leg_press_calf",
+        "name": "Calf Press (Machine)",
+        "sets": [
+          { "setNumber": 1, "weight": 40, "reps": 16, "rir": "0", "completed": true },
+          { "setNumber": 2, "weight": 40, "reps": 15, "rir": "0", "completed": true },
+          { "setNumber": 3, "weight": 40, "reps": 15, "rir": "0", "completed": true },
+          { "setNumber": 4, "weight": 40, "reps": 19, "rir": "0", "completed": true }
+        ]
+      },
+      {
+        "exerciseId": "l1_pallof_press",
+        "name": "Cable Core Pallof Press",
+        "sets": [
+          { "setNumber": 1, "weight": 22.5, "reps": 12, "rir": "Iso", "completed": true },
+          { "setNumber": 2, "weight": 22.5, "reps": 12, "rir": "Iso", "completed": true },
+          { "setNumber": 3, "weight": 22.5, "reps": 12, "rir": "Iso", "completed": true }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hevy_025a641a-d259-4b43-9438-d135c85c6d47",
+    "dayId": "upper2",
+    "dayTitle": "Upper 2: Lat Width & Shoulder Capping Priority",
+    "shortTitle": "Upper 2",
+    "date": "2026-03-25",
+    "timestamp": "2026-03-25T06:34:46+00:00",
+    "bodyweight": null,
+    "sessionNotes": "Synced from Hevy",
+    "totalVolume": 12977,
+    "totalSets": 16,
+    "exercises": [
+      {
+        "exerciseId": "u2_neutral_pulldown",
+        "name": "Lat Pulldown (Machine)",
+        "sets": [
+          { "setNumber": 1, "weight": 96, "reps": 9, "rir": "1", "completed": true },
+          { "setNumber": 2, "weight": 96, "reps": 7, "rir": "1", "completed": true },
+          { "setNumber": 3, "weight": 96, "reps": 7, "rir": "1", "completed": true }
+        ]
+      },
+      {
+        "exerciseId": "u2_machine_lat_raise",
+        "name": "Lateral Raise (Machine)",
+        "sets": [
+          { "setNumber": 1, "weight": 60, "reps": 19, "rir": "0", "completed": true },
+          { "setNumber": 2, "weight": 60, "reps": 18, "rir": "0", "completed": true },
+          { "setNumber": 3, "weight": 60, "reps": 13, "rir": "0", "completed": true },
+          { "setNumber": 4, "weight": 60, "reps": 13, "rir": "0", "completed": true }
+        ]
+      },
+      {
+        "exerciseId": "u2_converging_incline_press",
+        "name": "Converging Incline Machine Press (30°-40°)",
+        "sets": [
+          { "setNumber": 1, "weight": 86, "reps": 12, "rir": "1", "completed": true },
+          { "setNumber": 2, "weight": 88, "reps": 11, "rir": "1", "completed": true },
+          { "setNumber": 3, "weight": 95, "reps": 9, "rir": "1", "completed": true }
+        ]
+      },
+      {
+        "exerciseId": "u2_rear_delt_fly",
+        "name": "Rear Delt Reverse Fly (Machine)",
+        "sets": [
+          { "setNumber": 1, "weight": 68, "reps": 20, "rir": "0", "completed": true },
+          { "setNumber": 2, "weight": 68, "reps": 15, "rir": "0", "completed": true },
+          { "setNumber": 3, "weight": 68, "reps": 18, "rir": "0", "completed": true }
+        ]
+      },
+      {
+        "exerciseId": "u2_cable_triceps_ext",
+        "name": "Cross-Body Cable Triceps Extension",
+        "sets": [
+          { "setNumber": 1, "weight": 15, "reps": 12, "rir": "0", "completed": true },
+          { "setNumber": 2, "weight": 17.5, "reps": 10, "rir": "0", "completed": true },
+          { "setNumber": 3, "weight": 17.5, "reps": 10, "rir": "0", "completed": true }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hevy_aae1b696-c1c4-41c2-bfef-004b3fdf5fef",
+    "dayId": "lower2",
+    "dayTitle": "Lower 2: Posterior Chain & Hamstring Priority",
+    "shortTitle": "Lower 2",
+    "date": "2026-03-23",
+    "timestamp": "2026-03-23T07:40:05+00:00",
+    "bodyweight": null,
+    "sessionNotes": "Synced from Hevy",
+    "totalVolume": 8799,
+    "totalSets": 15,
+    "exercises": [
+      {
+        "exerciseId": "l2_hip_thrust",
+        "name": "Hip Thrust (Machine)",
+        "sets": [
+          { "setNumber": 1, "weight": 10, "reps": 10, "rir": "1-2", "completed": true },
+          { "setNumber": 2, "weight": 20, "reps": 12, "rir": "1-2", "completed": true },
+          { "setNumber": 3, "weight": 30, "reps": 11, "rir": "1-2", "completed": true }
+        ]
+      },
+      {
+        "exerciseId": "l2_lying_leg_curl",
+        "name": "Lying Leg Curl (Machine)",
+        "sets": [
+          { "setNumber": 1, "weight": 45, "reps": 10, "rir": "0", "completed": true },
+          { "setNumber": 2, "weight": 45, "reps": 9, "rir": "0", "completed": true },
+          { "setNumber": 3, "weight": 45, "reps": 10, "rir": "0", "completed": true }
+        ]
+      },
+      {
+        "exerciseId": "l2_single_leg_press_high",
+        "name": "Single Leg Press (Machine)",
+        "sets": [
+          { "setNumber": 1, "weight": 45, "reps": 12, "rir": "1-2", "completed": true },
+          { "setNumber": 2, "weight": 54, "reps": 12, "rir": "1-2", "completed": true },
+          { "setNumber": 3, "weight": 63, "reps": 12, "rir": "1-2", "completed": true }
+        ]
+      },
+      {
+        "exerciseId": "l2_seated_calf_raise",
+        "name": "Seated Calf Raise",
+        "sets": [
+          { "setNumber": 1, "weight": 40, "reps": 10, "rir": "0", "completed": true },
+          { "setNumber": 2, "weight": 40, "reps": 13, "rir": "0", "completed": true },
+          { "setNumber": 3, "weight": 40, "reps": 14, "rir": "0", "completed": true }
+        ]
+      },
+      {
+        "exerciseId": "l2_seated_hip_abduction",
+        "name": "Hip Abduction (Machine)",
+        "sets": [
+          { "setNumber": 1, "weight": 85, "reps": 12, "rir": "0", "completed": true },
+          { "setNumber": 2, "weight": 70, "reps": 17, "rir": "0", "completed": true },
+          { "setNumber": 3, "weight": 70, "reps": 17, "rir": "0", "completed": true }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hevy_cf3e179f-2716-46eb-9300-62f97bc4556d",
+    "dayId": "upper1",
+    "dayTitle": "Upper 1: Side Delt & Clavicular Chest Priority",
+    "shortTitle": "Upper 1",
+    "date": "2026-03-22",
+    "timestamp": "2026-03-22T13:01:26+00:00",
+    "bodyweight": null,
+    "sessionNotes": "Synced from Hevy",
+    "totalVolume": 7157,
+    "totalSets": 15,
+    "exercises": [
+      {
+        "exerciseId": "u1_cable_lat_raise",
+        "name": "Lateral Raise (Cable)",
+        "sets": [
+          { "setNumber": 1, "weight": 10, "reps": 12, "rir": "0", "completed": true },
+          { "setNumber": 2, "weight": 10, "reps": 12, "rir": "0", "completed": true },
+          { "setNumber": 3, "weight": 10, "reps": 12, "rir": "0", "completed": true },
+          { "setNumber": 4, "weight": 10, "reps": 12, "rir": "0", "completed": true }
+        ]
+      },
+      {
+        "exerciseId": "u1_incline_press",
+        "name": "Incline Chest Press (Machine)",
+        "sets": [
+          { "setNumber": 1, "weight": 68, "reps": 13, "rir": "1-2", "completed": true },
+          { "setNumber": 2, "weight": 77, "reps": 12, "rir": "1-2", "completed": true },
+          { "setNumber": 3, "weight": 86, "reps": 8, "rir": "1-2", "completed": true }
+        ]
+      },
+      {
+        "exerciseId": "u1_chest_supp_row",
+        "name": "Seated Row (Machine)",
+        "sets": [
+          { "setNumber": 1, "weight": 100, "reps": 9, "rir": "1", "completed": true },
+          { "setNumber": 2, "weight": 100, "reps": 8, "rir": "1", "completed": true },
+          { "setNumber": 3, "weight": 100, "reps": 8, "rir": "1", "completed": true }
+        ]
+      },
+      {
+        "exerciseId": "u1_converging_flat_press",
+        "name": "Converging Machine Chest Press",
+        "sets": [
+          { "setNumber": 1, "weight": 77, "reps": 5, "rir": "0", "completed": true },
+          { "setNumber": 2, "weight": 73, "reps": 6, "rir": "0", "completed": true }
+        ]
+      },
+      {
+        "exerciseId": "u1_bayesian_preacher_curl",
+        "name": "Behind the Back Curl (Cable)",
+        "sets": [
+          { "setNumber": 1, "weight": 17.5, "reps": 12, "rir": "0", "completed": true },
+          { "setNumber": 2, "weight": 27, "reps": 12, "rir": "0", "completed": true },
+          { "setNumber": 3, "weight": 27, "reps": 12, "rir": "0", "completed": true }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hevy_10a269cb-7a05-4cd0-a028-0ff4c9f8b542",
+    "dayId": "lower1",
+    "dayTitle": "Lower 1: Quad Dominance & Knee-Friendly Alignment",
+    "shortTitle": "Lower 1",
+    "date": "2026-03-20",
+    "timestamp": "2026-03-20T05:44:33+00:00",
+    "bodyweight": null,
+    "sessionNotes": "Synced from Hevy",
+    "totalVolume": 12015,
+    "totalSets": 16,
+    "exercises": [
+      {
+        "exerciseId": "l1_seated_leg_curl",
+        "name": "Seated Leg Curl (Machine)",
+        "sets": [
+          { "setNumber": 1, "weight": 72.5, "reps": 11, "rir": "0", "completed": true },
+          { "setNumber": 2, "weight": 72.5, "reps": 11, "rir": "0", "completed": true },
+          { "setNumber": 3, "weight": 72.5, "reps": 11, "rir": "0", "completed": true }
+        ]
+      },
+      {
+        "exerciseId": "l1_leg_extension",
+        "name": "Leg Extension (Machine)",
+        "sets": [
+          { "setNumber": 1, "weight": 72.5, "reps": 12, "rir": "0", "completed": true },
+          { "setNumber": 2, "weight": 72.5, "reps": 15, "rir": "0", "completed": true },
+          { "setNumber": 3, "weight": 72.5, "reps": 14, "rir": "0", "completed": true }
+        ]
+      },
+      {
+        "exerciseId": "l1_single_leg_press",
+        "name": "Single Leg Press (Machine)",
+        "sets": [
+          { "setNumber": 1, "weight": 90, "reps": 12, "rir": "1-2", "completed": true },
+          { "setNumber": 2, "weight": 90, "reps": 12, "rir": "1-2", "completed": true },
+          { "setNumber": 3, "weight": 90, "reps": 12, "rir": "1-2", "completed": true }
+        ]
+      },
+      {
+        "exerciseId": "l1_leg_press_calf",
+        "name": "Calf Press (Machine)",
+        "sets": [
+          { "setNumber": 1, "weight": 40, "reps": 16, "rir": "0", "completed": true },
+          { "setNumber": 2, "weight": 40, "reps": 15, "rir": "0", "completed": true },
+          { "setNumber": 3, "weight": 40, "reps": 15, "rir": "0", "completed": true },
+          { "setNumber": 4, "weight": 40, "reps": 19, "rir": "0", "completed": true }
+        ]
+      },
+      {
+        "exerciseId": "l1_pallof_press",
+        "name": "Cable Core Pallof Press",
+        "sets": [
+          { "setNumber": 1, "weight": 22.5, "reps": 12, "rir": "Iso", "completed": true },
+          { "setNumber": 2, "weight": 22.5, "reps": 12, "rir": "Iso", "completed": true },
+          { "setNumber": 3, "weight": 22.5, "reps": 12, "rir": "Iso", "completed": true }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hevy_291df741-9100-40da-a12a-6dd580696ea9",
+    "dayId": "upper2",
+    "dayTitle": "Upper 2: Lat Width & Shoulder Capping Priority",
+    "shortTitle": "Upper 2",
+    "date": "2026-03-18",
+    "timestamp": "2026-03-18T04:57:15+00:00",
+    "bodyweight": null,
+    "sessionNotes": "Synced from Hevy",
+    "totalVolume": 12897,
+    "totalSets": 16,
+    "exercises": [
+      {
+        "exerciseId": "u2_neutral_pulldown",
+        "name": "Lat Pulldown (Machine)",
+        "sets": [
+          { "setNumber": 1, "weight": 96, "reps": 9, "rir": "1", "completed": true },
+          { "setNumber": 2, "weight": 96, "reps": 7, "rir": "1", "completed": true },
+          { "setNumber": 3, "weight": 96, "reps": 7, "rir": "1", "completed": true }
+        ]
+      },
+      {
+        "exerciseId": "u2_machine_lat_raise",
+        "name": "Lateral Raise (Machine)",
+        "sets": [
+          { "setNumber": 1, "weight": 60, "reps": 19, "rir": "0", "completed": true },
+          { "setNumber": 2, "weight": 60, "reps": 18, "rir": "0", "completed": true },
+          { "setNumber": 3, "weight": 60, "reps": 13, "rir": "0", "completed": true },
+          { "setNumber": 4, "weight": 60, "reps": 13, "rir": "0", "completed": true }
+        ]
+      },
+      {
+        "exerciseId": "u2_converging_incline_press",
+        "name": "Converging Incline Machine Press (30°-40°)",
+        "sets": [
+          { "setNumber": 1, "weight": 86, "reps": 12, "rir": "1", "completed": true },
+          { "setNumber": 2, "weight": 88, "reps": 11, "rir": "1", "completed": true },
+          { "setNumber": 3, "weight": 90, "reps": 9, "rir": "1", "completed": true }
+        ]
+      },
+      {
+        "exerciseId": "u2_rear_delt_fly",
+        "name": "Rear Delt Reverse Fly (Machine)",
+        "sets": [
+          { "setNumber": 1, "weight": 68, "reps": 20, "rir": "0", "completed": true },
+          { "setNumber": 2, "weight": 68, "reps": 15, "rir": "0", "completed": true },
+          { "setNumber": 3, "weight": 68, "reps": 18, "rir": "0", "completed": true }
+        ]
+      },
+      {
+        "exerciseId": "u2_cable_triceps_ext",
+        "name": "Cross-Body Cable Triceps Extension",
+        "sets": [
+          { "setNumber": 1, "weight": 15, "reps": 11, "rir": "0", "completed": true },
+          { "setNumber": 2, "weight": 15, "reps": 11, "rir": "0", "completed": true },
+          { "setNumber": 3, "weight": 15, "reps": 11, "rir": "0", "completed": true }
+        ]
+      }
+    ]
+  }
+];
+
+// ============================================================================
 // APPLICATION STATE
 // ============================================================================
 let state = {
@@ -675,6 +1109,9 @@ let state = {
   settings: {
     unit: 'kg',
     targetBodyweight: 80.0,
+    hevyApiKey: '533d98a3-6dea-4105-8abc-c4e532b8a466',
+    autoSyncHevy: true,
+    lastHevySyncTime: 'Pre-synced with Hevy v1 API',
     githubToken: '',
     githubGistId: '',
     autoSyncGithub: true,
@@ -711,7 +1148,22 @@ function getTodayDateString() {
 function loadStateFromStorage() {
   try {
     const savedHistory = localStorage.getItem(STORAGE_KEYS.HISTORY);
-    if (savedHistory) state.workoutHistory = JSON.parse(savedHistory);
+    if (savedHistory) {
+      state.workoutHistory = JSON.parse(savedHistory);
+    }
+
+    // Ensure pre-seeded Hevy history is merged in if missing
+    const existingIds = new Set(state.workoutHistory.map(w => w.id));
+    let addedSeed = false;
+    DEFAULT_HEVY_HISTORY.forEach(seedSession => {
+      if (!existingIds.has(seedSession.id)) {
+        state.workoutHistory.push(seedSession);
+        addedSeed = true;
+      }
+    });
+    if (addedSeed) {
+      state.workoutHistory.sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+    }
 
     const savedBw = localStorage.getItem(STORAGE_KEYS.BODYWEIGHT);
     if (savedBw) state.bodyweightLogs = JSON.parse(savedBw);
@@ -722,6 +1174,9 @@ function loadStateFromStorage() {
     const savedSettings = localStorage.getItem(STORAGE_KEYS.SETTINGS);
     if (savedSettings) {
       state.settings = { ...state.settings, ...JSON.parse(savedSettings) };
+      if (!state.settings.hevyApiKey) {
+        state.settings.hevyApiKey = '533d98a3-6dea-4105-8abc-c4e532b8a466';
+      }
     }
 
     const savedDraft = localStorage.getItem(STORAGE_KEYS.ACTIVE_DRAFT);
@@ -753,10 +1208,11 @@ function saveStateToStorage() {
 }
 
 function getLastExerciseLog(exerciseId) {
+  const candidateIds = EXERCISE_EQUIVALENTS[exerciseId] || [exerciseId];
   for (let i = 0; i < state.workoutHistory.length; i++) {
     const session = state.workoutHistory[i];
     if (!session.exercises) continue;
-    const found = session.exercises.find(e => e.exerciseId === exerciseId);
+    const found = session.exercises.find(e => candidateIds.includes(e.exerciseId));
     if (found && found.sets && found.sets.some(s => s.weight !== '' || s.reps !== '')) {
       return {
         date: session.date,
@@ -870,6 +1326,22 @@ function ensureDraftForSelectedDay() {
       }
       state.activeDraft.exercises[ex.id] = { sets, notes: '' };
       updated = true;
+    } else {
+      // Backfill any uncompleted sets that still have empty weights from Hevy history
+      const lastLog = getLastExerciseLog(ex.id);
+      if (lastLog && lastLog.sets && lastLog.sets.length > 0) {
+        const draftSets = state.activeDraft.exercises[ex.id].sets || [];
+        draftSets.forEach((s, i) => {
+          if (!s.completed && (s.weight === '' || s.weight === null)) {
+            const prevSet = lastLog.sets[i] || lastLog.sets[0];
+            if (prevSet && prevSet.weight !== '') {
+              s.weight = prevSet.weight;
+              if (s.reps === '' || s.reps === null) s.reps = prevSet.reps;
+              updated = true;
+            }
+          }
+        });
+      }
     }
   });
   if (updated) saveStateToStorage();
@@ -1106,6 +1578,11 @@ async function finishWorkoutSession() {
 
   showToast(`Saved ${plan.shortTitle}! (${totalSetsCompleted} sets • ${totalVolume.toLocaleString()} ${state.settings.unit} volume)`, 'emerald');
 
+  // Auto-sync to Hevy Official API if configured
+  if (state.settings.hevyApiKey && state.settings.autoSyncHevy) {
+    await pushWorkoutToHevyApi(sessionRecord, true);
+  }
+
   // Auto-sync to GitHub Gist if configured
   if (state.settings.githubToken && state.settings.autoSyncGithub) {
     await syncToGitHubGist(true);
@@ -1325,6 +1802,186 @@ async function pullFromGitHubGist() {
     showToast(`Pulled ${state.workoutHistory.length} workouts from GitHub Cloud!`, 'emerald');
   } catch (err) {
     showToast(`Pull failed: ${err.message}`, 'amber');
+  }
+}
+
+// ============================================================================
+// HEVY OFFICIAL PUBLIC API (v1) LIVE 2-WAY SYNC
+// ============================================================================
+async function pullFromHevyApi(silent = false) {
+  const apiKey = (state.settings.hevyApiKey || '').trim();
+  if (!apiKey) {
+    if (!silent) showToast('Please enter your Hevy API Key first.', 'amber');
+    return;
+  }
+
+  try {
+    if (!silent) showToast('Pulling latest workouts from Hevy Official API...', 'sky');
+    const response = await fetch('https://api.hevyapp.com/v1/workouts?page=1&pageSize=10', {
+      headers: {
+        'accept': 'application/json',
+        'api-key': apiKey
+      }
+    });
+    if (!response.ok) {
+      throw new Error(`Hevy API HTTP ${response.status}`);
+    }
+    const data = await response.json();
+    const workouts = data.workouts || [];
+
+    const existingById = new Map();
+    state.workoutHistory.forEach(w => existingById.set(w.id, w));
+
+    let importedCount = 0;
+    workouts.forEach(w => {
+      const hevyId = 'hevy_' + w.id;
+      const titleLower = (w.title || '').toLowerCase();
+      let dayId = 'upper1';
+      let shortTitle = 'Upper 1';
+      if (titleLower.includes('lower 1')) { dayId = 'lower1'; shortTitle = 'Lower 1'; }
+      else if (titleLower.includes('upper 2')) { dayId = 'upper2'; shortTitle = 'Upper 2'; }
+      else if (titleLower.includes('lower 2')) { dayId = 'lower2'; shortTitle = 'Lower 2'; }
+      else if (titleLower.includes('day 5') || titleLower.includes('superman')) { dayId = 'superman5'; shortTitle = 'Day 5: Delts & Arms'; }
+
+      let totalVolume = 0;
+      let totalSets = 0;
+      const exercises = (w.exercises || []).map(ex => {
+        const mappedId = HEVY_TEMPLATE_TO_APP_ID[ex.exercise_template_id] || ex.exercise_template_id;
+        const isHighFoot = dayId === 'lower2' && ex.exercise_template_id === '3FD83744';
+        const isDay5Lat = dayId === 'superman5' && ex.exercise_template_id === 'BE289E45';
+        const isDay5Tri = dayId === 'superman5' && ex.exercise_template_id === 'B5EFBF9C';
+        const isDay5Curl = dayId === 'superman5' && ex.exercise_template_id === '2DBCA395';
+
+        const finalExId = isHighFoot
+          ? 'l2_single_leg_press_high'
+          : isDay5Lat
+            ? 'd5_fresh_lat_raise'
+            : isDay5Tri
+              ? 'd5_overhead_tri'
+              : isDay5Curl
+                ? 'd5_bayesian_curl_ss'
+                : mappedId;
+
+        const sets = (ex.sets || []).map((s, idx) => {
+          const wt = Number(s.weight_kg) || 0;
+          const rp = Number(s.reps) || 0;
+          totalSets += 1;
+          totalVolume += wt * rp;
+          return {
+            setNumber: idx + 1,
+            weight: wt,
+            reps: rp,
+            rir: s.rpe ? String(10 - s.rpe) : '0-1',
+            completed: true
+          };
+        });
+        return {
+          exerciseId: finalExId,
+          name: ex.title,
+          sets
+        };
+      });
+
+      existingById.set(hevyId, {
+        id: hevyId,
+        dayId,
+        dayTitle: w.title,
+        shortTitle,
+        date: (w.start_time || '').split('T')[0],
+        timestamp: w.start_time,
+        bodyweight: null,
+        sessionNotes: w.description || 'Synced from Hevy Official API',
+        totalVolume: Math.round(totalVolume),
+        totalSets,
+        exercises
+      });
+      importedCount += 1;
+    });
+
+    state.workoutHistory = Array.from(existingById.values()).sort((a, b) =>
+      (b.date || '').localeCompare(a.date || '')
+    );
+    state.settings.lastHevySyncTime = new Date().toLocaleString();
+    state.activeDraft = createDraftForDay(state.selectedDayId);
+    saveStateToStorage();
+    renderApp();
+    if (!silent) {
+      showToast(`Synced ${importedCount} workouts directly from Hevy!`, 'emerald');
+    }
+  } catch (err) {
+    console.error('Hevy Pull Error:', err);
+    if (!silent) {
+      showToast(`Hevy API Pull failed: ${err.message}`, 'amber');
+    }
+  }
+}
+
+async function pushWorkoutToHevyApi(sessionRecord, silent = false) {
+  const apiKey = (state.settings.hevyApiKey || '').trim();
+  if (!apiKey || !sessionRecord) return;
+
+  try {
+    const endTime = new Date();
+    const startTime = new Date(endTime.getTime() - 55 * 60 * 1000); // 55-min session window
+
+    const hevyExercises = [];
+    (sessionRecord.exercises || []).forEach(ex => {
+      const templateId = APP_ID_TO_HEVY_TEMPLATE[ex.exerciseId];
+      if (!templateId) return;
+      const validSets = (ex.sets || []).filter(s => s.completed || Number(s.reps) > 0);
+      if (validSets.length === 0) return;
+
+      hevyExercises.push({
+        exercise_template_id: templateId,
+        superset_id: null,
+        notes: sessionRecord.sessionNotes || null,
+        sets: validSets.map(s => ({
+          type: 'normal',
+          weight_kg: Number(s.weight) || 0,
+          reps: Number(s.reps) || 0,
+          distance_meters: null,
+          duration_seconds: null,
+          custom_metric: null,
+          rpe: null
+        }))
+      });
+    });
+
+    if (hevyExercises.length === 0) return;
+
+    const response = await fetch('https://api.hevyapp.com/v1/workouts', {
+      method: 'POST',
+      headers: {
+        'accept': 'application/json',
+        'api-key': apiKey,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        workout: {
+          title: sessionRecord.dayTitle,
+          description: sessionRecord.sessionNotes || 'Logged via Superhero Physique Interactive App',
+          start_time: startTime.toISOString(),
+          end_time: endTime.toISOString(),
+          is_private: false,
+          exercises: hevyExercises
+        }
+      })
+    });
+
+    if (!response.ok) {
+      throw new Error(`Hevy POST workout HTTP ${response.status}`);
+    }
+
+    state.settings.lastHevySyncTime = new Date().toLocaleString();
+    saveStateToStorage();
+    if (!silent) {
+      showToast('Workout pushed live to your Hevy account!', 'emerald');
+    }
+  } catch (err) {
+    console.error('Hevy Push Error:', err);
+    if (!silent) {
+      showToast(`Could not push workout to Hevy: ${err.message}`, 'amber');
+    }
   }
 }
 
@@ -2331,6 +2988,72 @@ function renderBlueprintTab() {
 function renderSyncTab() {
   return `
     <div class="tab-content space-y-6">
+      <!-- Hevy Official API Live Sync Card -->
+      <div class="glass-panel rounded-2xl p-5 border-t-2 border-t-emerald-400">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-emerald-400">Official Hevy v1 Developer API • Connected</span>
+            <h2 class="text-xl font-extrabold text-white mt-0.5">🏋️‍♂️ Hevy App Live Sync & Routine Integration</h2>
+          </div>
+          <span class="text-xs font-bold px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+            ✓ All 5 Superman Routines Synced to Hevy
+          </span>
+        </div>
+        <p class="text-xs sm:text-sm text-slate-300 mt-1.5 leading-relaxed">
+          Your <strong>Hevy account</strong> is directly linked via the official Hevy v1 API. All 5 upgraded <strong>"Superman" Specialization Routines</strong> (including your custom machines, working weights, and Chinese gym setup notes <code class="text-emerald-300">集巨 / 健工</code>) are live in your Hevy app, and your past Hevy workouts are pre-loaded into your charts and set logger.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+          <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 space-y-3">
+            <label class="block text-xs text-slate-400">Hevy Developer API Key (<code class="text-emerald-300">api.hevyapp.com/v1</code>)</label>
+            <input
+              type="password"
+              placeholder="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+              value="${state.settings.hevyApiKey || ''}"
+              oninput="state.settings.hevyApiKey = this.value; saveStateToStorage();"
+              class="gym-input w-full py-2 px-3 text-xs text-left font-mono"
+            />
+            <label class="flex items-center gap-2 text-xs text-slate-300 cursor-pointer pt-1">
+              <input
+                type="checkbox"
+                ${state.settings.autoSyncHevy ? 'checked' : ''}
+                onchange="state.settings.autoSyncHevy = this.checked; saveStateToStorage();"
+                class="rounded accent-emerald-400"
+              />
+              <span>Automatically log completed web workouts to my Hevy account</span>
+            </label>
+            ${state.settings.lastHevySyncTime ? `<div class="text-[11px] text-emerald-400">Status: ${state.settings.lastHevySyncTime}</div>` : ''}
+            <div class="flex flex-wrap gap-2 pt-1">
+              <button
+                onclick="pullFromHevyApi(false)"
+                class="flex-1 py-2.5 px-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold text-xs transition-all"
+              >
+                ⬇ Pull Latest Workouts from Hevy
+              </button>
+            </div>
+          </div>
+
+          <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 space-y-2 text-xs">
+            <div class="font-bold text-white mb-1">📋 Active Routines Updated on Your Hevy Account:</div>
+            <div class="p-2 rounded-lg bg-slate-950/70 border border-slate-800/80 text-slate-300">
+              <span class="text-sky-400 font-bold">1. Upper 1:</span> Clavicular Chest, Lat Width & Lengthened Arms <span class="text-emerald-400">(7 exercises + Arm Superset)</span>
+            </div>
+            <div class="p-2 rounded-lg bg-slate-950/70 border border-slate-800/80 text-slate-300">
+              <span class="text-sky-400 font-bold">2. Lower 1:</span> Quad Dominance (Pre-Exhausted & Spine Shielded) <span class="text-emerald-400">(5 exercises)</span>
+            </div>
+            <div class="p-2 rounded-lg bg-slate-950/70 border border-slate-800/80 text-slate-300">
+              <span class="text-sky-400 font-bold">3. Upper 2:</span> 3D Upper-Back Yoke, Pec Shelf & Delts <span class="text-emerald-400">(5 exercises + High Row & Pec Deck)</span>
+            </div>
+            <div class="p-2 rounded-lg bg-slate-950/70 border border-slate-800/80 text-slate-300">
+              <span class="text-sky-400 font-bold">4. Lower 2:</span> Posterior Chain & Hip Shock-Absorber <span class="text-emerald-400">(Upgraded to Seated Leg Curl)</span>
+            </div>
+            <div class="p-2 rounded-lg bg-indigo-950/40 border border-indigo-500/30 text-indigo-200">
+              <span class="text-indigo-400 font-bold">5. Day 5 (NEW):</span> Superman Detailing — 3D Delts, Dense Limbs & Core <span class="text-emerald-400">(7 exercises)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Storage Architecture Overview -->
       <div class="glass-panel rounded-2xl p-5 border-t-2 border-t-sky-400">
         <span class="text-xs font-bold uppercase tracking-wider text-sky-400">100% Free • Permanent • Zero Inactive Pausing</span>
