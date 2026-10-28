@@ -68,22 +68,22 @@ const EXERCISE_MEDIA = {
     biomechanics: 'Extending the shoulder slightly behind the torso stretches the biarticular biceps long head for maximum stretch-mediated growth.'
   },
   u1_overhead_tri_ext: {
-    gif: './assets/gifs/u1_overhead_tri_ext.gif',
-    photoFolder: 'Cable_Rope_Overhead_Triceps_Extension',
-    muscles: 'Triceps Brachii (Long Head Priority)',
-    biomechanics: 'Overhead shoulder flexion stretches the triceps long head—proven to trigger ~40% more muscle growth than pushdowns alone.'
+    gif: './assets/gifs/u2_cable_triceps_ext.gif',
+    photoFolder: 'Triceps_Pushdown_-_Rope_Attachment',
+    muscles: 'Triceps Brachii (Lateral & Medial Heads)',
+    biomechanics: 'Upward/inward cable line of pull eliminates backward lumbar hyperextension torque at the end of Upper A.'
   },
   l1_seated_leg_curl: {
     gif: './assets/gifs/l1_seated_leg_curl.gif',
     photoFolder: 'Seated_Leg_Curl',
     muscles: 'Semitendinosus • Semimembranosus • Biceps Femoris',
-    biomechanics: 'Done 1st to pump synovial cushioning into the knee joint while 90° hip flexion stretches hamstrings for 1.5× hypertrophy.'
+    biomechanics: 'Done 1st to cushion the knee joint + 1.5× hamstring growth (Maeo 2020). Keeping torso glued to reclined pad avoids sciatic nerve slump tension.'
   },
   l1_leg_extension: {
     gif: './assets/gifs/l1_leg_extension.gif',
     photoFolder: 'Leg_Extensions',
     muscles: 'Rectus Femoris • Vastus Lateralis • Vastus Medialis (VMO)',
-    biomechanics: 'Only exercise that fully shortens the rectus femoris; pre-fatigues quads so Leg Press requires 25–30% less spinal/knee load.'
+    biomechanics: 'Reclining the backrest to 105°–110° stretches the biarticular rectus femoris for superior center-quad sweep (Larsen 2024) and pre-fatigues quads.'
   },
   l1_single_leg_press: {
     gif: './assets/gifs/l1_single_leg_press.gif',
@@ -95,7 +95,7 @@ const EXERCISE_MEDIA = {
     gif: './assets/gifs/l1_leg_press_calf.gif',
     photoFolder: 'Calf_Press_On_The_Leg_Press_Machine',
     muscles: 'Gastrocnemius • Intrinsic Foot Arch Stabilizers',
-    biomechanics: 'Trains straight-knee gastrocnemius in a deep stretch while keeping 0 kg of axial compression off your spine.'
+    biomechanics: 'Straight-knee stretch + bottom-half lengthened partials yield 2.2× gastrocnemius hypertrophy (Kassiano 2023) with 0 axial spine load.'
   },
   l1_pallof_press: {
     gif: './assets/gifs/l1_pallof_press.gif',
@@ -137,13 +137,13 @@ const EXERCISE_MEDIA = {
     gif: './assets/gifs/l2_hip_thrust.gif',
     photoFolder: 'Barbell_Hip_Thrust',
     muscles: 'Gluteus Maximus • Hamstrings',
-    biomechanics: 'Horizontal force vector loads the glutes at peak hip extension while placing zero shear stress on the lumbar discs.'
+    biomechanics: 'Top-half "Kas" ROM (~45° hip hinge to full lockout) maximizes glute leverage while preventing bottom-range pelvic tuck.'
   },
   l2_lying_leg_curl: {
-    gif: './assets/gifs/l2_lying_leg_curl.gif',
+    gif: './assets/gifs/l1_seated_leg_curl.gif',
     photoFolder: 'Seated_Leg_Curl',
     muscles: 'Hamstrings (Lengthened Hip-Flexed Position)',
-    biomechanics: 'Leaning slightly forward over the seated pad maximizes stretch-mediated hamstring hypertrophy without lower-back arching.'
+    biomechanics: 'Keeping pelvis & upper back glued flat to the reclined backrest (no forward slump!) delivers 1.5× hamstring growth with zero sciatic nerve tension.'
   },
   l2_single_leg_press_high: {
     gif: './assets/gifs/l2_single_leg_press_high.gif',
@@ -175,17 +175,23 @@ const EXERCISE_MEDIA = {
     muscles: 'Posterior Deltoid • Infraspinatus • Teres Minor',
     biomechanics: '45° arm path with chest support isolates the posterior deltoid to complete the 3D shoulder cap from the side.'
   },
+  u2_rear_delt_fly_b: {
+    gif: './assets/gifs/u2_rear_delt_fly.gif',
+    photoFolder: 'Reverse_Machine_Flyes',
+    muscles: 'Posterior Deltoid • Infraspinatus • Teres Minor',
+    biomechanics: '1st of 2 weekly direct rear-delt sessions—chest pad eliminates spinal load while capping the back of the shoulder.'
+  },
   d5_preacher_curl: {
     gif: './assets/gifs/d5_preacher_curl.gif',
     photoFolder: 'Machine_Preacher_Curls',
-    muscles: 'Biceps Brachii (Short Head) • Brachialis',
-    biomechanics: 'Pad locks humerus in place to eliminate shoulder momentum and apply high tension in the bottom stretched range.'
+    muscles: 'Biceps Brachii (Distal Short Head) • Brachialis',
+    biomechanics: 'Pad locks humerus in front of torso to target distal lower-bicep & brachialis thickness (Pedrosa 2023).'
   },
   d5_overhead_tri: {
     gif: './assets/gifs/d5_overhead_tri.gif',
     photoFolder: 'Cable_Rope_Overhead_Triceps_Extension',
-    muscles: 'Triceps Brachii (Long Head)',
-    biomechanics: 'Trains the largest head of the triceps while fresh on Arm Day for dense upper-arm girth.'
+    muscles: 'Triceps Brachii (Long Head — +40% Growth)',
+    biomechanics: 'Seated against a 70°–80° incline bench (or back braced on pad) blocks lumbar arching while stretching the biarticular long head (Maeo 2022).'
   },
   d5_bayesian_curl_ss: {
     gif: './assets/gifs/d5_bayesian_curl_ss.gif',
@@ -302,8 +308,8 @@ const WORKOUT_PLAN = {
         restSeconds: 90,
         restLabel: '90s',
         targetRir: '0 RIR',
-        badge: 'Side Delt Hit #1 of 3 • Safe to Failure',
-        cue: 'Pulley at wrist height; raise 30° forward into the scapular plane. Push to technical failure.'
+        badge: 'Side Delt Hit #1 of 3 • +4 Lengthened Partials',
+        cue: 'Pulley at wrist height; raise 30° into scapular plane. On final set, do 4 bottom-half lengthened partials after failure.'
       },
       {
         id: 'u1_bayesian_preacher_curl',
@@ -315,12 +321,12 @@ const WORKOUT_PLAN = {
         restSeconds: 60,
         restLabel: '60s',
         targetRir: '0 RIR',
-        badge: 'Lengthened Bicep Stretch • Superset w/ 6B',
-        cue: 'Step forward so arm is drawn slightly behind torso for maximum long-head bicep stretch; zero torso sway.'
+        badge: 'Proximal Bicep Peak (Pedrosa 2023) • Superset w/ 6B',
+        cue: 'Step forward so arm is drawn slightly behind torso for maximum long-head bicep stretch; keep ribs stacked over pelvis.'
       },
       {
         id: 'u1_overhead_tri_ext',
-        name: '6B. [Superset] Overhead Cable Triceps Extension',
+        name: '6B. [Superset] Cross-Body Cable Triceps Extension',
         sets: 2,
         repRange: '10–12',
         minReps: 10,
@@ -328,8 +334,8 @@ const WORKOUT_PLAN = {
         restSeconds: 90,
         restLabel: '90s',
         targetRir: '0 RIR',
-        badge: 'Triceps Long-Head Stretch (+40% Growth)',
-        cue: 'Cables set at hip/chest height, arms overhead; stretches the biarticular triceps long head for maximum arm mass.'
+        badge: 'Zero Lumbar Extension Torque • Lateral/Medial Head',
+        cue: 'Dual high cables crossed in front; elbows pinned at sides. Zero backward pull on fatigued lower back!'
       }
     ]
   },
@@ -343,7 +349,7 @@ const WORKOUT_PLAN = {
     exercises: [
       {
         id: 'l1_seated_leg_curl',
-        name: '1. Seated Leg Curl (Done 1st)',
+        name: '1. Seated Leg Curl (Done 1st — Back Glued to Pad)',
         sets: 3,
         repRange: '10–12',
         minReps: 10,
@@ -351,12 +357,12 @@ const WORKOUT_PLAN = {
         restSeconds: 120,
         restLabel: '2 min',
         targetRir: '0 RIR',
-        badge: 'Step 1: Joint Cushion + 1.5× Hamstring Stretch',
-        cue: 'Pumps hamstrings first to cushion the knee capsule while training hamstrings in the lengthened 90° hip position.'
+        badge: '1.5× Stretch (Maeo 2020) • NO Forward Slump (Nerve Safe)',
+        cue: 'Keep pelvis & upper back GLUED flat to reclined pad (100°–105°). Never slump forward (prevents sciatic nerve root tension).'
       },
       {
         id: 'l1_leg_extension',
-        name: '2. Leg Extension (Pre-Exhaust)',
+        name: '2. Leg Extension (Reclined Backrest Pre-Exhaust)',
         sets: 3,
         repRange: '12–15',
         minReps: 12,
@@ -364,8 +370,8 @@ const WORKOUT_PLAN = {
         restSeconds: 90,
         restLabel: '90s',
         targetRir: '0 RIR',
-        badge: 'Step 2: Quad Pre-Exhaust (-25% Spine Load)',
-        cue: '2s hard squeeze at top; pre-fatigues quads so Single-Leg Press stimulates full growth with 25–30% less load.'
+        badge: '105°–110° Reclined Pad (Larsen 2024) • -25% Spine Load',
+        cue: 'Set backrest slightly reclined (105°–110°) to stretch center-quad rectus femoris & open tight hips; 2s top squeeze.'
       },
       {
         id: 'l1_single_leg_press',
@@ -382,7 +388,7 @@ const WORKOUT_PLAN = {
       },
       {
         id: 'l1_leg_press_calf',
-        name: '4. Leg Press Calf Extension',
+        name: '4. Leg Press Calf Extension (+ Lengthened Partials)',
         sets: 4,
         repRange: '10–12',
         minReps: 10,
@@ -390,8 +396,8 @@ const WORKOUT_PLAN = {
         restSeconds: 90,
         restLabel: '90s',
         targetRir: '0 RIR',
-        badge: 'Zero Axial Compression • Arch Builder',
-        cue: 'Push through big toe ball to strengthen flat-foot arch; 2s bottom stretch pause; zero spinal compression.'
+        badge: '2.2× Calf Growth (Kassiano 2023) • Arch Builder',
+        cue: 'Push through big toe ball; 2s bottom stretch pause. After full-ROM failure on final set, do 5 bottom-half lengthened partials.'
       },
       {
         id: 'l1_pallof_press',
@@ -478,8 +484,21 @@ const WORKOUT_PLAN = {
         restSeconds: 90,
         restLabel: '90s',
         targetRir: '0 RIR',
-        badge: 'Side Delt Hit #2 of 3 • Strict Capping',
-        cue: 'Pads placed on outer upper arms/elbows; initiate movement purely with side delts; push to 0 RIR.'
+        badge: 'Side Delt Hit #2 of 3 • +4 Lengthened Partials',
+        cue: 'Pads placed on outer upper arms/elbows; push to 0 RIR + 4 bottom-half lengthened partials on final set.'
+      },
+      {
+        id: 'u2_rear_delt_fly_b',
+        name: '6. Chest-Supported Rear Delt Fly',
+        sets: 2,
+        repRange: '15–20',
+        minReps: 15,
+        maxReps: 20,
+        restSeconds: 60,
+        restLabel: '60s',
+        targetRir: '0 RIR',
+        badge: 'Rear Delt Hit #1 of 2 • 3D Shoulder Cap',
+        cue: 'Sternum flat against pad; sweep arms wide at 45° elbow flare to cap posterior delts with zero spine load.'
       }
     ]
   },
@@ -493,7 +512,7 @@ const WORKOUT_PLAN = {
     exercises: [
       {
         id: 'l2_hip_thrust',
-        name: '1. Hip Thrust (Machine / Smith / B-Stance)',
+        name: '1. Hip Thrust (Machine — Top-Half "Kas" ROM)',
         sets: 3,
         repRange: '8–12',
         minReps: 8,
@@ -501,12 +520,12 @@ const WORKOUT_PLAN = {
         restSeconds: 135,
         restLabel: '2–2.5m',
         targetRir: '1–2 RIR',
-        badge: 'Replaces RDLs • Zero Horizontal Shear',
-        cue: 'Chin tucked, ribs down; posterior pelvic tilt at lockout; opens front hip flexors with zero lumbar shear.'
+        badge: 'Top-Half ROM • Prevents Bottom Pelvic Tuck',
+        cue: 'Chin tucked, ribs down; lower hips only ~45° (stop before pelvis tucks under) and drive to full lockout w/ 2s squeeze.'
       },
       {
         id: 'l2_lying_leg_curl',
-        name: '2. Seated Leg Curl (Lean-Forward Stretch)',
+        name: '2. Seated Leg Curl (Back Glued to Pad — Nerve Safe)',
         sets: 3,
         repRange: '12–15',
         minReps: 12,
@@ -514,8 +533,8 @@ const WORKOUT_PLAN = {
         restSeconds: 90,
         restLabel: '90s',
         targetRir: '0 RIR',
-        badge: 'Upgraded from Lying Curl • 1.5× Growth & Zero Back Arch',
-        cue: 'Hinge slightly forward at hips against backrest pad to maximize biarticular hamstring stretch with zero lumbar hyperextension.'
+        badge: '1.5× Growth (Maeo 2020) • NO Forward Lean (Sciatic Safe)',
+        cue: 'Keep pelvis & upper back GLUED flat to reclined backrest pad (chest proud, neutral spine). Do NOT slump forward!'
       },
       {
         id: 'l2_single_leg_press_high',
@@ -589,7 +608,7 @@ const WORKOUT_PLAN = {
         restSeconds: 60,
         restLabel: '60s',
         targetRir: '0 RIR',
-        badge: '3D Shoulder Cap • Sternum Supported',
+        badge: 'Rear Delt Hit #2 of 2 • Sternum Supported',
         cue: 'Sternum flat on pad; sweep hands outward in a wide arc with elbows flared 45° to isolate rear delts.'
       },
       {
@@ -602,12 +621,12 @@ const WORKOUT_PLAN = {
         restSeconds: 90,
         restLabel: '90s',
         targetRir: '0 RIR',
-        badge: 'Bicep Short-Head & Brachialis Thickness',
+        badge: 'Distal Bicep & Brachialis Thickness (Pedrosa 2023)',
         cue: 'Triceps glued to preacher pad; zero shoulder momentum; smooth pull from 95% extension to peak squeeze.'
       },
       {
         id: 'd5_overhead_tri',
-        name: '4. Overhead Cable Triceps Extension',
+        name: '4. Incline-Supported Overhead Cable Triceps Extension',
         sets: 3,
         repRange: '10–12',
         minReps: 10,
@@ -615,8 +634,8 @@ const WORKOUT_PLAN = {
         restSeconds: 90,
         restLabel: '90s',
         targetRir: '0 RIR',
-        badge: 'Triceps Long Head • Maximum Stretch Tension',
-        cue: 'Elbows pointed forward/upward; pause 1s in the deep stretched position behind head on every rep.'
+        badge: 'Back-Supported • +40% Long-Head Growth (Maeo 2022)',
+        cue: 'Sit against a 70°–80° incline bench (or brace back flat on vertical cable pad) to block lower-back arching; 1s stretch pause behind head.'
       },
       {
         id: 'd5_bayesian_curl_ss',
@@ -698,7 +717,7 @@ const APP_ID_TO_HEVY_TEMPLATE = {
   'u1_chest_supp_row': '1DF4A847',
   'u1_cable_lat_raise': 'BE289E45',
   'u1_bayesian_preacher_curl': '2DBCA395',
-  'u1_overhead_tri_ext': 'B5EFBF9C',
+  'u1_overhead_tri_ext': '292f33f5-9ffe-40a2-af7e-9dd6a22c1fcc',
   'l1_seated_leg_curl': '11A123F3',
   'l1_leg_extension': '75A4F6C4',
   'l1_single_leg_press': '3FD83744',
@@ -709,6 +728,7 @@ const APP_ID_TO_HEVY_TEMPLATE = {
   'u2_neutral_pulldown': '473CF5B8',
   'u2_pec_deck_fly': '9DCE2D64',
   'u2_machine_lat_raise': 'D5D0354D',
+  'u2_rear_delt_fly_b': 'D8281C62',
   'l2_hip_thrust': '68CE0B9B',
   'l2_lying_leg_curl': '11A123F3',
   'l2_single_leg_press_high': '3FD83744',
@@ -728,8 +748,9 @@ const EXERCISE_EQUIVALENTS = {
   'u1_neutral_pulldown': ['u1_neutral_pulldown', 'u2_neutral_pulldown'],
   'u2_neutral_pulldown': ['u2_neutral_pulldown', 'u1_neutral_pulldown'],
   'd5_fresh_lat_raise': ['d5_fresh_lat_raise', 'u1_cable_lat_raise', 'u2_machine_lat_raise'],
-  'u1_overhead_tri_ext': ['u1_overhead_tri_ext', 'd5_overhead_tri'],
-  'd5_overhead_tri': ['d5_overhead_tri', 'u1_overhead_tri_ext'],
+  'u1_overhead_tri_ext': ['u1_overhead_tri_ext', 'u2_cable_triceps_ext'],
+  'u2_cable_triceps_ext': ['u2_cable_triceps_ext', 'u1_overhead_tri_ext'],
+  'u2_rear_delt_fly_b': ['u2_rear_delt_fly_b', 'u2_rear_delt_fly'],
   'd5_bayesian_curl_ss': ['d5_bayesian_curl_ss', 'u1_bayesian_preacher_curl'],
   'l2_lying_leg_curl': ['l2_lying_leg_curl', 'l1_seated_leg_curl']
 };
@@ -3049,7 +3070,7 @@ function renderSyncTab() {
               <span class="text-sky-400 font-bold">2. Lower A:</span> Quads, Calves & Core <span class="text-emerald-400">(5 exercises • Pre-Exhausted)</span>
             </div>
             <div class="p-2 rounded-lg bg-slate-950/70 border border-slate-800/80 text-slate-300">
-              <span class="text-sky-400 font-bold">3. Upper B:</span> Upper Back, Chest & Delts <span class="text-emerald-400">(5 exercises • High Row & Pec Deck)</span>
+              <span class="text-sky-400 font-bold">3. Upper B:</span> Upper Back, Chest & Delts <span class="text-emerald-400">(6 exercises • High Row, Pec Deck & Rear Delts)</span>
             </div>
             <div class="p-2 rounded-lg bg-slate-950/70 border border-slate-800/80 text-slate-300">
               <span class="text-sky-400 font-bold">4. Lower B:</span> Glutes, Hamstrings & Hips <span class="text-emerald-400">(5 exercises • Seated Leg Curl)</span>
