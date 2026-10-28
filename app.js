@@ -720,7 +720,7 @@ const APP_ID_TO_HEVY_TEMPLATE = {
   'u1_converging_flat_press': 'd6904d8f-e078-43c2-a9d4-44a1c2615ea3',
   'u1_chest_supp_row': '1DF4A847',
   'u1_cable_lat_raise': 'DE68C825',
-  'u1_bayesian_preacher_curl': '2DBCA395',
+  'u1_bayesian_preacher_curl': 'B33B526E',
   'u1_overhead_tri_ext': '552AB030',
   'l1_seated_leg_curl': '11A123F3',
   'l1_leg_extension': '75A4F6C4',
@@ -742,7 +742,7 @@ const APP_ID_TO_HEVY_TEMPLATE = {
   'u2_rear_delt_fly': 'D8281C62',
   'd5_preacher_curl': '1E9A6B8E',
   'd5_overhead_tri': 'B5EFBF9C',
-  'd5_bayesian_curl_ss': '2DBCA395',
+  'd5_bayesian_curl_ss': 'B33B526E',
   'u2_cable_triceps_ext': '552AB030',
   'd5_deadbug_core': 'D8911FC4'
 };
