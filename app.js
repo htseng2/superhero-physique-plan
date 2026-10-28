@@ -57,21 +57,21 @@ const EXERCISE_MEDIA = {
   },
   u1_cable_lat_raise: {
     gif: './assets/gifs/u1_cable_lat_raise.gif',
-    photoFolder: 'Cable_Seated_Lateral_Raise',
-    muscles: 'Lateral Deltoid (Medial Head)',
-    biomechanics: 'Wrist-height cable delivers peak mechanical tension in the bottom lengthened third where dumbbells have zero load.'
+    photoFolder: 'One-Arm_Side_Laterals',
+    muscles: 'Lateral Deltoid (Unilateral — Bilateral Deficit Advantage)',
+    biomechanics: 'Single-arm execution recruits 5–12% more high-threshold motor units while your free hand braces on the post for zero spine sway.'
   },
   u1_bayesian_preacher_curl: {
     gif: './assets/gifs/u1_bayesian_preacher_curl.gif',
     photoFolder: 'Standing_One-Arm_Cable_Curl',
-    muscles: 'Biceps Brachii (Long Head Peak) • Brachialis',
-    biomechanics: 'Extending the shoulder slightly behind the torso stretches the biarticular biceps long head for maximum stretch-mediated growth.'
+    muscles: 'Biceps Brachii (Proximal Long-Head Peak) • Brachialis',
+    biomechanics: 'Unilateral behind-the-back setup aligns the cable directly with your humerus while your free hand braces on the upright frame.'
   },
   u1_overhead_tri_ext: {
-    gif: './assets/gifs/u2_cable_triceps_ext.gif',
-    photoFolder: 'Triceps_Pushdown_-_Rope_Attachment',
-    muscles: 'Triceps Brachii (Lateral & Medial Heads)',
-    biomechanics: 'Upward/inward cable line of pull eliminates backward lumbar hyperextension torque at the end of Upper A.'
+    gif: './assets/gifs/u1_overhead_tri_ext.gif',
+    photoFolder: 'Cable_One_Arm_Tricep_Extension',
+    muscles: 'Triceps Brachii (Lateral & Medial Heads — Unilateral)',
+    biomechanics: 'Single-arm cross-body cable line of pull on the same tower eliminates backward lumbar hyperextension torque.'
   },
   l1_seated_leg_curl: {
     gif: './assets/gifs/l1_seated_leg_curl.gif',
@@ -165,9 +165,9 @@ const EXERCISE_MEDIA = {
   },
   d5_fresh_lat_raise: {
     gif: './assets/gifs/d5_fresh_lat_raise.gif',
-    photoFolder: 'Side_Lateral_Raise',
-    muscles: 'Lateral Deltoid (3rd Weekly Frequency Hit)',
-    biomechanics: 'Performed 1st on Saturday when CNS motor unit recruitment is 100% fresh for maximum V-taper shoulder width.'
+    photoFolder: 'One-Arm_Side_Laterals',
+    muscles: 'Lateral Deltoid (Unilateral 3rd Weekly Hit)',
+    biomechanics: 'Performed 1st on Saturday one arm at a time when CNS motor unit recruitment is 100% fresh for maximum V-taper shoulder width.'
   },
   u2_rear_delt_fly: {
     gif: './assets/gifs/u2_rear_delt_fly.gif',
@@ -189,21 +189,21 @@ const EXERCISE_MEDIA = {
   },
   d5_overhead_tri: {
     gif: './assets/gifs/d5_overhead_tri.gif',
-    photoFolder: 'Cable_Rope_Overhead_Triceps_Extension',
+    photoFolder: 'Cable_Incline_Triceps_Extension',
     muscles: 'Triceps Brachii (Long Head — +40% Growth)',
-    biomechanics: 'Seated against a 70°–80° incline bench (or back braced on pad) blocks lumbar arching while stretching the biarticular long head (Maeo 2022).'
+    biomechanics: 'Seated against a 70°–80° incline bench (or single-arm braced on post) blocks lumbar arching while stretching the biarticular long head (Maeo 2022).'
   },
   d5_bayesian_curl_ss: {
     gif: './assets/gifs/d5_bayesian_curl_ss.gif',
-    photoFolder: 'Standing_Biceps_Cable_Curl',
-    muscles: 'Biceps Brachii (Long Head Peak)',
-    biomechanics: 'Continuous cable tension from full shoulder extension to peak elbow flexion.'
+    photoFolder: 'Standing_One-Arm_Cable_Curl',
+    muscles: 'Biceps Brachii (Unilateral Long-Head Peak)',
+    biomechanics: 'Single-arm behind-the-back cable tension from full shoulder extension to peak elbow flexion with free-hand post bracing.'
   },
   u2_cable_triceps_ext: {
     gif: './assets/gifs/u2_cable_triceps_ext.gif',
-    photoFolder: 'Triceps_Pushdown_-_Rope_Attachment',
-    muscles: 'Triceps Brachii (Lateral & Medial Heads)',
-    biomechanics: 'Arms-at-side extension biases the lateral horseshoe and medial head in the shortened lockout position.'
+    photoFolder: 'Cable_One_Arm_Tricep_Extension',
+    muscles: 'Triceps Brachii (Unilateral Lateral & Medial Heads)',
+    biomechanics: 'Single-arm cross-body extension biases the lateral horseshoe and medial head at full lockout on the same single pulley.'
   },
   d5_deadbug_core: {
     gif: './assets/gifs/d5_deadbug_core.gif',
@@ -300,42 +300,42 @@ const WORKOUT_PLAN = {
       },
       {
         id: 'u1_cable_lat_raise',
-        name: '5. Cross-Body Cable Lateral Raise',
+        name: '5. Single-Arm Cross-Body Cable Lateral Raise',
         sets: 3,
-        repRange: '10–15',
+        repRange: '10–15/arm',
         minReps: 10,
         maxReps: 15,
-        restSeconds: 90,
-        restLabel: '90s',
+        restSeconds: 60,
+        restLabel: '60s',
         targetRir: '0 RIR',
-        badge: 'Side Delt Hit #1 of 3 • +4 Lengthened Partials',
-        cue: 'Pulley at wrist height; raise 30° into scapular plane. On final set, do 4 bottom-half lengthened partials after failure.'
+        badge: 'Unilateral Hit #1 of 3 • Free Hand Braced on Post',
+        cue: 'Pulley at wrist height; hold post with non-working hand; sweep 30° into scapular plane (+4 lengthened partials on final set).'
       },
       {
         id: 'u1_bayesian_preacher_curl',
-        name: '6A. [Superset] Bayesian Cable Curl',
+        name: '6A. [Superset] Single-Arm Behind-the-Back Cable Curl',
         sets: 2,
-        repRange: '10–12',
+        repRange: '10–12/arm',
+        minReps: 10,
+        maxReps: 12,
+        restSeconds: 45,
+        restLabel: '45s',
+        targetRir: '0 RIR',
+        badge: 'Unilateral Proximal Bicep Peak • Superset w/ 6B',
+        cue: 'Single low pulley; step forward so working arm is drawn behind torso; brace free hand on frame for zero lower-back sway.'
+      },
+      {
+        id: 'u1_overhead_tri_ext',
+        name: '6B. [Superset] Single-Arm Cross-Body Cable Triceps Extension',
+        sets: 2,
+        repRange: '10–12/arm',
         minReps: 10,
         maxReps: 12,
         restSeconds: 60,
         restLabel: '60s',
         targetRir: '0 RIR',
-        badge: 'Proximal Bicep Peak (Pedrosa 2023) • Superset w/ 6B',
-        cue: 'Step forward so arm is drawn slightly behind torso for maximum long-head bicep stretch; keep ribs stacked over pelvis.'
-      },
-      {
-        id: 'u1_overhead_tri_ext',
-        name: '6B. [Superset] Cross-Body Cable Triceps Extension',
-        sets: 2,
-        repRange: '10–12',
-        minReps: 10,
-        maxReps: 12,
-        restSeconds: 90,
-        restLabel: '90s',
-        targetRir: '0 RIR',
-        badge: 'Zero Lumbar Extension Torque • Lateral/Medial Head',
-        cue: 'Dual high cables crossed in front; elbows pinned at sides. Zero backward pull on fatigued lower back!'
+        badge: 'Same Single Pulley • Zero Lumbar Extension Torque',
+        cue: 'Set single pulley to shoulder height; brace free hand on post and extend across body to full lockout one arm at a time.'
       }
     ]
   },
@@ -587,16 +587,16 @@ const WORKOUT_PLAN = {
     exercises: [
       {
         id: 'd5_fresh_lat_raise',
-        name: '1. Cable or Machine Lateral Raise (Fresh Priority)',
+        name: '1. Single-Arm Cable Lateral Raise (Fresh Priority)',
         sets: 4,
-        repRange: '12–15',
+        repRange: '12–15/arm',
         minReps: 12,
         maxReps: 15,
-        restSeconds: 90,
-        restLabel: '90s',
+        restSeconds: 60,
+        restLabel: '60s',
         targetRir: '0 RIR',
-        badge: 'Side Delt Hit #3 of 3 • Peak Unfatigued Drive',
-        cue: 'Trained first when CNS is 100% fresh! Control 2s lowering; push final set to failure + 3 lengthened partial reps.'
+        badge: 'Unilateral Hit #3 of 3 • Peak Unfatigued Drive',
+        cue: 'Trained 1st while CNS is 100% fresh! Brace free hand on post; 2s lowering; push final set to failure + 4 lengthened partials.'
       },
       {
         id: 'u2_rear_delt_fly',
@@ -626,42 +626,42 @@ const WORKOUT_PLAN = {
       },
       {
         id: 'd5_overhead_tri',
-        name: '4. Incline-Supported Overhead Cable Triceps Extension',
+        name: '4. Incline-Supported (or Single-Arm Braced) Overhead Cable Triceps Extension',
         sets: 3,
         repRange: '10–12',
         minReps: 10,
         maxReps: 12,
-        restSeconds: 90,
-        restLabel: '90s',
+        restSeconds: 75,
+        restLabel: '75s',
         targetRir: '0 RIR',
-        badge: 'Back-Supported • +40% Long-Head Growth (Maeo 2022)',
-        cue: 'Sit against a 70°–80° incline bench (or brace back flat on vertical cable pad) to block lower-back arching; 1s stretch pause behind head.'
+        badge: 'Back/Post Braced • +40% Long-Head Growth (Maeo 2022)',
+        cue: 'Sit against a 70°–80° incline bench OR do Single-Arm Overhead with free hand braced on cable post to block lower-back arching.'
       },
       {
         id: 'd5_bayesian_curl_ss',
-        name: '5A. [Superset] Bayesian Cable Curl',
+        name: '5A. [Superset] Single-Arm Behind-the-Back Cable Curl',
         sets: 2,
-        repRange: '12–15',
+        repRange: '12–15/arm',
+        minReps: 12,
+        maxReps: 15,
+        restSeconds: 45,
+        restLabel: '45s',
+        targetRir: '0 RIR',
+        badge: 'Unilateral Bicep Peak • Superset w/ 5B',
+        cue: 'Single low cable behind torso; brace free hand on frame; keep elbow pinned behind hip line throughout the curl.'
+      },
+      {
+        id: 'u2_cable_triceps_ext',
+        name: '5B. [Superset] Single-Arm Cross-Body Cable Triceps Extension',
+        sets: 2,
+        repRange: '12–15/arm',
         minReps: 12,
         maxReps: 15,
         restSeconds: 60,
         restLabel: '60s',
         targetRir: '0 RIR',
-        badge: 'Lengthened Bicep Peak • Superset w/ 5B',
-        cue: 'Cables behind torso; keep elbow pinned behind hip line throughout the curl for extreme bicep peak pump.'
-      },
-      {
-        id: 'u2_cable_triceps_ext',
-        name: '5B. [Superset] Cross-Body Cable Triceps Extension',
-        sets: 2,
-        repRange: '12–15',
-        minReps: 12,
-        maxReps: 15,
-        restSeconds: 90,
-        restLabel: '90s',
-        targetRir: '0 RIR',
-        badge: 'Lateral & Medial Triceps Horseshoe',
-        cue: 'Dual high cables crossed; elbows locked at sides; hard 1s lockout squeeze at the bottom.'
+        badge: 'Same Single Pulley • Lateral & Medial Horseshoe',
+        cue: 'Same single cable tower; brace free hand on post; extend across body with hard 1s lockout squeeze at the bottom.'
       },
       {
         id: 'd5_deadbug_core',
