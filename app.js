@@ -234,9 +234,9 @@ const WARMUP_PROTOCOL = [
 const WORKOUT_PLAN = {
   upper1: {
     id: 'upper1',
-    shortTitle: 'Upper 1',
+    shortTitle: 'Upper A',
     dayLabel: 'Monday',
-    title: 'Upper 1: Clavicular Chest, Lat Width & Lengthened Arms',
+    title: 'Upper A: Chest, Lats & Arms',
     subtitle: 'Heavy Upper-Shelf Pressing, Vertical/Horizontal Lat Pulls & Stretch Arm Feeder',
     needsLowerWarmup: false,
     exercises: [
@@ -335,10 +335,10 @@ const WORKOUT_PLAN = {
   },
   lower1: {
     id: 'lower1',
-    shortTitle: 'Lower 1',
+    shortTitle: 'Lower A',
     dayLabel: 'Tuesday',
-    title: 'Lower 1: Quad Dominance (Pre-Exhausted)',
-    subtitle: 'Knee & Lumbar Spine Shielded Sequencing',
+    title: 'Lower A: Quads, Calves & Core',
+    subtitle: 'Pre-Exhausted Knee & Lumbar Spine Shielded Sequencing',
     needsLowerWarmup: true,
     exercises: [
       {
@@ -410,9 +410,9 @@ const WORKOUT_PLAN = {
   },
   upper2: {
     id: 'upper2',
-    shortTitle: 'Upper 2',
+    shortTitle: 'Upper B',
     dayLabel: 'Thursday',
-    title: 'Upper 2: 3D Upper-Back Yoke, Pec Shelf & Delts',
+    title: 'Upper B: Upper Back, Chest & Delts',
     subtitle: 'Transverse Upper-Back Thickness, Stretched Pec Adduction & Side Delt Capping',
     needsLowerWarmup: false,
     exercises: [
@@ -485,10 +485,10 @@ const WORKOUT_PLAN = {
   },
   lower2: {
     id: 'lower2',
-    shortTitle: 'Lower 2',
+    shortTitle: 'Lower B',
     dayLabel: 'Friday',
-    title: 'Lower 2: Posterior Chain & Hip Shock-Absorber',
-    subtitle: 'Zero-Shear Glute/Hamstring & Pickleball Armor',
+    title: 'Lower B: Glutes, Hamstrings & Hips',
+    subtitle: 'Zero-Shear Posterior Chain & Pickleball Hip Armor',
     needsLowerWarmup: true,
     exercises: [
       {
@@ -560,9 +560,9 @@ const WORKOUT_PLAN = {
   },
   superman5: {
     id: 'superman5',
-    shortTitle: 'Day 5: Delts & Arms',
+    shortTitle: 'Upper C',
     dayLabel: 'Saturday',
-    title: 'Day 5: "Superman Detailing" (3D Delts, Dense Limbs & Core)',
+    title: 'Upper C: 3D Delts, Arms & Abs',
     subtitle: '100% Fresh Neural Drive for Side/Rear Delts, Biceps, Triceps & Anti-Extension Abs (Zero Spine Load)',
     needsLowerWarmup: false,
     exercises: [
@@ -670,7 +670,7 @@ const HEVY_TEMPLATE_TO_APP_ID = {
   '1DF4A847': 'u1_chest_supp_row',
   'd6904d8f-e078-43c2-a9d4-44a1c2615ea3': 'u1_converging_flat_press',
   '2DBCA395': 'u1_bayesian_preacher_curl',
-  'B5EFBF9C': 'u1_overhead_triceps',
+  'B5EFBF9C': 'u1_overhead_tri_ext',
   '11A123F3': 'l1_seated_leg_curl',
   '75A4F6C4': 'l1_leg_extension',
   '3FD83744': 'l1_single_leg_press',
@@ -698,7 +698,7 @@ const APP_ID_TO_HEVY_TEMPLATE = {
   'u1_chest_supp_row': '1DF4A847',
   'u1_cable_lat_raise': 'BE289E45',
   'u1_bayesian_preacher_curl': '2DBCA395',
-  'u1_overhead_triceps': 'B5EFBF9C',
+  'u1_overhead_tri_ext': 'B5EFBF9C',
   'l1_seated_leg_curl': '11A123F3',
   'l1_leg_extension': '75A4F6C4',
   'l1_single_leg_press': '3FD83744',
@@ -728,8 +728,8 @@ const EXERCISE_EQUIVALENTS = {
   'u1_neutral_pulldown': ['u1_neutral_pulldown', 'u2_neutral_pulldown'],
   'u2_neutral_pulldown': ['u2_neutral_pulldown', 'u1_neutral_pulldown'],
   'd5_fresh_lat_raise': ['d5_fresh_lat_raise', 'u1_cable_lat_raise', 'u2_machine_lat_raise'],
-  'u1_overhead_triceps': ['u1_overhead_triceps', 'd5_overhead_tri'],
-  'd5_overhead_tri': ['d5_overhead_tri', 'u1_overhead_triceps'],
+  'u1_overhead_tri_ext': ['u1_overhead_tri_ext', 'd5_overhead_tri'],
+  'd5_overhead_tri': ['d5_overhead_tri', 'u1_overhead_tri_ext'],
   'd5_bayesian_curl_ss': ['d5_bayesian_curl_ss', 'u1_bayesian_preacher_curl'],
   'l2_lying_leg_curl': ['l2_lying_leg_curl', 'l1_seated_leg_curl']
 };
@@ -1159,6 +1159,13 @@ function loadStateFromStorage() {
       if (!existingIds.has(seedSession.id)) {
         state.workoutHistory.push(seedSession);
         addedSeed = true;
+      }
+    });
+    // Align all history titles & shortTitles with the consistent Option A naming
+    state.workoutHistory.forEach(session => {
+      if (session.dayId && WORKOUT_PLAN[session.dayId]) {
+        session.shortTitle = WORKOUT_PLAN[session.dayId].shortTitle;
+        session.dayTitle = WORKOUT_PLAN[session.dayId].title;
       }
     });
     if (addedSeed) {
@@ -1837,11 +1844,11 @@ async function pullFromHevyApi(silent = false) {
       const hevyId = 'hevy_' + w.id;
       const titleLower = (w.title || '').toLowerCase();
       let dayId = 'upper1';
-      let shortTitle = 'Upper 1';
-      if (titleLower.includes('lower 1')) { dayId = 'lower1'; shortTitle = 'Lower 1'; }
-      else if (titleLower.includes('upper 2')) { dayId = 'upper2'; shortTitle = 'Upper 2'; }
-      else if (titleLower.includes('lower 2')) { dayId = 'lower2'; shortTitle = 'Lower 2'; }
-      else if (titleLower.includes('day 5') || titleLower.includes('superman')) { dayId = 'superman5'; shortTitle = 'Day 5: Delts & Arms'; }
+      let shortTitle = 'Upper A';
+      if (titleLower.includes('lower a') || titleLower.includes('lower 1')) { dayId = 'lower1'; shortTitle = 'Lower A'; }
+      else if (titleLower.includes('upper b') || titleLower.includes('upper 2')) { dayId = 'upper2'; shortTitle = 'Upper B'; }
+      else if (titleLower.includes('lower b') || titleLower.includes('lower 2')) { dayId = 'lower2'; shortTitle = 'Lower B'; }
+      else if (titleLower.includes('upper c') || titleLower.includes('day 5') || titleLower.includes('superman')) { dayId = 'superman5'; shortTitle = 'Upper C'; }
 
       let totalVolume = 0;
       let totalSets = 0;
@@ -3036,19 +3043,19 @@ function renderSyncTab() {
           <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 space-y-2 text-xs">
             <div class="font-bold text-white mb-1">📋 Active Routines Updated on Your Hevy Account:</div>
             <div class="p-2 rounded-lg bg-slate-950/70 border border-slate-800/80 text-slate-300">
-              <span class="text-sky-400 font-bold">1. Upper 1:</span> Clavicular Chest, Lat Width & Lengthened Arms <span class="text-emerald-400">(7 exercises + Arm Superset)</span>
+              <span class="text-sky-400 font-bold">1. Upper A:</span> Chest, Lats & Arms <span class="text-emerald-400">(7 exercises + Arm Superset)</span>
             </div>
             <div class="p-2 rounded-lg bg-slate-950/70 border border-slate-800/80 text-slate-300">
-              <span class="text-sky-400 font-bold">2. Lower 1:</span> Quad Dominance (Pre-Exhausted & Spine Shielded) <span class="text-emerald-400">(5 exercises)</span>
+              <span class="text-sky-400 font-bold">2. Lower A:</span> Quads, Calves & Core <span class="text-emerald-400">(5 exercises • Pre-Exhausted)</span>
             </div>
             <div class="p-2 rounded-lg bg-slate-950/70 border border-slate-800/80 text-slate-300">
-              <span class="text-sky-400 font-bold">3. Upper 2:</span> 3D Upper-Back Yoke, Pec Shelf & Delts <span class="text-emerald-400">(5 exercises + High Row & Pec Deck)</span>
+              <span class="text-sky-400 font-bold">3. Upper B:</span> Upper Back, Chest & Delts <span class="text-emerald-400">(5 exercises • High Row & Pec Deck)</span>
             </div>
             <div class="p-2 rounded-lg bg-slate-950/70 border border-slate-800/80 text-slate-300">
-              <span class="text-sky-400 font-bold">4. Lower 2:</span> Posterior Chain & Hip Shock-Absorber <span class="text-emerald-400">(Upgraded to Seated Leg Curl)</span>
+              <span class="text-sky-400 font-bold">4. Lower B:</span> Glutes, Hamstrings & Hips <span class="text-emerald-400">(5 exercises • Seated Leg Curl)</span>
             </div>
             <div class="p-2 rounded-lg bg-indigo-950/40 border border-indigo-500/30 text-indigo-200">
-              <span class="text-indigo-400 font-bold">5. Day 5 (NEW):</span> Superman Detailing — 3D Delts, Dense Limbs & Core <span class="text-emerald-400">(7 exercises)</span>
+              <span class="text-indigo-400 font-bold">5. Upper C:</span> 3D Delts, Arms & Abs <span class="text-emerald-400">(7 exercises • Fresh CNS Priority)</span>
             </div>
           </div>
         </div>
