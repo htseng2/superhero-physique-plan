@@ -56,19 +56,19 @@ const EXERCISE_MEDIA = {
     biomechanics: 'Chest pad absorbs 100% of horizontal torso load, eliminating lumbar shear stress completely.'
   },
   u1_cable_lat_raise: {
-    gif: './assets/gifs/u1_cable_lat_raise.gif',
+    gif: './assets/gifs/u1_cable_lat_raise.gif?v=2',
     photoFolder: 'One-Arm_Side_Laterals',
     muscles: 'Lateral Deltoid (Unilateral — Bilateral Deficit Advantage)',
     biomechanics: 'Single-arm execution recruits 5–12% more high-threshold motor units while your free hand braces on the post for zero spine sway.'
   },
   u1_bayesian_preacher_curl: {
-    gif: './assets/gifs/u1_bayesian_preacher_curl.gif',
+    gif: './assets/gifs/u1_bayesian_preacher_curl.gif?v=2',
     photoFolder: 'Standing_One-Arm_Cable_Curl',
     muscles: 'Biceps Brachii (Proximal Long-Head Peak) • Brachialis',
     biomechanics: 'Unilateral behind-the-back setup aligns the cable directly with your humerus while your free hand braces on the upright frame.'
   },
   u1_overhead_tri_ext: {
-    gif: './assets/gifs/u1_overhead_tri_ext.gif',
+    gif: './assets/gifs/u1_overhead_tri_ext.gif?v=2',
     photoFolder: 'Cable_One_Arm_Tricep_Extension',
     muscles: 'Triceps Brachii (Lateral & Medial Heads — Unilateral)',
     biomechanics: 'Single-arm cross-body cable line of pull on the same tower eliminates backward lumbar hyperextension torque.'
@@ -164,43 +164,43 @@ const EXERCISE_MEDIA = {
     biomechanics: 'Strengthens lateral hip stabilizers to stop inward knee valgus (flat-foot pronation) and absorb pickleball lunges.'
   },
   d5_fresh_lat_raise: {
-    gif: './assets/gifs/d5_fresh_lat_raise.gif',
+    gif: './assets/gifs/d5_fresh_lat_raise.gif?v=2',
     photoFolder: 'One-Arm_Side_Laterals',
     muscles: 'Lateral Deltoid (Unilateral 3rd Weekly Hit)',
     biomechanics: 'Performed 1st on Saturday one arm at a time when CNS motor unit recruitment is 100% fresh for maximum V-taper shoulder width.'
   },
   u2_rear_delt_fly: {
-    gif: './assets/gifs/u2_rear_delt_fly.gif',
+    gif: './assets/gifs/u2_rear_delt_fly.gif?v=2',
     photoFolder: 'Reverse_Machine_Flyes',
     muscles: 'Posterior Deltoid • Infraspinatus • Teres Minor',
     biomechanics: '45° arm path with chest support isolates the posterior deltoid to complete the 3D shoulder cap from the side.'
   },
   u2_rear_delt_fly_b: {
-    gif: './assets/gifs/u2_rear_delt_fly.gif',
+    gif: './assets/gifs/u2_rear_delt_fly.gif?v=2',
     photoFolder: 'Reverse_Machine_Flyes',
     muscles: 'Posterior Deltoid • Infraspinatus • Teres Minor',
     biomechanics: '1st of 2 weekly direct rear-delt sessions—chest pad eliminates spinal load while capping the back of the shoulder.'
   },
   d5_preacher_curl: {
-    gif: './assets/gifs/d5_preacher_curl.gif',
+    gif: './assets/gifs/d5_preacher_curl.gif?v=2',
     photoFolder: 'Machine_Preacher_Curls',
     muscles: 'Biceps Brachii (Distal Short Head) • Brachialis',
     biomechanics: 'Pad locks humerus in front of torso to target distal lower-bicep & brachialis thickness (Pedrosa 2023).'
   },
   d5_overhead_tri: {
-    gif: './assets/gifs/d5_overhead_tri.gif',
+    gif: './assets/gifs/d5_overhead_tri.gif?v=2',
     photoFolder: 'Cable_Incline_Triceps_Extension',
     muscles: 'Triceps Brachii (Long Head — +40% Growth)',
     biomechanics: 'Seated against a 70°–80° incline bench (or single-arm braced on post) blocks lumbar arching while stretching the biarticular long head (Maeo 2022).'
   },
   d5_bayesian_curl_ss: {
-    gif: './assets/gifs/d5_bayesian_curl_ss.gif',
+    gif: './assets/gifs/d5_bayesian_curl_ss.gif?v=2',
     photoFolder: 'Standing_One-Arm_Cable_Curl',
     muscles: 'Biceps Brachii (Unilateral Long-Head Peak)',
     biomechanics: 'Single-arm behind-the-back cable tension from full shoulder extension to peak elbow flexion with free-hand post bracing.'
   },
   u2_cable_triceps_ext: {
-    gif: './assets/gifs/u2_cable_triceps_ext.gif',
+    gif: './assets/gifs/u2_cable_triceps_ext.gif?v=2',
     photoFolder: 'Cable_One_Arm_Tricep_Extension',
     muscles: 'Triceps Brachii (Unilateral Lateral & Medial Heads)',
     biomechanics: 'Single-arm cross-body extension biases the lateral horseshoe and medial head at full lockout on the same single pulley.'
@@ -685,11 +685,13 @@ const WORKOUT_PLAN = {
 // ============================================================================
 const HEVY_TEMPLATE_TO_APP_ID = {
   'BE289E45': 'u1_cable_lat_raise',
+  'DE68C825': 'u1_cable_lat_raise',
   'FBF92739': 'u1_incline_press',
   '1DF4A847': 'u1_chest_supp_row',
   'd6904d8f-e078-43c2-a9d4-44a1c2615ea3': 'u1_converging_flat_press',
   '2DBCA395': 'u1_bayesian_preacher_curl',
-  'B5EFBF9C': 'u1_overhead_tri_ext',
+  'B33B526E': 'u1_bayesian_preacher_curl',
+  'B5EFBF9C': 'd5_overhead_tri',
   '11A123F3': 'l1_seated_leg_curl',
   '75A4F6C4': 'l1_leg_extension',
   '3FD83744': 'l1_single_leg_press',
@@ -702,11 +704,13 @@ const HEVY_TEMPLATE_TO_APP_ID = {
   '9DCE2D64': 'u2_pec_deck_fly',
   'D8281C62': 'u2_rear_delt_fly',
   '292f33f5-9ffe-40a2-af7e-9dd6a22c1fcc': 'u2_cable_triceps_ext',
+  '552AB030': 'u2_cable_triceps_ext',
   '68CE0B9B': 'l2_hip_thrust',
   'B812E76E': 'l2_lying_leg_curl',
   '062AB91A': 'l2_seated_calf_raise',
   'F4B4C6EE': 'l2_seated_hip_abduction',
   '5535b7aa-e6ae-459b-85fe-21057ee5d24a': 'd5_preacher_curl',
+  '1E9A6B8E': 'd5_preacher_curl',
   'D8911FC4': 'd5_deadbug_core'
 };
 
@@ -715,9 +719,9 @@ const APP_ID_TO_HEVY_TEMPLATE = {
   'u1_neutral_pulldown': '473CF5B8',
   'u1_converging_flat_press': 'd6904d8f-e078-43c2-a9d4-44a1c2615ea3',
   'u1_chest_supp_row': '1DF4A847',
-  'u1_cable_lat_raise': 'BE289E45',
+  'u1_cable_lat_raise': 'DE68C825',
   'u1_bayesian_preacher_curl': '2DBCA395',
-  'u1_overhead_tri_ext': '292f33f5-9ffe-40a2-af7e-9dd6a22c1fcc',
+  'u1_overhead_tri_ext': '552AB030',
   'l1_seated_leg_curl': '11A123F3',
   'l1_leg_extension': '75A4F6C4',
   'l1_single_leg_press': '3FD83744',
@@ -734,12 +738,12 @@ const APP_ID_TO_HEVY_TEMPLATE = {
   'l2_single_leg_press_high': '3FD83744',
   'l2_seated_calf_raise': '062AB91A',
   'l2_seated_hip_abduction': 'F4B4C6EE',
-  'd5_fresh_lat_raise': 'BE289E45',
+  'd5_fresh_lat_raise': 'DE68C825',
   'u2_rear_delt_fly': 'D8281C62',
-  'd5_preacher_curl': '5535b7aa-e6ae-459b-85fe-21057ee5d24a',
+  'd5_preacher_curl': '1E9A6B8E',
   'd5_overhead_tri': 'B5EFBF9C',
   'd5_bayesian_curl_ss': '2DBCA395',
-  'u2_cable_triceps_ext': '292f33f5-9ffe-40a2-af7e-9dd6a22c1fcc',
+  'u2_cable_triceps_ext': '552AB030',
   'd5_deadbug_core': 'D8911FC4'
 };
 
