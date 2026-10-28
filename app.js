@@ -16,224 +16,224 @@ const EXERCISE_MEDIA = {
   warmup_couch: {
     gif: './assets/gifs/warmup_couch.gif',
     photoFolder: 'Intermediate_Hip_Flexor_and_Quad_Stretch',
-    muscles: 'Iliopsoas (Hip Flexors) • Rectus Femoris',
-    biomechanics: 'Decompresses anterior pelvic pull on lumbar vertebrae before lower-body loading or pickleball.'
+    muscles: 'Iliopsoas (Hip Flexors) • Rectus Femoris | 髂腰肌（髖屈肌）・股直肌',
+    biomechanics: 'Decompresses anterior pelvic pull on lumbar vertebrae before lower-body loading or pickleball. | 解除緊繃髖屈肌對腰椎的往前拉扯，在練腿與打匹克球前先為下背減壓。'
   },
   warmup_9090: {
     gif: './assets/gifs/warmup_9090.gif',
     photoFolder: 'Seated_Glute',
-    muscles: 'Deep Hip External & Internal Rotators • Hip Capsule',
-    biomechanics: 'Restores hip joint capsule rotation so lateral court cuts and deep leg presses never torque the lower back.'
+    muscles: 'Deep Hip External & Internal Rotators • Hip Capsule | 深層髖內外旋肌群・髖關節囊',
+    biomechanics: 'Restores hip joint capsule rotation so lateral court cuts and deep leg presses never torque the lower back. | 打開髖關節囊內外旋活動度，避免匹克球急停轉身或深蹲腿推時由腰椎代償扭轉。'
   },
   warmup_birddog: {
     gif: './assets/gifs/warmup_birddog.gif',
     photoFolder: 'Superman',
-    muscles: 'Multifidus • Transverse Abdominis • Gluteus Maximus',
-    biomechanics: 'Dr. Stuart McGill\'s gold-standard spine stabilizer—activates 360° core stiffness with near-zero disc compression.'
+    muscles: 'Multifidus • Transverse Abdominis • Gluteus Maximus | 多裂肌・腹橫肌・臀大肌',
+    biomechanics: 'Dr. Stuart McGill\'s gold-standard spine stabilizer—activates 360° core stiffness with near-zero disc compression. | 脊椎權威 McGill 博士黃金護腰動作——在近乎零椎間盤壓迫下啟動 360° 深層核心剛性。'
   },
   u1_incline_press: {
     gif: './assets/gifs/u1_incline_press.gif',
     photoFolder: 'Leverage_Incline_Chest_Press',
-    muscles: 'Clavicular Pectoralis Major (Upper Chest) • Anterior Delts • Triceps',
-    biomechanics: 'Squares off the high "Superman" upper-chest shelf while fixed lever path eliminates shoulder joint instability.'
+    muscles: 'Clavicular Pectoralis Major (Upper Chest) • Anterior Delts • Triceps | 胸大肌鎖骨部（上胸）・前三角肌・三頭肌',
+    biomechanics: 'Squares off the high "Superman" upper-chest shelf while fixed lever path eliminates shoulder joint instability. | 打造如超人般飽滿方正的「上胸視覺厚度」，固定軌跡能完全消除肩關節不穩定。'
   },
   u1_neutral_pulldown: {
     gif: './assets/gifs/u1_neutral_pulldown.gif',
     photoFolder: 'Close-Grip_Front_Lat_Pulldown',
-    muscles: 'Iliac & Thoracic Latissimus Dorsi • Teres Major',
-    biomechanics: 'Neutral grip aligns the humerus in the sagittal plane to bias lower-lat sweep and V-taper flare.'
+    muscles: 'Iliac & Thoracic Latissimus Dorsi • Teres Major | 背闊肌（下側髂骨部與胸椎部）・大圓肌',
+    biomechanics: 'Neutral grip aligns the humerus in the sagittal plane to bias lower-lat sweep and V-taper flare. | 對握讓上臂保持在矢狀面往下拉，集中刺激下背闊肌外展線條、撐開倒三角寬度。'
   },
   u1_converging_flat_press: {
     gif: './assets/gifs/u1_converging_flat_press.gif',
     photoFolder: 'Leverage_Chest_Press',
-    muscles: 'Sternal Pectoralis Major • Triceps Brachii',
-    biomechanics: 'Converging arms match natural pec fiber line of pull, allowing safe 0 RIR training with full back pad support.'
+    muscles: 'Sternal Pectoralis Major • Triceps Brachii | 胸大肌胸骨部（中胸）・肱三頭肌',
+    biomechanics: 'Converging arms match natural pec fiber line of pull, allowing safe 0 RIR training with full back pad support. | 內聚式軌跡完全契合胸肌纖維收縮方向，搭配椅背全面支撐可安全推至完全力竭（0 RIR）。'
   },
   u1_chest_supp_row: {
     gif: './assets/gifs/u1_chest_supp_row.gif',
     photoFolder: 'Leverage_Iso_Row',
-    muscles: 'Mid/Lower Lats • Rhomboids • Middle Trapezius',
-    biomechanics: 'Chest pad absorbs 100% of horizontal torso load, eliminating lumbar shear stress completely.'
+    muscles: 'Mid/Lower Lats • Rhomboids • Middle Trapezius | 中下背闊肌・菱形肌・中斜方肌',
+    biomechanics: 'Chest pad absorbs 100% of horizontal torso load, eliminating lumbar shear stress completely. | 胸前靠墊100%承接軀幹水平負荷，徹底消除下背腰椎的水平剪力與拉傷風險。'
   },
   u1_cable_lat_raise: {
     gif: './assets/gifs/u1_cable_lat_raise.gif?v=2',
     photoFolder: 'One-Arm_Side_Laterals',
-    muscles: 'Lateral Deltoid (Unilateral — Bilateral Deficit Advantage)',
-    biomechanics: 'Single-arm execution recruits 5–12% more high-threshold motor units while your free hand braces on the post for zero spine sway.'
+    muscles: 'Lateral Deltoid (Unilateral — Bilateral Deficit Advantage) | 三角肌中束（單手孤立 — 雙側赤字神經優勢）',
+    biomechanics: 'Single-arm execution recruits 5–12% more high-threshold motor units while your free hand braces on the post for zero spine sway. | 單手操作能多徵召 5–12% 高門檻運動單位（力量更大），另一手抓柱子固定軀幹可確保腰椎零晃動。'
   },
   u1_bayesian_preacher_curl: {
     gif: './assets/gifs/u1_bayesian_preacher_curl.gif?v=2',
     photoFolder: 'Standing_One-Arm_Cable_Curl',
-    muscles: 'Biceps Brachii (Proximal Long-Head Peak) • Brachialis',
-    biomechanics: 'Unilateral behind-the-back setup aligns the cable directly with your humerus while your free hand braces on the upright frame.'
+    muscles: 'Biceps Brachii (Proximal Long-Head Peak) • Brachialis | 肱二頭肌（長頭肌峰）・肱肌',
+    biomechanics: 'Unilateral behind-the-back setup aligns the cable directly with your humerus while your free hand braces on the upright frame. | 單手背後滑輪讓纜繩完美對齊上臂軌跡，在肩伸展位置極大化拉伸二頭長頭；空著的手扶柱防止甩腰。'
   },
   u1_overhead_tri_ext: {
     gif: './assets/gifs/u1_overhead_tri_ext.gif?v=2',
     photoFolder: 'Cable_One_Arm_Tricep_Extension',
-    muscles: 'Triceps Brachii (Lateral & Medial Heads — Unilateral)',
-    biomechanics: 'Single-arm cross-body cable line of pull on the same tower eliminates backward lumbar hyperextension torque.'
+    muscles: 'Triceps Brachii (Lateral & Medial Heads — Unilateral) | 肱三頭肌（外側頭與內側頭 — 單手孤立）',
+    biomechanics: 'Single-arm cross-body cable line of pull on the same tower eliminates backward lumbar hyperextension torque. | 在同一座單邊滑輪斜向跨體下壓，完全消除雙手過頭時常見的下背折腰（過度伸展）壓力。'
   },
   l1_seated_leg_curl: {
     gif: './assets/gifs/l1_seated_leg_curl.gif',
     photoFolder: 'Seated_Leg_Curl',
-    muscles: 'Semitendinosus • Semimembranosus • Biceps Femoris',
-    biomechanics: 'Done 1st to cushion the knee joint + 1.5× hamstring growth (Maeo 2020). Keeping torso glued to reclined pad avoids sciatic nerve slump tension.'
+    muscles: 'Semitendinosus • Semimembranosus • Biceps Femoris | 半腱肌・半膜肌・股二頭肌（腿後側肌群）',
+    biomechanics: 'Done 1st to cushion the knee joint + 1.5× hamstring growth (Maeo 2020). Keeping torso glued to reclined pad avoids sciatic nerve slump tension. | 放第一動作先讓膝蓋充血並提供 1.5 倍腿後側成長（Maeo 2020）。屁股與上背死死貼緊微仰靠墊，避免駝背前傾拉扯坐骨神經。'
   },
   l1_leg_extension: {
     gif: './assets/gifs/l1_leg_extension.gif',
     photoFolder: 'Leg_Extensions',
-    muscles: 'Rectus Femoris • Vastus Lateralis • Vastus Medialis (VMO)',
-    biomechanics: 'Reclining the backrest to 105°–110° stretches the biarticular rectus femoris for superior center-quad sweep (Larsen 2024) and pre-fatigues quads.'
+    muscles: 'Rectus Femoris • Vastus Lateralis • Vastus Medialis (VMO) | 股直肌・股外側肌・股內側肌（水滴肌）',
+    biomechanics: 'Reclining the backrest to 105°–110° stretches the biarticular rectus femoris for superior center-quad sweep (Larsen 2024) and pre-fatigues quads. | 椅背微仰 105°–110° 可拉伸跨雙關節的「股直肌」（Larsen 2024 實證提升大腿正中央飽滿度），並預先疲勞股四頭肌以減輕後續腿推對腰椎的負荷。'
   },
   l1_single_leg_press: {
     gif: './assets/gifs/l1_single_leg_press.gif',
     photoFolder: 'Leg_Press',
-    muscles: 'Quadriceps Sweep • Gluteus Maximus',
-    biomechanics: 'Resting non-working foot on the floor locks pelvic tilt and prevents lower-back rounding ("butt wink") completely.'
+    muscles: 'Quadriceps Sweep • Gluteus Maximus | 股四頭肌全束・臀大肌',
+    biomechanics: 'Resting non-working foot on the floor locks pelvic tilt and prevents lower-back rounding ("butt wink") completely. | 非訓練腳踩穩地面能鎖死骨盆角度，100% 防止雙腿腿推底部常見的「骨盆後傾（屁股眨眼）」傷腰風險。'
   },
   l1_leg_press_calf: {
     gif: './assets/gifs/l1_leg_press_calf.gif',
     photoFolder: 'Calf_Press_On_The_Leg_Press_Machine',
-    muscles: 'Gastrocnemius • Intrinsic Foot Arch Stabilizers',
-    biomechanics: 'Straight-knee stretch + bottom-half lengthened partials yield 2.2× gastrocnemius hypertrophy (Kassiano 2023) with 0 axial spine load.'
+    muscles: 'Gastrocnemius • Intrinsic Foot Arch Stabilizers | 腓腸肌（小腿肚）・足弓深層穩定肌群',
+    biomechanics: 'Straight-knee stretch + bottom-half lengthened partials yield 2.2× gastrocnemius hypertrophy (Kassiano 2023) with 0 axial spine load. | 直膝拉伸搭配力竭後「底部半程組」可創造 2.2 倍小腿肌肥大（Kassiano 2023），且脊椎軸向壓迫為零。'
   },
   l1_pallof_press: {
     gif: './assets/gifs/l1_pallof_press.gif',
     photoFolder: 'Pallof_Press',
-    muscles: 'Transverse Abdominis • Internal & External Obliques',
-    biomechanics: 'Isometric anti-rotation tightens the "corset" waist muscles while reinforcing lumbar disc stability.'
+    muscles: 'Transverse Abdominis • Internal & External Obliques | 腹橫肌（天然束腹帶）・腹內外斜肌',
+    biomechanics: 'Isometric anti-rotation tightens the "corset" waist muscles while reinforcing lumbar disc stability. | 等長抗旋轉張力能收緊深層腹橫肌（縮小腰圍視覺），同時強化腰椎椎間盤的抗扭轉穩定度。'
   },
   u2_upper_back_row: {
     gif: './assets/gifs/u2_upper_back_row.gif',
     photoFolder: 'Leverage_High_Row',
-    muscles: 'Upper Back (Rhomboids, Mid/Lower Traps, Rear Delts)',
-    biomechanics: '45°–60° elbow path drives scapular retraction/protraction to build 3D upper-back thickness with sternum support.'
+    muscles: 'Upper Back (Rhomboids, Mid/Lower Traps, Rear Delts) | 上背肌群（菱形肌、中下斜方肌、後三角肌）',
+    biomechanics: '45°–60° elbow path drives scapular retraction/protraction to build 3D upper-back thickness with sternum support. | 手肘外展 45°–60° 帶動肩胛骨完整前引與後收，在胸墊完全支撐護腰下打造 3D 上背立體厚度。'
   },
   u2_converging_incline_press: {
     gif: './assets/gifs/u2_converging_incline_press.gif',
     photoFolder: 'Incline_Cable_Chest_Press',
-    muscles: 'Clavicular Pectoralis Major • Anterior Deltoid',
-    biomechanics: '25°–30° converging arc maximizes clavicular fiber shortening without anterior shoulder impingement.'
+    muscles: 'Clavicular Pectoralis Major • Anterior Deltoid | 胸大肌鎖骨部（上胸）・前三角肌',
+    biomechanics: '25°–30° converging arc maximizes clavicular fiber shortening without anterior shoulder impingement. | 25°–30° 內聚式推舉弧線能完美貼合上胸纖維收縮，同時避免過高角度造成的肩夾擠。'
   },
   u2_neutral_pulldown: {
     gif: './assets/gifs/u2_neutral_pulldown.gif',
     photoFolder: 'Underhand_Cable_Pulldowns',
-    muscles: 'Latissimus Dorsi (Lower Iliac Sweep) • Biceps',
-    biomechanics: 'Supinated/neutral grip keeps elbows tucked forward in the sagittal plane for maximum lower-lat leverage.'
+    muscles: 'Latissimus Dorsi (Lower Iliac Sweep) • Biceps | 背闊肌（下背闊弧線）・肱二頭肌',
+    biomechanics: 'Supinated/neutral grip keeps elbows tucked forward in the sagittal plane for maximum lower-lat leverage. | 反握或對握能讓手肘自然收在身體前側，提供下背闊肌最強的機械力矩。'
   },
   u2_pec_deck_fly: {
     gif: './assets/gifs/u2_pec_deck_fly.gif',
     photoFolder: 'Butterfly',
-    muscles: 'Pectoralis Major (Sternal & Clavicular Heads)',
-    biomechanics: 'Pure horizontal adduction removes the triceps bottleneck and loads the pecs across their entire contractile range.'
+    muscles: 'Pectoralis Major (Sternal & Clavicular Heads) | 胸大肌（中胸與上胸橫向內收）',
+    biomechanics: 'Pure horizontal adduction removes the triceps bottleneck and loads the pecs across their entire contractile range. | 純水平內收動作能跳過三頭肌力竭的限制，讓胸大肌在完整拉伸與收縮行程中承受最大張力。'
   },
   u2_machine_lat_raise: {
     gif: './assets/gifs/u2_machine_lat_raise.gif',
     photoFolder: 'Seated_Side_Lateral_Raise',
-    muscles: 'Lateral Deltoid (Capped 3D Shoulder Width)',
-    biomechanics: 'Arm pads apply resistance directly above the elbow, removing wrist/grip involvement for pure lateral delt isolation.'
+    muscles: 'Lateral Deltoid (Capped 3D Shoulder Width) | 三角肌中束（打造寬闊圓潤側肩）',
+    biomechanics: 'Arm pads apply resistance directly above the elbow, removing wrist/grip involvement for pure lateral delt isolation. | 阻力墊直接施力於手肘上方，徹底排除手腕與小臂代償，100% 孤立轟炸肩中束。'
   },
   l2_hip_thrust: {
     gif: './assets/gifs/l2_hip_thrust.gif',
     photoFolder: 'Barbell_Hip_Thrust',
-    muscles: 'Gluteus Maximus • Hamstrings',
-    biomechanics: 'Top-half "Kas" ROM (~45° hip hinge to full lockout) maximizes glute leverage while preventing bottom-range pelvic tuck.'
+    muscles: 'Gluteus Maximus • Hamstrings | 臀大肌・腿後側肌群',
+    biomechanics: 'Top-half "Kas" ROM (~45° hip hinge to full lockout) maximizes glute leverage while preventing bottom-range pelvic tuck. | 採用上半程「Kas 臀推」行程（只下放約 45° 即推起鎖死），鎖定臀肌力矩最強區間，完全杜絕底部折腰與骨盆翻轉。'
   },
   l2_lying_leg_curl: {
     gif: './assets/gifs/l1_seated_leg_curl.gif',
     photoFolder: 'Seated_Leg_Curl',
-    muscles: 'Hamstrings (Lengthened Hip-Flexed Position)',
-    biomechanics: 'Keeping pelvis & upper back glued flat to the reclined backrest (no forward slump!) delivers 1.5× hamstring growth with zero sciatic nerve tension.'
+    muscles: 'Hamstrings (Lengthened Hip-Flexed Position) | 腿後側肌群（屈髖拉伸位）',
+    biomechanics: 'Keeping pelvis & upper back glued flat to the reclined backrest (no forward slump!) delivers 1.5× hamstring growth with zero sciatic nerve tension. | 屁股與上背死死貼緊後仰椅背（嚴禁駝背前傾！），在零坐骨神經拉扯下獲得比趴姿腿後勾高 1.5 倍的肌肥大效果。'
   },
   l2_single_leg_press_high: {
     gif: './assets/gifs/l2_single_leg_press_high.gif',
     photoFolder: 'Narrow_Stance_Leg_Press',
-    muscles: 'Gluteus Maximus • Hamstrings • Quadriceps',
-    biomechanics: 'High foot placement increases hip flexion moment and reduces knee flexion angle—zero anterior knee shear.'
+    muscles: 'Gluteus Maximus • Hamstrings • Quadriceps | 臀大肌・腿後腱・股四頭肌',
+    biomechanics: 'High foot placement increases hip flexion moment and reduces knee flexion angle—zero anterior knee shear. | 腳踩踏板高位能增加髖關節屈曲力矩並減小膝蓋彎曲角度——膝關節前側零剪力、臀腿同步發展。'
   },
   l2_seated_calf_raise: {
     gif: './assets/gifs/l2_seated_calf_raise.gif',
     photoFolder: 'Seated_Calf_Raise',
-    muscles: 'Soleus • Posterior Tibialis (Flat-Foot Arch Support)',
-    biomechanics: '90° bent knee slackens the gastrocnemius to isolate the soleus and deep arch-supporting posterior tibialis.'
+    muscles: 'Soleus • Posterior Tibialis (Flat-Foot Arch Support) | 比目魚肌・脛後肌（扁平足足弓支撐關鍵）',
+    biomechanics: '90° bent knee slackens the gastrocnemius to isolate the soleus and deep arch-supporting posterior tibialis. | 屈膝 90° 會讓表層腓腸肌放鬆，專門強化深層「比目魚肌」與撐起扁平足足弓的「脛後肌腱」。'
   },
   l2_seated_hip_abduction: {
     gif: './assets/gifs/l2_seated_hip_abduction.gif',
     photoFolder: 'Thigh_Abductor',
-    muscles: 'Gluteus Medius • Gluteus Minimus • TFL',
-    biomechanics: 'Strengthens lateral hip stabilizers to stop inward knee valgus (flat-foot pronation) and absorb pickleball lunges.'
+    muscles: 'Gluteus Medius • Gluteus Minimus • TFL | 臀中肌・臀小肌・闊筋膜張肌',
+    biomechanics: 'Strengthens lateral hip stabilizers to stop inward knee valgus (flat-foot pronation) and absorb pickleball lunges. | 強化側向骨盆穩定肌群，防止扁平足引起的膝蓋內扣（Valgus），並吸收匹克球跨步救球的側向衝擊。'
   },
   d5_fresh_lat_raise: {
     gif: './assets/gifs/d5_fresh_lat_raise.gif?v=2',
     photoFolder: 'One-Arm_Side_Laterals',
-    muscles: 'Lateral Deltoid (Unilateral 3rd Weekly Hit)',
-    biomechanics: 'Performed 1st on Saturday one arm at a time when CNS motor unit recruitment is 100% fresh for maximum V-taper shoulder width.'
+    muscles: 'Lateral Deltoid (Unilateral 3rd Weekly Hit) | 三角肌中束（每週第3次單手滿血強化）',
+    biomechanics: 'Performed 1st on Saturday one arm at a time when CNS motor unit recruitment is 100% fresh for maximum V-taper shoulder width. | 週六全場第一動作！趁中樞神經 100% 滿血時單手孤立訓練，最大化倒三角側肩視覺寬度。'
   },
   u2_rear_delt_fly: {
     gif: './assets/gifs/u2_rear_delt_fly.gif?v=2',
     photoFolder: 'Reverse_Machine_Flyes',
-    muscles: 'Posterior Deltoid • Infraspinatus • Teres Minor',
-    biomechanics: '45° arm path with chest support isolates the posterior deltoid to complete the 3D shoulder cap from the side.'
+    muscles: 'Posterior Deltoid • Infraspinatus • Teres Minor | 後三角肌・棘下肌・小圓肌（外旋袖肌群）',
+    biomechanics: '45° arm path with chest support isolates the posterior deltoid to complete the 3D shoulder cap from the side. | 胸口貼墊搭配 45° 外展軌跡，精準孤立後三角肌，打造從側面看過去的 3D 立體圓肩。'
   },
   u2_rear_delt_fly_b: {
     gif: './assets/gifs/u2_rear_delt_fly.gif?v=2',
     photoFolder: 'Reverse_Machine_Flyes',
-    muscles: 'Posterior Deltoid • Infraspinatus • Teres Minor',
-    biomechanics: '1st of 2 weekly direct rear-delt sessions—chest pad eliminates spinal load while capping the back of the shoulder.'
+    muscles: 'Posterior Deltoid • Infraspinatus • Teres Minor | 後三角肌・棘下肌・小圓肌',
+    biomechanics: '1st of 2 weekly direct rear-delt sessions—chest pad eliminates spinal load while capping the back of the shoulder. | 每週 2 次後三角直接訓練的第 1 次——胸墊徹底消除脊椎負擔，填滿肩膀後側立體度。'
   },
   d5_preacher_curl: {
     gif: './assets/gifs/d5_preacher_curl.gif?v=2',
     photoFolder: 'Machine_Preacher_Curls',
-    muscles: 'Biceps Brachii (Distal Short Head) • Brachialis',
-    biomechanics: 'Pad locks humerus in front of torso to target distal lower-bicep & brachialis thickness (Pedrosa 2023).'
+    muscles: 'Biceps Brachii (Distal Short Head) • Brachialis | 肱二頭肌（遠端短頭）・肱肌厚度',
+    biomechanics: 'Pad locks humerus in front of torso to target distal lower-bicep & brachialis thickness (Pedrosa 2023). | 牧師椅靠墊將上臂固定於軀幹前方，專攻靠近手肘處的「遠端二頭肌」與「肱肌」飽滿度（Pedrosa 2023 實證與背後彎舉互補）。'
   },
   d5_overhead_tri: {
     gif: './assets/gifs/d5_overhead_tri.gif?v=2',
     photoFolder: 'Cable_Incline_Triceps_Extension',
-    muscles: 'Triceps Brachii (Long Head — +40% Growth)',
-    biomechanics: 'Seated against a 70°–80° incline bench (or single-arm braced on post) blocks lumbar arching while stretching the biarticular long head (Maeo 2022).'
+    muscles: 'Triceps Brachii (Long Head — +40% Growth) | 肱三頭肌長頭（+40% 肌肥大優勢）',
+    biomechanics: 'Seated against a 70°–80° incline bench (or single-arm braced on post) blocks lumbar arching while stretching the biarticular long head (Maeo 2022). | 背靠 70°–80° 上斜椅（或單手扶柱）能完全封鎖下背折腰代償，同時在過頭拉伸位創造 +40% 三頭長頭成長（Maeo 2022）。'
   },
   d5_bayesian_curl_ss: {
     gif: './assets/gifs/d5_bayesian_curl_ss.gif?v=2',
     photoFolder: 'Standing_One-Arm_Cable_Curl',
-    muscles: 'Biceps Brachii (Unilateral Long-Head Peak)',
-    biomechanics: 'Single-arm behind-the-back cable tension from full shoulder extension to peak elbow flexion with free-hand post bracing.'
+    muscles: 'Biceps Brachii (Unilateral Long-Head Peak) | 肱二頭肌長頭（單手拉伸肌峰）',
+    biomechanics: 'Single-arm behind-the-back cable tension from full shoulder extension to peak elbow flexion with free-hand post bracing. | 單手背後滑輪在肩後伸位置拉滿二頭長頭張力，另一手扶柱固定核心，安全榨乾手臂泵感。'
   },
   u2_cable_triceps_ext: {
     gif: './assets/gifs/u2_cable_triceps_ext.gif?v=2',
     photoFolder: 'Cable_One_Arm_Tricep_Extension',
-    muscles: 'Triceps Brachii (Unilateral Lateral & Medial Heads)',
-    biomechanics: 'Single-arm cross-body extension biases the lateral horseshoe and medial head at full lockout on the same single pulley.'
+    muscles: 'Triceps Brachii (Unilateral Lateral & Medial Heads) | 肱三頭肌（單手外側馬蹄鐵與內側頭）',
+    biomechanics: 'Single-arm cross-body extension biases the lateral horseshoe and medial head at full lockout on the same single pulley. | 在同一座單邊滑輪斜向跨體完全伸直鎖死，強化三頭肌外側馬蹄鐵與內側頭線條。'
   },
   d5_deadbug_core: {
     gif: './assets/gifs/d5_deadbug_core.gif',
     photoFolder: 'Dead_Bug',
-    muscles: 'Rectus Abdominis (6-Pack) • Transverse Abdominis',
-    biomechanics: 'Loads the rectus abdominis via intense anti-extension tension while keeping the lumbar spine pressed flat and safe.'
+    muscles: 'Rectus Abdominis (6-Pack) • Transverse Abdominis | 腹直肌（六塊肌）・深層腹橫肌',
+    biomechanics: 'Loads the rectus abdominis via intense anti-extension tension while keeping the lumbar spine pressed flat and safe. | 透過強烈的「抗伸展（抗折腰）」張力精準刺激六塊腹直肌，全程保持下背平貼地面、零椎間盤擠壓。'
   }
 };
 
 const WARMUP_PROTOCOL = [
   {
     id: 'warmup_couch',
-    name: '1. Half-Kneeling Couch / Psoas Stretch',
-    prescription: '2 × 45s / side',
+    name: '1. Half-Kneeling Couch / Psoas Stretch (半跪姿沙發髂腰肌伸展)',
+    prescription: '2 × 45s / side (每邊45秒)',
     timerSeconds: 45,
-    cue: 'Lengthens tight hip flexors pulling on the lumbar spine. Squeeze glute of kneeling leg; do not arch lower back.'
+    cue: 'EN: Lengthens tight hip flexors pulling on the lumbar spine. Squeeze glute of kneeling leg; do not arch lower back.\n繁中：拉開緊繃的髖屈肌（解除對腰椎的往前拉扯）。用力夾緊跪地側的屁股，保持肋骨下壓、絕對不要折腰挺肚子。'
   },
   {
     id: 'warmup_9090',
-    name: '2. Seated 90/90 Hip Capsule Switches',
-    prescription: '2 × 8 slow reps / side',
+    name: '2. Seated 90/90 Hip Capsule Switches (坐姿 90/90 髖關節內外旋轉換)',
+    prescription: '2 × 8 slow reps / side (每邊慢速8下)',
     timerSeconds: 60,
-    cue: 'Frees internal & external hip rotation for pickleball court pivots and prevents pelvic tuck ("butt wink").'
+    cue: 'EN: Frees internal & external hip rotation for pickleball court pivots and prevents pelvic tuck ("butt wink").\n繁中：打開髖關節囊內旋與外旋角度，讓匹克球急停轉身與深蹲腿推時骨盆更自由，防止底部屁股眨眼傷腰。'
   },
   {
     id: 'warmup_birddog',
-    name: '3. McGill Bird-Dog',
-    prescription: '2 × 5 reps / side (5s hold)',
+    name: '3. McGill Bird-Dog (McGill 鳥狗式核心穩定)',
+    prescription: '2 × 5 reps / side • 5s hold (每邊5下・停頓5秒)',
     timerSeconds: 50,
-    cue: 'Establishes 360° lumbar core stiffness. Push heel back (don\'t kick high); keep spine completely neutral.'
+    cue: 'EN: Establishes 360° lumbar core stiffness. Push heel back (don\'t kick high); keep spine completely neutral.\n繁中：建立 360° 腰椎保護剛性。腳跟往後牆水平蹬直（不要往上踢高導致折腰），保持脊椎與骨盆完全水平中立。'
   }
 ];
 
@@ -241,14 +241,14 @@ const WORKOUT_PLAN = {
   upper1: {
     id: 'upper1',
     shortTitle: 'Upper A',
-    dayLabel: 'Monday',
-    title: 'Upper A: Chest, Lats & Arms',
-    subtitle: 'Heavy Upper-Shelf Pressing, Vertical/Horizontal Lat Pulls & Stretch Arm Feeder',
+    dayLabel: 'Monday 週一',
+    title: 'Upper A: Chest, Lats & Arms (上肢 A：胸、背闊與手臂)',
+    subtitle: 'Heavy Upper-Shelf Pressing, Vertical/Horizontal Lat Pulls & Stretch Arm Feeder | 大重量上胸推、垂直/水平背闊肌下拉划船、二三頭拉伸超級組',
     needsLowerWarmup: false,
     exercises: [
       {
         id: 'u1_incline_press',
-        name: '1. Plate-Loaded Incline Chest Press',
+        name: '1. Plate-Loaded Incline Chest Press (掛片式上斜胸推)',
         sets: 3,
         repRange: '6–8',
         minReps: 6,
@@ -256,12 +256,12 @@ const WORKOUT_PLAN = {
         restSeconds: 180,
         restLabel: '3 min',
         targetRir: '1–2 RIR',
-        badge: 'Clavicular Shelf • Upper Horns First',
-        cue: 'Handles at upper chest; tuck elbows 45°; 3s controlled eccentric. Load primary plates on upper horns first.'
+        badge: 'Clavicular Shelf • Upper Horns First | 鎖骨上胸厚度・優先掛上方掛角',
+        cue: 'EN: Handles at upper chest; tuck elbows 45°; 3s controlled eccentric. Load primary plates on upper horns first.\n繁中：握把對準上胸鎖骨、手肘內收45°、控制離心下放3秒；槓片優先掛在上方掛角（強化中段與頂峰力矩）。'
       },
       {
         id: 'u1_neutral_pulldown',
-        name: '2. Neutral-Grip Lat Pulldown',
+        name: '2. Neutral-Grip Lat Pulldown (對握滑輪下拉)',
         sets: 3,
         repRange: '6–8',
         minReps: 6,
@@ -269,12 +269,12 @@ const WORKOUT_PLAN = {
         restSeconds: 150,
         restLabel: '2.5 min',
         targetRir: '1 RIR',
-        badge: 'Use Lifting Straps • V-Taper Iliac Flare',
-        cue: 'Shoulder-width neutral grip with lifting straps; drive elbows down toward hips to widen iliac lats.'
+        badge: 'Use Lifting Straps • V-Taper Iliac Flare | 必戴拉力帶・倒三角下背闊外展',
+        cue: 'EN: Shoulder-width neutral grip with lifting straps; drive elbows down toward hips to widen iliac lats.\n繁中：與肩同寬對握並使用拉力帶（避免小臂先力竭）；想像把將手肘往骨盆方向下壓，主攻下背闊肌打造倒三角寬度。'
       },
       {
         id: 'u1_converging_flat_press',
-        name: '3. Converging Machine Chest Press',
+        name: '3. Converging Machine Chest Press (內聚式器械平胸推)',
         sets: 2,
         repRange: '8–10',
         minReps: 8,
@@ -282,12 +282,12 @@ const WORKOUT_PLAN = {
         restSeconds: 120,
         restLabel: '2 min',
         targetRir: '0 RIR',
-        badge: 'Sternal Fibers • Full Back Support',
-        cue: 'Full back support against pad; push the final set all the way to technical failure safely.'
+        badge: 'Sternal Fibers • Full Back Support | 中胸厚實度・背部貼緊靠墊',
+        cue: 'EN: Full back support against pad; push the final set all the way to technical failure safely.\n繁中：上背與屁股貼緊椅背穩定脊椎；最後一組在動作不變形的前提下安全推到完全力竭（0 RIR）。'
       },
       {
         id: 'u1_chest_supp_row',
-        name: '4. Chest-Supported Neutral Row',
+        name: '4. Chest-Supported Neutral Row (胸靠墊對握器械划船)',
         sets: 3,
         repRange: '8–10',
         minReps: 8,
@@ -295,12 +295,12 @@ const WORKOUT_PLAN = {
         restSeconds: 120,
         restLabel: '2 min',
         targetRir: '1 RIR',
-        badge: 'Use Lifting Straps • Zero Lower Back Load',
-        cue: 'Sternum pinned firmly to pad; use straps so forearm grip never limits back growth; drive elbows toward hips.'
+        badge: 'Use Lifting Straps • Zero Lower Back Load | 必戴拉力帶・腰椎零剪力負擔',
+        cue: 'EN: Sternum pinned firmly to pad; use straps so forearm grip never limits back growth; drive elbows toward hips.\n繁中：胸口死死貼緊靠墊（徹底消除下背壓力）；戴拉力帶，將手肘往後下方骨盆方向拉，收緊中下背闊肌。'
       },
       {
         id: 'u1_cable_lat_raise',
-        name: '5. Single-Arm Cross-Body Cable Lateral Raise',
+        name: '5. Single-Arm Cross-Body Cable Lateral Raise (單手跨體滑輪側平舉)',
         sets: 3,
         repRange: '10–15/arm',
         minReps: 10,
@@ -308,12 +308,12 @@ const WORKOUT_PLAN = {
         restSeconds: 60,
         restLabel: '60s',
         targetRir: '0 RIR',
-        badge: 'Unilateral Hit #1 of 3 • Free Hand Braced on Post',
-        cue: 'Pulley at wrist height; hold post with non-working hand; sweep 30° into scapular plane (+4 lengthened partials on final set).'
+        badge: 'Unilateral Hit #1 of 3 • Free Hand Braced on Post | 單手側肩 #1/3・另一手扶柱穩固核心',
+        cue: 'EN: Pulley at wrist height; hold post with non-working hand; sweep 30° into scapular plane (+4 lengthened partials on final set).\n繁中：滑輪調至手腕高度（底部即有最大拉伸張力）；非訓練手抓緊柱子穩住身體，手臂前傾30°沿肩胛平面往外抬；最後一組力竭後直接加做4下底部半程組。'
       },
       {
         id: 'u1_bayesian_preacher_curl',
-        name: '6A. [Superset] Single-Arm Behind-the-Back Cable Curl',
+        name: '6A. [Superset] Single-Arm Behind-the-Back Cable Curl (超級組：單手背後滑輪二頭彎舉)',
         sets: 2,
         repRange: '10–12/arm',
         minReps: 10,
@@ -321,12 +321,12 @@ const WORKOUT_PLAN = {
         restSeconds: 45,
         restLabel: '45s',
         targetRir: '0 RIR',
-        badge: 'Unilateral Proximal Bicep Peak • Superset w/ 6B',
-        cue: 'Single low pulley; step forward so working arm is drawn behind torso; brace free hand on frame for zero lower-back sway.'
+        badge: 'Unilateral Proximal Bicep Peak • Superset w/ 6B | 單手二頭長頭肌峰・與 6B 超級組',
+        cue: 'EN: Single low pulley; step forward so working arm is drawn behind torso; brace free hand on frame for zero lower-back sway.\n繁中：單邊低位滑輪，往前站一步讓手臂延伸至身體後方（極大化二頭長頭拉伸與肌峰）；另一手扶柱鎖定軀幹、嚴禁甩腰代償。'
       },
       {
         id: 'u1_overhead_tri_ext',
-        name: '6B. [Superset] Single-Arm Cross-Body Cable Triceps Extension',
+        name: '6B. [Superset] Single-Arm Cross-Body Cable Triceps Extension (超級組：單手跨體滑輪三頭下壓)',
         sets: 2,
         repRange: '10–12/arm',
         minReps: 10,
@@ -334,22 +334,22 @@ const WORKOUT_PLAN = {
         restSeconds: 60,
         restLabel: '60s',
         targetRir: '0 RIR',
-        badge: 'Same Single Pulley • Zero Lumbar Extension Torque',
-        cue: 'Set single pulley to shoulder height; brace free hand on post and extend across body to full lockout one arm at a time.'
+        badge: 'Same Single Pulley • Zero Lumbar Extension Torque | 同座單邊滑輪・零折腰風險',
+        cue: 'EN: Set single pulley to shoulder height; brace free hand on post and extend across body to full lockout one arm at a time.\n繁中：同一座單邊滑輪調至肩高；另一手扶柱固定身體，單手斜向跨體往下完全伸直鎖死1秒，安全榨乾三頭肌。'
       }
     ]
   },
   lower1: {
     id: 'lower1',
     shortTitle: 'Lower A',
-    dayLabel: 'Tuesday',
-    title: 'Lower A: Quads, Calves & Core',
-    subtitle: 'Pre-Exhausted Knee & Lumbar Spine Shielded Sequencing',
+    dayLabel: 'Tuesday 週二',
+    title: 'Lower A: Quads, Calves & Core (下肢 A：股四頭、小腿與核心)',
+    subtitle: 'Pre-Exhausted Knee & Lumbar Spine Shielded Sequencing | 預先疲勞護膝護腰排序・零軸向脊椎壓迫',
     needsLowerWarmup: true,
     exercises: [
       {
         id: 'l1_seated_leg_curl',
-        name: '1. Seated Leg Curl (Done 1st — Back Glued to Pad)',
+        name: '1. Seated Leg Curl — Done 1st, Back Glued to Pad (坐姿腿後勾 — 首發暖膝・背貼緊靠墊)',
         sets: 3,
         repRange: '10–12',
         minReps: 10,
@@ -357,12 +357,12 @@ const WORKOUT_PLAN = {
         restSeconds: 120,
         restLabel: '2 min',
         targetRir: '0 RIR',
-        badge: '1.5× Stretch (Maeo 2020) • NO Forward Slump (Nerve Safe)',
-        cue: 'Keep pelvis & upper back GLUED flat to reclined pad (100°–105°). Never slump forward (prevents sciatic nerve root tension).'
+        badge: '1.5× Stretch (Maeo 2020) • NO Forward Slump (Nerve Safe) | 1.5倍肌肥大・嚴禁駝背前傾（保護坐骨神經）',
+        cue: 'EN: Keep pelvis & upper back GLUED flat to reclined pad (100°–105°). Never slump forward (prevents sciatic nerve root tension).\n繁中：放第一動作先讓膝蓋充血並獲得1.5倍腿後側成長。關鍵護腰指令：屁股與上背必須「死死貼平」微仰椅背（100°–105°），絕對不可駝背前傾（防止觸發坐骨神經拉扯）！'
       },
       {
         id: 'l1_leg_extension',
-        name: '2. Leg Extension (Reclined Backrest Pre-Exhaust)',
+        name: '2. Leg Extension — Reclined Backrest Pre-Exhaust (微仰靠墊坐姿腿屈伸 — 股四頭預先力竭)',
         sets: 3,
         repRange: '12–15',
         minReps: 12,
@@ -370,12 +370,12 @@ const WORKOUT_PLAN = {
         restSeconds: 90,
         restLabel: '90s',
         targetRir: '0 RIR',
-        badge: '105°–110° Reclined Pad (Larsen 2024) • -25% Spine Load',
-        cue: 'Set backrest slightly reclined (105°–110°) to stretch center-quad rectus femoris & open tight hips; 2s top squeeze.'
+        badge: '105°–110° Reclined Pad (Larsen 2024) • -25% Spine Load | 微仰椅背強化股直肌・減輕後續腿推25%腰椎負荷',
+        cue: 'EN: Set backrest slightly reclined (105°–110°) to stretch center-quad rectus femoris & open tight hips; 2s top squeeze.\n繁中：將椅背調微仰（105°–110°）打開緊繃髖部並拉伸大腿正中央的「股直肌」（Larsen 2024 實證）；預先疲勞股四頭肌讓下一動作腿推不需超大重量就能徹底刺激大腿；頂峰夾緊2秒。'
       },
       {
         id: 'l1_single_leg_press',
-        name: '3. Single-Leg 45° Leg Press (Mid-Foot)',
+        name: '3. Single-Leg 45° Leg Press — Mid-Foot (單腿 45° 斜板腿推 — 腳踩踏板中段)',
         sets: 3,
         repRange: '10–12/leg',
         minReps: 10,
@@ -383,12 +383,12 @@ const WORKOUT_PLAN = {
         restSeconds: 90,
         restLabel: '90s',
         targetRir: '1–2 RIR',
-        badge: 'Backrest Flat • Tripod Foot • No Belt',
-        cue: 'SET BACKREST FLAT. Non-working foot on floor stabilizes pelvis. Foot mid-sled; Tripod Foot; knee tracks 2nd toe.'
+        badge: 'Backrest Flat • Tripod Foot • No Belt | 椅背調最平・足底三角踩穩・不繫腰帶',
+        cue: 'EN: SET BACKREST FLAT. Non-working foot on floor stabilizes pelvis. Foot mid-sled; Tripod Foot; knee tracks 2nd toe.\n繁中：椅背調到最平（打開髖角護腰）；非訓練腳踩地鎖死骨盆（100%防止底部屁股眨眼傷腰）。腳掌三角點踩穩踏板中段，膝蓋對準第二腳趾方向推進。'
       },
       {
         id: 'l1_leg_press_calf',
-        name: '4. Leg Press Calf Extension (+ Lengthened Partials)',
+        name: '4. Leg Press Calf Extension + Lengthened Partials (腿推機直膝小腿推舉 + 底部半程組)',
         sets: 4,
         repRange: '10–12',
         minReps: 10,
@@ -396,12 +396,12 @@ const WORKOUT_PLAN = {
         restSeconds: 90,
         restLabel: '90s',
         targetRir: '0 RIR',
-        badge: '2.2× Calf Growth (Kassiano 2023) • Arch Builder',
-        cue: 'Push through big toe ball; 2s bottom stretch pause. After full-ROM failure on final set, do 5 bottom-half lengthened partials.'
+        badge: '2.2× Calf Growth (Kassiano 2023) • Arch Builder | 2.2倍小腿成長・強化扁平足弓・零脊椎壓迫',
+        cue: 'EN: Push through big toe ball; 2s bottom stretch pause. After full-ROM failure on final set, do 5 bottom-half lengthened partials.\n繁中：用大拇趾球發力推起（強化足弓）；底部完全拉伸暫停2秒消除阿基里斯腱反彈。最後一組全程力竭後，在底部拉伸區間多做5下「底部半程組」（實證2.2倍小腿肌肥大）。'
       },
       {
         id: 'l1_pallof_press',
-        name: '5. Standing Cable Pallof Press',
+        name: '5. Standing Cable Pallof Press (站姿滑輪抗旋轉核心推 / Pallof Press)',
         sets: 3,
         repRange: '10–12/side',
         minReps: 10,
@@ -409,22 +409,22 @@ const WORKOUT_PLAN = {
         restSeconds: 60,
         restLabel: '60s',
         targetRir: 'Isometric',
-        badge: 'Waist Cinch • Anti-Rotation Spine Armor',
-        cue: 'Anti-rotation core brace; hold full extension in front of sternum for 2s per rep to cinch waist safely.'
+        badge: 'Waist Cinch • Anti-Rotation Spine Armor | 收窄腰圍束腹帶・抗旋轉護腰裝甲',
+        cue: 'EN: Anti-rotation core brace; hold full extension in front of sternum for 2s per rep to cinch waist safely.\n繁中：抵抗滑輪側拉旋轉力，激活深層腹橫肌（天然束腹帶收緊腰圍）並建立匹克球急停變向時的腰椎防禦；雙手推直在胸前停頓2秒。'
       }
     ]
   },
   upper2: {
     id: 'upper2',
     shortTitle: 'Upper B',
-    dayLabel: 'Thursday',
-    title: 'Upper B: Upper Back, Chest & Delts',
-    subtitle: 'Transverse Upper-Back Thickness, Stretched Pec Adduction & Side Delt Capping',
+    dayLabel: 'Thursday 週四',
+    title: 'Upper B: Upper Back, Chest & Delts (上肢 B：上背厚度、胸與側後肩)',
+    subtitle: 'Transverse Upper-Back Thickness, Stretched Pec Adduction & Side Delt Capping | 立體上背厚度、胸肌水平內收拉伸、3D 側肩與後三角',
     needsLowerWarmup: false,
     exercises: [
       {
         id: 'u2_upper_back_row',
-        name: '1. Chest-Supported 45° Upper-Back Row',
+        name: '1. Chest-Supported 45° Upper-Back Row (胸靠墊 45° 開肘上背划船)',
         sets: 3,
         repRange: '8–10',
         minReps: 8,
@@ -432,12 +432,12 @@ const WORKOUT_PLAN = {
         restSeconds: 150,
         restLabel: '2.5 min',
         targetRir: '1 RIR',
-        badge: 'Use Straps • Rhomboids, Traps & Rear Delts',
-        cue: 'Pronated/wide grip on chest-supported pad; flare elbows 45°–60° and retract/protract shoulder blades for 3D back thickness.'
+        badge: 'Use Straps • Rhomboids, Traps & Rear Delts | 必戴拉力帶・轟炸菱形肌／中下斜方／後三角',
+        cue: 'EN: Pronated/wide grip on chest-supported pad; flare elbows 45°–60° and retract/protract shoulder blades for 3D back thickness.\n繁中：胸口貼緊靠墊（保護下背）；戴拉力帶、正手寬握，手肘外展45°–60°，底部讓肩胛骨充分前引拉開，向後拉時用力夾緊上背肌群。'
       },
       {
         id: 'u2_converging_incline_press',
-        name: '2. Converging Incline Machine Press',
+        name: '2. Converging Incline Machine Press (內聚式上斜器械胸推 25°–30°)',
         sets: 3,
         repRange: '8–10',
         minReps: 8,
@@ -445,12 +445,12 @@ const WORKOUT_PLAN = {
         restSeconds: 150,
         restLabel: '2.5 min',
         targetRir: '1 RIR',
-        badge: '25°–30° Angle • Upper Pec Shelf',
-        cue: '25°–30° bench angle; hands converge upward along clavicular fibers; stop 1 rep shy of failure.'
+        badge: '25°–30° Angle • Upper Pec Shelf | 25°–30° 黃金上斜角・飽滿上胸視覺',
+        cue: 'EN: 25°–30° bench angle; hands converge upward along clavicular fibers; stop 1 rep shy of failure.\n繁中：25°–30°上斜角度，雙手沿鎖骨胸肌纖維走向往內上方匯聚推起，安全榨乾上胸飽滿度（保留1下餘力 1 RIR）。'
       },
       {
         id: 'u2_neutral_pulldown',
-        name: '3. Underhand / Neutral-Grip Lat Pulldown',
+        name: '3. Underhand / Neutral-Grip Lat Pulldown (反握／對握滑輪下拉)',
         sets: 3,
         repRange: '8–10',
         minReps: 8,
@@ -458,12 +458,12 @@ const WORKOUT_PLAN = {
         restSeconds: 120,
         restLabel: '2 min',
         targetRir: '1 RIR',
-        badge: 'Use Lifting Straps • 2nd Weekly Lat Flare',
-        cue: 'Keep torso upright with slight thoracic extension; drive elbows down into front pockets for lower-lat sweep.'
+        badge: 'Use Lifting Straps • 2nd Weekly Lat Flare | 必戴拉力帶・每週第2次背闊寬度刺激',
+        cue: 'EN: Keep torso upright with slight thoracic extension; drive elbows down into front pockets for lower-lat sweep.\n繁中：戴拉力帶、軀幹穩定胸口微挺，將手肘貼著身體前側往腰際口袋方向下壓，強化下背闊肌倒三角弧線。'
       },
       {
         id: 'u2_pec_deck_fly',
-        name: '4. Seated Pec Deck / Cable Fly',
+        name: '4. Seated Pec Deck / Cable Fly (坐姿蝴蝶機夾胸／滑輪飛鳥)',
         sets: 2,
         repRange: '10–12',
         minReps: 10,
@@ -471,12 +471,12 @@ const WORKOUT_PLAN = {
         restSeconds: 90,
         restLabel: '90s',
         targetRir: '0 RIR',
-        badge: 'Pure Horizontal Adduction • 2s Stretch Pause',
-        cue: 'Eliminates triceps bottleneck; hold a 2s deep stretch when hands are just in front of torso line, then squeeze.'
+        badge: 'Pure Horizontal Adduction • 2s Stretch Pause | 純水平胸肌內收・底部拉伸暫停2秒',
+        cue: 'EN: Eliminates triceps bottleneck; hold a 2s deep stretch when hands are just in front of torso line, then squeeze.\n繁中：純水平內收孤立胸大肌（避開三頭肌先力竭）；雙手退到身體平面微前方時停留2秒感受胸肌深層拉伸（勿過度往後拉傷前肩囊），再向內夾緊。'
       },
       {
         id: 'u2_machine_lat_raise',
-        name: '5. Machine Lateral Raise',
+        name: '5. Machine Lateral Raise (器械側平舉)',
         sets: 3,
         repRange: '12–15',
         minReps: 12,
@@ -484,12 +484,12 @@ const WORKOUT_PLAN = {
         restSeconds: 90,
         restLabel: '90s',
         targetRir: '0 RIR',
-        badge: 'Side Delt Hit #2 of 3 • +4 Lengthened Partials',
-        cue: 'Pads placed on outer upper arms/elbows; push to 0 RIR + 4 bottom-half lengthened partials on final set.'
+        badge: 'Side Delt Hit #2 of 3 • +4 Lengthened Partials | 側肩頻率 #2/3・最後一組加4下底部半程',
+        cue: 'EN: Pads placed on outer upper arms/elbows; push to 0 RIR + 4 bottom-half lengthened partials on final set.\n繁中：靠墊頂住上臂外側／手肘上方（完全排除手腕與握力干擾）；用肩中束發力抬至水平，最後一組力竭後直接加做4下底部半程組。'
       },
       {
         id: 'u2_rear_delt_fly_b',
-        name: '6. Chest-Supported Rear Delt Fly',
+        name: '6. Chest-Supported Rear Delt Fly (胸靠墊蝴蝶機反向飛鳥)',
         sets: 2,
         repRange: '15–20',
         minReps: 15,
@@ -497,22 +497,22 @@ const WORKOUT_PLAN = {
         restSeconds: 60,
         restLabel: '60s',
         targetRir: '0 RIR',
-        badge: 'Rear Delt Hit #1 of 2 • 3D Shoulder Cap',
-        cue: 'Sternum flat against pad; sweep arms wide at 45° elbow flare to cap posterior delts with zero spine load.'
+        badge: 'Rear Delt Hit #1 of 2 • 3D Shoulder Cap | 後三角頻率 #1/2・3D 立體圓肩',
+        cue: 'EN: Sternum flat against pad; sweep arms wide at 45° elbow flare to cap posterior delts with zero spine load.\n繁中：每週第1次後三角孤立訓練；胸口貼平靠墊（零腰椎壓力），手肘微彎外展45°向兩側遠方畫大弧線撥開，把肩膀後側撐飽滿。'
       }
     ]
   },
   lower2: {
     id: 'lower2',
     shortTitle: 'Lower B',
-    dayLabel: 'Friday',
-    title: 'Lower B: Glutes, Hamstrings & Hips',
-    subtitle: 'Zero-Shear Posterior Chain & Pickleball Hip Armor',
+    dayLabel: 'Friday 週五',
+    title: 'Lower B: Glutes, Hamstrings & Hips (下肢 B：臀肌、腿後側與髖關節裝甲)',
+    subtitle: 'Zero-Shear Posterior Chain & Pickleball Hip Armor | 零剪力後側鏈（Kas 臀推＋護神經坐姿腿後勾）與匹克球護膝護腰',
     needsLowerWarmup: true,
     exercises: [
       {
         id: 'l2_hip_thrust',
-        name: '1. Hip Thrust (Machine — Top-Half "Kas" ROM)',
+        name: '1. Hip Thrust Machine — Top-Half "Kas" ROM (器械臀推 — 上半程 Kas 護腰練法)',
         sets: 3,
         repRange: '8–12',
         minReps: 8,
@@ -520,12 +520,12 @@ const WORKOUT_PLAN = {
         restSeconds: 135,
         restLabel: '2–2.5m',
         targetRir: '1–2 RIR',
-        badge: 'Top-Half ROM • Prevents Bottom Pelvic Tuck',
-        cue: 'Chin tucked, ribs down; lower hips only ~45° (stop before pelvis tucks under) and drive to full lockout w/ 2s squeeze.'
+        badge: 'Top-Half ROM • Prevents Bottom Pelvic Tuck | 上半程鎖定臀肌・杜絕底部骨盆翻轉傷腰',
+        cue: 'EN: Chin tucked, ribs down; lower hips only ~45° (stop before pelvis tucks under) and drive to full lockout w/ 2s squeeze.\n繁中：收下巴、肋骨下壓鎖住核心；下放時只降約45°（在骨盆開始翻轉／折腰前就停住！），專注在臀大肌發力力矩最強的上半程推到水平鎖死並夾緊臀部2秒（媲美深蹲的臀肌成長、零脊椎軸向壓力）。'
       },
       {
         id: 'l2_lying_leg_curl',
-        name: '2. Seated Leg Curl (Back Glued to Pad — Nerve Safe)',
+        name: '2. Seated Leg Curl — Back Glued to Pad, Nerve Safe (坐姿腿後勾 — 背貼緊靠墊護神經)',
         sets: 3,
         repRange: '12–15',
         minReps: 12,
@@ -533,12 +533,12 @@ const WORKOUT_PLAN = {
         restSeconds: 90,
         restLabel: '90s',
         targetRir: '0 RIR',
-        badge: '1.5× Growth (Maeo 2020) • NO Forward Lean (Sciatic Safe)',
-        cue: 'Keep pelvis & upper back GLUED flat to reclined backrest pad (chest proud, neutral spine). Do NOT slump forward!'
+        badge: '1.5× Growth (Maeo 2020) • NO Forward Lean (Sciatic Safe) | 1.5倍腿後肌肥大・嚴禁前傾（零坐骨神經張力）',
+        cue: 'EN: Keep pelvis & upper back GLUED flat to reclined backrest pad (chest proud, neutral spine). Do NOT slump forward!\n繁中：取代趴姿腿彎舉（避免骨盆前傾壓迫腰椎，且成長高出1.5倍）。關鍵：屁股與上背必須「全程貼死」後仰椅背、抬頭挺胸，絕對不要往前駝背！'
       },
       {
         id: 'l2_single_leg_press_high',
-        name: '3. Single-Leg 45° Leg Press (High Foot)',
+        name: '3. Single-Leg 45° Leg Press — High Foot (單腿 45° 斜板腿推 — 腳踩踏板高位)',
         sets: 3,
         repRange: '10–12/leg',
         minReps: 10,
@@ -546,12 +546,12 @@ const WORKOUT_PLAN = {
         restSeconds: 90,
         restLabel: '90s',
         targetRir: '1–2 RIR',
-        badge: 'Backrest Flat • High Foot Glute/Quad Drive',
-        cue: 'SET BACKREST FLAT. Foot placed high on sled; zero anterior knee shear, strong glute & quad recruitment.'
+        badge: 'Backrest Flat • High Foot Glute/Quad Drive | 椅背最平・高位踩法強化臀腿且零膝剪力',
+        cue: 'EN: SET BACKREST FLAT. Foot placed high on sled; zero anterior knee shear, strong glute & quad recruitment.\n繁中：椅背調到最平、非訓練腳踩地穩定骨盆；訓練腳踩在踏板偏高位置（增加髖屈曲力矩、大幅減少膝蓋前側壓力），用腳跟與足弓穩定推起。'
       },
       {
         id: 'l2_seated_calf_raise',
-        name: '4. Seated Calf Raise Machine',
+        name: '4. Seated Calf Raise Machine (坐姿小腿提踵機)',
         sets: 3,
         repRange: '12–15',
         minReps: 12,
@@ -559,12 +559,12 @@ const WORKOUT_PLAN = {
         restSeconds: 60,
         restLabel: '60s',
         targetRir: '0 RIR',
-        badge: 'Soleus & Posterior Tibialis (Flat-Foot Fix)',
-        cue: '90° knee angle; strengthens soleus and posterior tibialis tendon to support your foot arch.'
+        badge: 'Soleus & Posterior Tibialis (Flat-Foot Fix) | 比目魚肌與脛後肌（扁平足足弓救星）',
+        cue: 'EN: 90° knee angle; strengthens soleus and posterior tibialis tendon to support your foot arch.\n繁中：屈膝90°能放鬆腓腸肌，精準強化深層「比目魚肌」與「脛後肌腱」（直接撐起扁平足足弓、吸收球場跳躍衝擊）。底部暫停2秒、頂峰用力踮高。'
       },
       {
         id: 'l2_seated_hip_abduction',
-        name: '5. Seated Hip Abduction Machine',
+        name: '5. Seated Hip Abduction Machine (坐姿髖外展機)',
         sets: 3,
         repRange: '15–20',
         minReps: 15,
@@ -572,22 +572,22 @@ const WORKOUT_PLAN = {
         restSeconds: 60,
         restLabel: '60s',
         targetRir: '0 RIR',
-        badge: 'Glute Medius • Pickleball Impact Shield',
-        cue: 'Controlled pause at outer stretch; builds gluteus medius to stop valgus knee cave and absorb court impacts.'
+        badge: 'Glute Medius • Pickleball Impact Shield | 強化臀中肌・防止膝內扣與匹克球衝擊',
+        cue: 'EN: Controlled pause at outer stretch; builds gluteus medius to stop valgus knee cave and absorb court impacts.\n繁中：強化臀中肌與臀小肌，防止扁平足造成的膝蓋內扣（Valgus），並吸收匹克球橫向跨步救球時的骨盆與下背衝擊。背部貼緊靠墊、外展頂峰停頓1秒。'
       }
     ]
   },
   superman5: {
     id: 'superman5',
     shortTitle: 'Upper C',
-    dayLabel: 'Saturday',
-    title: 'Upper C: 3D Delts, Arms & Abs',
-    subtitle: '100% Fresh Neural Drive for Side/Rear Delts, Biceps, Triceps & Anti-Extension Abs (Zero Spine Load)',
+    dayLabel: 'Saturday 週六',
+    title: 'Upper C: 3D Delts, Arms & Abs (上肢 C：滿血 3D 側後肩、手臂與六塊肌)',
+    subtitle: '100% Fresh Neural Drive for Side/Rear Delts, Biceps, Triceps & Anti-Extension Abs (Zero Spine Load) | 100% 滿血中樞神經專攻 3D 肩膀、粗壯二三頭與零折腰六塊肌核心',
     needsLowerWarmup: false,
     exercises: [
       {
         id: 'd5_fresh_lat_raise',
-        name: '1. Single-Arm Cable Lateral Raise (Fresh Priority)',
+        name: '1. Single-Arm Cable Lateral Raise — Fresh Priority (單手跨體滑輪側平舉 — 滿血首發)',
         sets: 4,
         repRange: '12–15/arm',
         minReps: 12,
@@ -595,12 +595,12 @@ const WORKOUT_PLAN = {
         restSeconds: 60,
         restLabel: '60s',
         targetRir: '0 RIR',
-        badge: 'Unilateral Hit #3 of 3 • Peak Unfatigued Drive',
-        cue: 'Trained 1st while CNS is 100% fresh! Brace free hand on post; 2s lowering; push final set to failure + 4 lengthened partials.'
+        badge: 'Unilateral Hit #3 of 3 • Peak Unfatigued Drive | 單手側肩 #3/3・中樞神經 100% 滿血首發',
+        cue: 'EN: Trained 1st while CNS is 100% fresh! Brace free hand on post; 2s lowering; push final set to failure + 4 lengthened partials.\n繁中：週六全場第一動作（趁中樞神經100%滿血、還沒有胸背推拉疲勞時優先轟炸側肩）！單手訓練發揮雙側赤字優勢（力量更大），另一手扶柱固定身體；離心下放2秒，最後一組力竭後接4下底部半程組。'
       },
       {
         id: 'u2_rear_delt_fly',
-        name: '2. Chest-Supported Rear Delt Fly',
+        name: '2. Chest-Supported Rear Delt Fly (胸靠墊蝴蝶機反向飛鳥)',
         sets: 3,
         repRange: '15–20',
         minReps: 15,
@@ -608,12 +608,12 @@ const WORKOUT_PLAN = {
         restSeconds: 60,
         restLabel: '60s',
         targetRir: '0 RIR',
-        badge: 'Rear Delt Hit #2 of 2 • Sternum Supported',
-        cue: 'Sternum flat on pad; sweep hands outward in a wide arc with elbows flared 45° to isolate rear delts.'
+        badge: 'Rear Delt Hit #2 of 2 • Sternum Supported | 後三角頻率 #2/2・胸墊護腰',
+        cue: 'EN: Sternum flat on pad; sweep hands outward in a wide arc with elbows flared 45° to isolate rear delts.\n繁中：每週第2次後三角強化；胸口貼平靠墊（零腰椎壓力），手肘微彎外展45°向後外側畫大弧線，把肩膀後側3D立體圓潤度撐滿。'
       },
       {
         id: 'd5_preacher_curl',
-        name: '3. Machine Preacher Curl',
+        name: '3. Machine Preacher Curl (器械牧師椅二頭彎舉)',
         sets: 3,
         repRange: '8–10',
         minReps: 8,
@@ -621,12 +621,12 @@ const WORKOUT_PLAN = {
         restSeconds: 90,
         restLabel: '90s',
         targetRir: '0 RIR',
-        badge: 'Distal Bicep & Brachialis Thickness (Pedrosa 2023)',
-        cue: 'Triceps glued to preacher pad; zero shoulder momentum; smooth pull from 95% extension to peak squeeze.'
+        badge: 'Distal Bicep & Brachialis Thickness (Pedrosa 2023) | 遠端二頭與肱肌厚度（與背後彎舉互補）',
+        cue: 'EN: Triceps glued to preacher pad; zero shoulder momentum; smooth pull from 95% extension to peak squeeze.\n繁中：三頭肌與腋下死死貼緊斜板（100%封鎖肩膀借力與腰部晃動）；專攻手臂靠近手肘處的「遠端二頭肌」與「肱肌」飽滿厚度（Pedrosa 2023實證）。下放至95%伸展即可，勿完全放鬆鎖死。'
       },
       {
         id: 'd5_overhead_tri',
-        name: '4. Incline-Supported (or Single-Arm Braced) Overhead Cable Triceps Extension',
+        name: '4. Incline-Supported (or Single-Arm Braced) Overhead Cable Triceps Extension (上斜椅靠背／單手扶柱過頭滑輪三頭伸展)',
         sets: 3,
         repRange: '10–12',
         minReps: 10,
@@ -634,12 +634,12 @@ const WORKOUT_PLAN = {
         restSeconds: 75,
         restLabel: '75s',
         targetRir: '0 RIR',
-        badge: 'Back/Post Braced • +40% Long-Head Growth (Maeo 2022)',
-        cue: 'Sit against a 70°–80° incline bench OR do Single-Arm Overhead with free hand braced on cable post to block lower-back arching.'
+        badge: 'Back/Post Braced • +40% Long-Head Growth (Maeo 2022) | 靠背或扶柱防折腰・+40% 三頭長頭成長',
+        cue: 'EN: Sit against a 70°–80° incline bench OR do Single-Arm Overhead with free hand braced on cable post to block lower-back arching.\n繁中：過頭肩屈角度能帶來+40%三頭肌長頭肌肥大（Maeo 2022實證）！護腰關鍵：背靠70°–80°上斜椅坐姿操作，或採「單手過頭伸展＋另一手抓緊柱子」徹底鎖死肋骨與骨盆，嚴禁挺腰折腰代償。'
       },
       {
         id: 'd5_bayesian_curl_ss',
-        name: '5A. [Superset] Single-Arm Behind-the-Back Cable Curl',
+        name: '5A. [Superset] Single-Arm Behind-the-Back Cable Curl (超級組：單手背後滑輪二頭彎舉)',
         sets: 2,
         repRange: '12–15/arm',
         minReps: 12,
@@ -647,12 +647,12 @@ const WORKOUT_PLAN = {
         restSeconds: 45,
         restLabel: '45s',
         targetRir: '0 RIR',
-        badge: 'Unilateral Bicep Peak • Superset w/ 5B',
-        cue: 'Single low cable behind torso; brace free hand on frame; keep elbow pinned behind hip line throughout the curl.'
+        badge: 'Unilateral Bicep Peak • Superset w/ 5B | 單手二頭長頭肌峰・與 5B 超級組',
+        cue: 'EN: Single low cable behind torso; brace free hand on frame; keep elbow pinned behind hip line throughout the curl.\n繁中：單邊低位滑輪，往前站一步讓手肘固定在身體中線後方（極大化二頭肌長頭拉伸與肌峰）；非訓練手扶緊柱子，享受單手更強的神經驅動與泵感。'
       },
       {
         id: 'u2_cable_triceps_ext',
-        name: '5B. [Superset] Single-Arm Cross-Body Cable Triceps Extension',
+        name: '5B. [Superset] Single-Arm Cross-Body Cable Triceps Extension (超級組：單手跨體滑輪三頭下壓)',
         sets: 2,
         repRange: '12–15/arm',
         minReps: 12,
@@ -660,12 +660,12 @@ const WORKOUT_PLAN = {
         restSeconds: 60,
         restLabel: '60s',
         targetRir: '0 RIR',
-        badge: 'Same Single Pulley • Lateral & Medial Horseshoe',
-        cue: 'Same single cable tower; brace free hand on post; extend across body with hard 1s lockout squeeze at the bottom.'
+        badge: 'Same Single Pulley • Lateral & Medial Horseshoe | 同座單邊滑輪・三頭外側馬蹄鐵線條',
+        cue: 'EN: Same single cable tower; brace free hand on post; extend across body with hard 1s lockout squeeze at the bottom.\n繁中：同一座單邊滑輪調至肩高；另一手扶柱穩住核心，單手往對側下方完全伸直鎖死1秒，雕塑三頭肌外側馬蹄鐵線條。'
       },
       {
         id: 'd5_deadbug_core',
-        name: '6. Wall-Press Dead-Bug / Neutral-Spine Plank Saw',
+        name: '6. Wall-Press Dead-Bug — Neutral Spine (推牆死蟲式 — 零折腰六塊肌抗伸展訓練)',
         sets: 3,
         repRange: '10–12/side',
         minReps: 10,
@@ -673,8 +673,8 @@ const WORKOUT_PLAN = {
         restSeconds: 60,
         restLabel: '60s',
         targetRir: '0 RIR',
-        badge: '6-Pack Rectus Abdominis • Zero Spinal Flexion',
-        cue: 'Push palms hard into wall behind head, press lower back flat into floor, and slowly lower alternating heels.'
+        badge: '6-Pack Rectus Abdominis • Zero Spinal Flexion | 雕刻六塊腹直肌・零脊椎彎曲磨損',
+        cue: 'EN: Push palms hard into wall behind head, press lower back flat into floor, and slowly lower alternating heels.\n繁中：躺姿雙手用力推住頭頂後方的牆面或柱子底座，將下背死死壓平貼緊地面（零腰椎彎曲擠壓），雙腳交替緩慢下放延伸，用強大抗伸展張力雕刻六塊腹直肌。'
       }
     ]
   }
@@ -2184,13 +2184,13 @@ function openExerciseModal(itemId) {
           </div>
 
           <div class="p-3 rounded-xl bg-slate-900/90 border border-slate-800">
-            <div class="text-[11px] font-bold uppercase tracking-wider text-sky-400 mb-0.5">⚡ Key Execution Cue</div>
-            <div class="text-slate-200 leading-relaxed">${item.cue}</div>
+            <div class="text-[11px] font-bold uppercase tracking-wider text-sky-400 mb-0.5">⚡ Key Execution Cue (動作要領)</div>
+            <div class="text-slate-200 leading-relaxed whitespace-pre-line">${item.cue}</div>
           </div>
 
           <div class="p-3 rounded-xl bg-emerald-950/30 border border-emerald-500/30">
-            <div class="text-[11px] font-bold uppercase tracking-wider text-emerald-400 mb-0.5">🛡️ Spine, Hip & Hypertrophy Rationale</div>
-            <div class="text-emerald-100/90 leading-relaxed">${media.biomechanics}</div>
+            <div class="text-[11px] font-bold uppercase tracking-wider text-emerald-400 mb-0.5">🛡️ Spine, Hip & Hypertrophy Rationale (運動科學與護腰原理)</div>
+            <div class="text-emerald-100/90 leading-relaxed whitespace-pre-line">${media.biomechanics}</div>
           </div>
         </div>
 
@@ -2301,7 +2301,7 @@ function renderWorkoutTab() {
                   </div>
                 </div>
               </div>
-              <p class="text-xs text-slate-400 mt-2 leading-relaxed">${w.cue}</p>
+              <p class="text-xs text-slate-400 mt-2 leading-relaxed whitespace-pre-line">${w.cue}</p>
             </div>
           `;
         }).join('')}
@@ -2414,9 +2414,7 @@ function renderWorkoutTab() {
                 </span>
               </div>
               ${media ? `<div class="text-[11px] font-medium text-emerald-400/90 mt-1">🎯 ${media.muscles}</div>` : ''}
-              <p class="text-xs sm:text-sm text-slate-300 mt-1 leading-relaxed">
-                <strong class="text-sky-400">Cue:</strong> ${ex.cue}
-              </p>
+              <p class="text-xs sm:text-sm text-slate-300 mt-1.5 leading-relaxed whitespace-pre-line">${ex.cue}</p>
             </div>
           </div>
 
